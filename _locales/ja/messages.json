@@ -1,0 +1,326 @@
+{
+ "extName": {
+  "message": "Translate Switch - 翻訳スイッチ"
+ },
+ "extDesc": {
+  "message": "Chromeのデバイス内翻訳で、選んだサイトの選んだ言語だけを翻訳します。カーソルを合わせると原文を確認できます。"
+ },
+ "appTitle": {
+  "message": "Translate Switch"
+ },
+ "optionsTitle": {
+  "message": "Translate Switch の設定"
+ },
+ "optionsIntro": {
+  "message": "Chrome の内蔵翻訳機能で、ウェブページの外国語のテキストだけを翻訳します。翻訳はこのパソコン上で行われるため、ページの内容が外部に送信されることはありません。翻訳文にカーソルを合わせると原文を確認できます。"
+ },
+ "allSites": {
+  "message": "すべてのサイト"
+ },
+ "allSitesUse": {
+  "message": "すべてのサイトで使用"
+ },
+ "allSitesHint": {
+  "message": "オンにすると、すべてのウェブページに翻訳スイッチが表示されます。初めてオンにするときに、Chrome がアクセス許可を求めます。"
+ },
+ "source": {
+  "message": "翻訳元"
+ },
+ "target": {
+  "message": "翻訳先"
+ },
+ "autoTranslate": {
+  "message": "ページを開いたときに自動翻訳"
+ },
+ "perSite": {
+  "message": "サイト別設定"
+ },
+ "perSiteHint": {
+  "message": "— すべてのサイトの設定より優先されます"
+ },
+ "colUse": {
+  "message": "有効"
+ },
+ "colSite": {
+  "message": "サイト"
+ },
+ "colAuto": {
+  "message": "自動"
+ },
+ "emptySites": {
+  "message": "サイトはまだ登録されていません。翻訳したいページでツールバーの拡張機能アイコンをクリックし、「オンにする」を押すと、サイトが自動で追加されます。下の欄にサイトを入力することもできます。"
+ },
+ "addPlaceholder": {
+  "message": "サイトを追加（例：mail.example.com, *.example.jp）"
+ },
+ "add": {
+  "message": "追加"
+ },
+ "models": {
+  "message": "翻訳モデル"
+ },
+ "modelsHint": {
+  "message": "言語ペアごとのモデルは一度だけダウンロードされ、Chrome 全体で共有されます。数分かかることがあるため、よく読む言語は事前にダウンロードしておくと便利です。"
+ },
+ "preDownload": {
+  "message": "今すぐダウンロード"
+ },
+ "shortcut": {
+  "message": "ショートカットで翻訳を切り替え"
+ },
+ "shortcutHint": {
+  "message": "Mac では ⌘K、Windows では Ctrl+K です。韓国語・日本語のキーボード配列や Caps Lock がオンの状態でも使えます。"
+ },
+ "pillShow": {
+  "message": "翻訳スイッチ（丸みのあるボタン）を表示"
+ },
+ "pillPos": {
+  "message": "スイッチの位置"
+ },
+ "posTopLeft": {
+  "message": "左上"
+ },
+ "posTopCenter": {
+  "message": "上中央"
+ },
+ "posTopRight": {
+  "message": "右上"
+ },
+ "posMiddleLeft": {
+  "message": "左中央"
+ },
+ "posMiddleRight": {
+  "message": "右中央"
+ },
+ "posBottomLeft": {
+  "message": "左下"
+ },
+ "posBottomCenter": {
+  "message": "下中央"
+ },
+ "posBottomRight": {
+  "message": "右下"
+ },
+ "highlight": {
+  "message": "翻訳文を強調表示"
+ },
+ "highlightHint": {
+  "message": "翻訳文に薄い背景色と点線の下線を付けて、見分けやすくします。"
+ },
+ "highlightColor": {
+  "message": "強調表示の色"
+ },
+ "resetColor": {
+  "message": "既定の色"
+ },
+ "modelFirst": {
+  "message": "まず翻訳モデルをダウンロードしてください"
+ },
+ "modelFirstHint": {
+  "message": "一度だけ行う必要があります（Chrome 全体で共有されます）。ダウンロード中はこのウィンドウを開いたままにしてください。"
+ },
+ "noPage": {
+  "message": "このページでは使用できません（Chrome の内部ページ、ウェブストアなど）。"
+ },
+ "useHere": {
+  "message": "このサイトで使用"
+ },
+ "toggleNow": {
+  "message": "今すぐ翻訳のオン・オフを切り替え"
+ },
+ "openOptions": {
+  "message": "すべての設定を開く"
+ },
+ "grantTitle": {
+  "message": "アクセスを許可 - Translate Switch"
+ },
+ "grantBody": {
+  "message": "{1} のページを開くたびに翻訳スイッチを自動で追加するには、拡張機能にこのサイトへのアクセスを許可する必要があります。"
+ },
+ "grantBtn": {
+  "message": "アクセスを許可"
+ },
+ "grantNote": {
+  "message": "現在のタブにはすでに適用されています。このウィンドウを閉じるだけの場合は、今回のアクセス時のみ有効です。"
+ },
+ "grantOk": {
+  "message": "アクセスが許可されました。今後はこのサイトに翻訳スイッチが自動で追加されます。このウィンドウを閉じます。"
+ },
+ "grantNo": {
+  "message": "アクセスが許可されませんでした。もう一度クリックしてお試しください。"
+ },
+ "noAccess": {
+  "message": "アクセス許可なし"
+ },
+ "delete": {
+  "message": "削除"
+ },
+ "grantedOn": {
+  "message": "アクセスが許可されました。このサイトでの使用と自動翻訳をオンにしました。"
+ },
+ "noTranslator": {
+  "message": "このバージョンの Chrome は内蔵翻訳機能に対応していません（Chrome 138 以降が必要です）。"
+ },
+ "noDetector": {
+  "message": "このバージョンの Chrome は言語の自動検出に対応していません。"
+ },
+ "autoDetect": {
+  "message": "言語を検出"
+ },
+ "browserLang": {
+  "message": "ブラウザの言語（{1}）"
+ },
+ "langDetect": {
+  "message": "言語の検出"
+ },
+ "sameLang": {
+  "message": "翻訳元と翻訳先の言語が同じです。"
+ },
+ "alreadyHave": {
+  "message": "{1} → {2} のモデルはダウンロード済みです。"
+ },
+ "unsupportedPair": {
+  "message": "この言語ペアには対応していません。"
+ },
+ "saved": {
+  "message": "保存しました。開いているタブにはすぐに反映されます。新しく有効にしたサイトのタブは再読み込みしてください。"
+ },
+ "badHost": {
+  "message": "サイトのアドレスが正しくありません。"
+ },
+ "dupHost": {
+  "message": "このサイトはすでに追加されています。"
+ },
+ "needGrantToAdd": {
+  "message": "このサイトを追加するには、アクセスを許可する必要があります。"
+ },
+ "injectFail": {
+  "message": "このタブに適用できませんでした：{1}"
+ },
+ "noPermNote": {
+  "message": "アクセスを許可しない場合、次回のアクセス時には自動で追加されません —"
+ },
+ "ruleSite": {
+  "message": "サイト別設定"
+ },
+ "ruleSiteOf": {
+  "message": "サイト別設定（{1}）"
+ },
+ "ruleAll": {
+  "message": "すべてのサイトの設定を使用中"
+ },
+ "ruleNone": {
+  "message": "このサイトはまだ追加されていません"
+ },
+ "addedApplied": {
+  "message": "追加して、このタブに適用しました。"
+ },
+ "turnedOff": {
+  "message": "このサイトでの使用をオフにしました。"
+ },
+ "availAvailable": {
+  "message": "ダウンロード済み"
+ },
+ "availDownloadable": {
+  "message": "ダウンロードが必要"
+ },
+ "availDownloading": {
+  "message": "ダウンロード中"
+ },
+ "availUnavailable": {
+  "message": "非対応"
+ },
+ "downloadModel": {
+  "message": "モデルをダウンロード"
+ },
+ "failed": {
+  "message": "失敗しました：{1}"
+ },
+ "downloadingPct": {
+  "message": "ダウンロード中 {1}%"
+ },
+ "pillOriginal": {
+  "message": "原文を表示"
+ },
+ "pillTranslate": {
+  "message": "翻訳"
+ },
+ "pillAuto": {
+  "message": "自動"
+ },
+ "needHttps": {
+  "message": "安全な接続（HTTPS）を使用していないページでは、Chrome の内蔵翻訳機能は利用できません。"
+ },
+ "noTranslatorApi": {
+  "message": "このバージョンの Chrome は内蔵翻訳機能（Translator API）に対応していません。Chrome 138 以降が必要です。"
+ },
+ "modelDownloading": {
+  "message": "モデルをダウンロード中 {1}%"
+ },
+ "needClickPair": {
+  "message": "{1}→{2} の翻訳を開始するには、このページのスイッチを一度クリックしてください。"
+ },
+ "noDetectorApi": {
+  "message": "このバージョンの Chrome は言語の自動検出（LanguageDetector API）に対応していません。"
+ },
+ "detectorUnavailable": {
+  "message": "言語検出モデルを利用できません。"
+ },
+ "detectorDownloading": {
+  "message": "言語検出モデルをダウンロード中 {1}%"
+ },
+ "needClickDetect": {
+  "message": "言語の検出を開始するには、このページのスイッチを一度クリックしてください。"
+ },
+ "preparing": {
+  "message": "モデルを準備中…"
+ },
+ "slowDownload": {
+  "message": "モデルをダウンロード中…（初回は数分かかります）"
+ },
+ "pairUnsupported": {
+  "message": "{1}→{2} の翻訳には対応していません。"
+ },
+ "clickToStart": {
+  "message": "クリックして翻訳"
+ },
+ "tipOriginal": {
+  "message": "原文（{1}）"
+ },
+ "pillTitle": {
+  "message": "翻訳のオン・オフ{1} · 翻訳文にカーソルを合わせると原文を確認できます"
+ },
+ "alertPrefix": {
+  "message": "[翻訳]"
+ },
+ "grantLater": {
+  "message": "後で"
+ },
+ "saveFailed": {
+  "message": "保存できませんでした。保存容量がいっぱいの可能性があります。いくつかのサイトを削除してから、もう一度お試しください。"
+ },
+ "grantExpired": {
+  "message": "このリクエストは期限切れです。サイトで拡張機能のポップアップを開いて、もう一度お試しください。"
+ },
+ "grantThisSite": {
+  "message": "このサイトを許可"
+ },
+ "grantAllSites": {
+  "message": "すべてのサイトを許可 — 今後は確認しない"
+ },
+ "grantAllHint": {
+  "message": "「すべてのサイトを許可」を選ぶと、すべてのサイトですぐに使えるようになります。サイトごとにオフにすることも、設定で全体をオフにすることもできます。"
+ },
+ "useEverywhere": {
+  "message": "すべてのサイトで使う（一度許可すれば、どのサイトでも使えます）"
+ },
+ "turnOn": {
+  "message": "オンにする"
+ },
+ "turnOff": {
+  "message": "オフにする"
+ },
+ "autoThisSite": {
+  "message": "このサイトを自動翻訳"
+ }
+}

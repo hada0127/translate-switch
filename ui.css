@@ -1,0 +1,40 @@
+:root { --red: #ED3424; --bg: #fff; --fg: #222; --muted: #777; --line: #e3e3e3; --cell: #f6f6f6; }
+@media (prefers-color-scheme: dark) { :root { --bg: #1e1e1e; --fg: #eee; --muted: #999; --line: #3a3a3a; --cell: #2a2a2a; } }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 14px/1.5 -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", "Segoe UI", sans-serif; }
+main { max-width: 720px; margin: 40px auto; padding: 0 16px; }
+h1 { font-size: 20px; margin: 0 0 4px; display: flex; align-items: center; gap: 8px; }
+h2 { font-size: 15px; margin: 0 0 10px; }
+p.sub { color: var(--muted); margin: 0 0 24px; }
+section { border-top: 1px solid var(--line); padding: 18px 0; }
+label.row { display: flex; justify-content: space-between; align-items: center; gap: 12px; cursor: pointer; }
+label.inline { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; }
+.hint { color: var(--muted); font-size: 12px; font-weight: normal; }
+kbd { border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 4px; padding: 0 5px; font: 12px ui-monospace, monospace; }
+input[type=color] { width: 36px; height: 26px; padding: 0; border: 1px solid var(--line); border-radius: 6px; background: none; }
+#hlPreview { padding: 2px 4px; }
+input[type=checkbox] { width: 18px; height: 18px; accent-color: var(--red); }
+input[type=text], select { background: var(--cell); color: var(--fg); border: 1px solid var(--line); border-radius: 6px; padding: 5px 7px; font: inherit; max-width: 100%; }
+button.btn { background: var(--cell); color: var(--fg); border: 1px solid var(--line); border-radius: 6px; padding: 5px 10px; cursor: pointer; font: inherit; }
+button.btn.primary { background: var(--red); border-color: var(--red); color: #fff; }
+button.btn:disabled { opacity: .5; cursor: default; }
+.langs { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-top: 12px; }
+.langs.off { opacity: .45; }
+[dir=rtl] .arrow { display: inline-block; transform: scaleX(-1); }
+/* 위치 고르기 칸은 화면 위치 그대로 — 오른쪽→왼쪽 언어에서도 뒤집지 않는다 */
+.grid { direction: ltr; margin-top: 10px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; width: 240px; aspect-ratio: 16/10;
+        padding: 8px; border: 1px solid var(--line); border-radius: 10px; }
+.grid button { border: 1px solid var(--line); background: var(--cell); color: var(--fg); border-radius: 6px; cursor: pointer; font-size: 11px; }
+.grid button.sel { background: var(--red); border-color: var(--red); color: #fff; font-weight: bold; }
+.grid .center { visibility: hidden; }
+.grid.disabled { opacity: .4; pointer-events: none; }
+table { width: 100%; border-collapse: collapse; }
+th, td { text-align: start; padding: 6px 4px; border-bottom: 1px solid var(--line); vertical-align: middle; }
+th { font-weight: 600; font-size: 12px; color: var(--muted); }
+td.c, th.c { text-align: center; }
+td select { max-width: 160px; }
+.warn { color: var(--red); font-size: 12px; }
+.add { display: flex; gap: 6px; margin-top: 10px; flex-wrap: wrap; align-items: center; }
+.add input { flex: 1; min-width: 160px; }
+progress { width: 120px; accent-color: var(--red); }
+#saved { color: var(--red); font-size: 12px; min-height: 18px; }
+@media (max-width: 560px) { th:nth-child(6), td:nth-child(6) { display: none; } }

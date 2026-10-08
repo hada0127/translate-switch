@@ -1,0 +1,326 @@
+{
+ "extName": {
+  "message": "Translate Switch - Çeviri Anahtarı"
+ },
+ "extDesc": {
+  "message": "Chrome cihazda yalnızca seçtiğiniz sitelerde seçtiğiniz dili çevirir. Aslını görmek için fareyi metnin üzerine getirin."
+ },
+ "appTitle": {
+  "message": "Translate Switch"
+ },
+ "optionsTitle": {
+  "message": "Translate Switch ayarları"
+ },
+ "optionsIntro": {
+  "message": "Web sayfalarındaki yalnızca yabancı dildeki metinleri çevirmek için Chrome'un yerleşik çevirmenini kullanır. Çeviri bu bilgisayarda yapılır, sayfa içeriği bilgisayarınızdan dışarı çıkmaz. Özgün metni görmek için fareyle çevrilmiş metnin üzerine gelin."
+ },
+ "allSites": {
+  "message": "Tüm siteler"
+ },
+ "allSitesUse": {
+  "message": "Tüm sitelerde kullan"
+ },
+ "allSitesHint": {
+  "message": "Açıkken çeviri anahtarı her web sayfasında görünür. İlk kez açtığınızda Chrome erişim izni ister."
+ },
+ "source": {
+  "message": "Kaynak dil"
+ },
+ "target": {
+  "message": "Hedef dil"
+ },
+ "autoTranslate": {
+  "message": "Sayfa açıldığında otomatik çevir"
+ },
+ "perSite": {
+  "message": "Site ayarları"
+ },
+ "perSiteHint": {
+  "message": "— tüm siteler için geçerli ayarların yerine uygulanır"
+ },
+ "colUse": {
+  "message": "Açık"
+ },
+ "colSite": {
+  "message": "Site"
+ },
+ "colAuto": {
+  "message": "Otomatik"
+ },
+ "emptySites": {
+  "message": "Henüz site yok. Çevrilmesini istediğiniz sayfada, araç çubuğundaki uzantı simgesine tıklayıp “Aç” düğmesine basarak siteyi otomatik ekleyebilirsiniz. Aşağıya site adresini de yazabilirsiniz."
+ },
+ "addPlaceholder": {
+  "message": "Site ekleyin (ör. mail.example.com, *.example.jp)"
+ },
+ "add": {
+  "message": "Ekle"
+ },
+ "models": {
+  "message": "Çeviri modelleri"
+ },
+ "modelsHint": {
+  "message": "Her dil çiftinin modeli bir kez indirilir (Chrome genelinde paylaşılır). Bu işlem birkaç dakika sürebilir; sık okuduğunuz dilleri önceden indirin."
+ },
+ "preDownload": {
+  "message": "Şimdi indir"
+ },
+ "shortcut": {
+  "message": "Kısayolla çeviriyi aç/kapat"
+ },
+ "shortcutHint": {
+  "message": "Mac'te ⌘K, Windows'ta Ctrl+K. Korece veya Japonca klavye düzenlerinde ve Caps Lock açıkken de çalışır."
+ },
+ "pillShow": {
+  "message": "Çeviri anahtarını göster (kapsül düğme)"
+ },
+ "pillPos": {
+  "message": "Anahtar konumu"
+ },
+ "posTopLeft": {
+  "message": "Sol üst"
+ },
+ "posTopCenter": {
+  "message": "Üst orta"
+ },
+ "posTopRight": {
+  "message": "Sağ üst"
+ },
+ "posMiddleLeft": {
+  "message": "Sol orta"
+ },
+ "posMiddleRight": {
+  "message": "Sağ orta"
+ },
+ "posBottomLeft": {
+  "message": "Sol alt"
+ },
+ "posBottomCenter": {
+  "message": "Alt orta"
+ },
+ "posBottomRight": {
+  "message": "Sağ alt"
+ },
+ "highlight": {
+  "message": "Çevrilmiş metni vurgula"
+ },
+ "highlightHint": {
+  "message": "Çevrilmiş metne açık renkli arka plan ve noktalı alt çizgi ekleyerek ayırt edilmesini sağlar."
+ },
+ "highlightColor": {
+  "message": "Vurgu rengi"
+ },
+ "resetColor": {
+  "message": "Varsayılan renk"
+ },
+ "modelFirst": {
+  "message": "Önce çeviri modelini indirin"
+ },
+ "modelFirstHint": {
+  "message": "Bunu yalnızca bir kez yapmanız gerekir (Chrome genelinde paylaşılır). İndirme sırasında bu pencereyi açık tutun."
+ },
+ "noPage": {
+  "message": "Bu sayfada kullanılamaz (Chrome'un dahili sayfaları, Web Mağazası vb.)."
+ },
+ "useHere": {
+  "message": "Bu sitede kullan"
+ },
+ "toggleNow": {
+  "message": "Çeviriyi şimdi aç/kapat"
+ },
+ "openOptions": {
+  "message": "Tüm ayarları aç"
+ },
+ "grantTitle": {
+  "message": "Erişime izin ver - Translate Switch"
+ },
+ "grantBody": {
+  "message": "{1} sitesinde her sayfa açtığınızda çeviri anahtarını otomatik ekleyebilmek için uzantının bu siteye erişmesi gerekir."
+ },
+ "grantBtn": {
+  "message": "Erişime izin ver"
+ },
+ "grantNote": {
+  "message": "Geçerli sekmeye zaten uygulandı. Bu pencereyi kapatırsanız yalnızca bu ziyaret boyunca çalışır."
+ },
+ "grantOk": {
+  "message": "Erişime izin verildi. Çeviri anahtarı artık bu siteye otomatik eklenecek. Pencere kapatılıyor."
+ },
+ "grantNo": {
+  "message": "Erişime izin verilmedi. Yeniden denemek için tekrar tıklayın."
+ },
+ "noAccess": {
+  "message": "Erişim yok"
+ },
+ "delete": {
+  "message": "Sil"
+ },
+ "grantedOn": {
+  "message": "Erişime izin verildi. Site ve otomatik çeviri etkinleştirildi."
+ },
+ "noTranslator": {
+  "message": "Chrome'un bu sürümü yerleşik çevirmeni desteklemiyor (Chrome 138 veya üzeri gerekir)."
+ },
+ "noDetector": {
+  "message": "Chrome'un bu sürümü otomatik dil algılamayı desteklemiyor."
+ },
+ "autoDetect": {
+  "message": "Dili algıla"
+ },
+ "browserLang": {
+  "message": "Tarayıcı dili ({1})"
+ },
+ "langDetect": {
+  "message": "Dil algılama"
+ },
+ "sameLang": {
+  "message": "Kaynak dil ve hedef dil aynı."
+ },
+ "alreadyHave": {
+  "message": "{1} → {2} modeli zaten indirilmiş."
+ },
+ "unsupportedPair": {
+  "message": "Bu dil çifti desteklenmiyor."
+ },
+ "saved": {
+  "message": "Kaydedildi. Açık sekmeler hemen güncellenir; yeni etkinleştirdiğiniz sitenin sekmesini yeniden yükleyin."
+ },
+ "badHost": {
+  "message": "Geçerli bir site adresi değil."
+ },
+ "dupHost": {
+  "message": "Bu site zaten eklenmiş."
+ },
+ "needGrantToAdd": {
+  "message": "Bu siteyi eklemek için erişime izin vermeniz gerekir."
+ },
+ "injectFail": {
+  "message": "Bu sekmeye uygulanamadı: {1}"
+ },
+ "noPermNote": {
+  "message": "Erişim izni olmadan sonraki ziyaretinizde otomatik eklenmez —"
+ },
+ "ruleSite": {
+  "message": "Site ayarı"
+ },
+ "ruleSiteOf": {
+  "message": "Site ayarı ({1})"
+ },
+ "ruleAll": {
+  "message": "Tüm siteler için geçerli ayar kullanılıyor"
+ },
+ "ruleNone": {
+  "message": "Bu site henüz eklenmedi"
+ },
+ "addedApplied": {
+  "message": "Eklendi ve bu sekmeye uygulandı."
+ },
+ "turnedOff": {
+  "message": "Bu site için kapatıldı."
+ },
+ "availAvailable": {
+  "message": "İndirildi"
+ },
+ "availDownloadable": {
+  "message": "İndirme gerekli"
+ },
+ "availDownloading": {
+  "message": "İndiriliyor"
+ },
+ "availUnavailable": {
+  "message": "Desteklenmiyor"
+ },
+ "downloadModel": {
+  "message": "Modeli indir"
+ },
+ "failed": {
+  "message": "Başarısız: {1}"
+ },
+ "downloadingPct": {
+  "message": "İndiriliyor %{1}"
+ },
+ "pillOriginal": {
+  "message": "Özgün metni göster"
+ },
+ "pillTranslate": {
+  "message": "Çevir"
+ },
+ "pillAuto": {
+  "message": "Otomatik"
+ },
+ "needHttps": {
+  "message": "Chrome'un yerleşik çevirmeni, güvenli (HTTPS) bağlantısı olmayan sayfalarda kullanılamaz."
+ },
+ "noTranslatorApi": {
+  "message": "Chrome'un bu sürümü yerleşik çevirmeni (Translator API) desteklemiyor. Chrome 138 veya üzeri gerekir."
+ },
+ "modelDownloading": {
+  "message": "Model indiriliyor %{1}"
+ },
+ "needClickPair": {
+  "message": "{1}→{2} çevirisini başlatmak için bu sayfadaki anahtara bir kez tıklayın."
+ },
+ "noDetectorApi": {
+  "message": "Chrome'un bu sürümü otomatik dil algılamayı (LanguageDetector API) desteklemiyor."
+ },
+ "detectorUnavailable": {
+  "message": "Dil algılama modeli kullanılamıyor."
+ },
+ "detectorDownloading": {
+  "message": "Algılama modeli indiriliyor %{1}"
+ },
+ "needClickDetect": {
+  "message": "Dil algılamayı başlatmak için bu sayfadaki anahtara bir kez tıklayın."
+ },
+ "preparing": {
+  "message": "Model hazırlanıyor…"
+ },
+ "slowDownload": {
+  "message": "Model indiriliyor… (ilk seferde birkaç dakika sürer)"
+ },
+ "pairUnsupported": {
+  "message": "{1}→{2} çevirisi desteklenmiyor."
+ },
+ "clickToStart": {
+  "message": "Çevirmek için tıklayın"
+ },
+ "tipOriginal": {
+  "message": "Özgün metin ({1})"
+ },
+ "pillTitle": {
+  "message": "Çeviriyi aç/kapat{1} · Özgün metni görmek için fareyle çevrilmiş metnin üzerine gelin"
+ },
+ "alertPrefix": {
+  "message": "[Çeviri]"
+ },
+ "grantLater": {
+  "message": "Şimdi değil"
+ },
+ "saveFailed": {
+  "message": "Kaydedilemedi. Depolama alanı dolmuş olabilir; bazı siteleri silip tekrar deneyin."
+ },
+ "grantExpired": {
+  "message": "Bu isteğin süresi doldu. Sitede uzantının açılır penceresini açıp tekrar deneyin."
+ },
+ "grantThisSite": {
+  "message": "Bu siteye izin ver"
+ },
+ "grantAllSites": {
+  "message": "Tüm sitelere izin ver — bir daha sorma"
+ },
+ "grantAllHint": {
+  "message": "“Tüm sitelere izin ver” seçeneği, tüm sitelerde hemen çalışmasını sağlar. Belirli bir site için kapatabilir veya ayarlardan tamamen devre dışı bırakabilirsiniz."
+ },
+ "useEverywhere": {
+  "message": "Tüm sitelerde kullan (bir kez izin verin, her yerde çalışsın)"
+ },
+ "turnOn": {
+  "message": "Aç"
+ },
+ "turnOff": {
+  "message": "Kapat"
+ },
+ "autoThisSite": {
+  "message": "Bu siteyi otomatik çevir"
+ }
+}

@@ -1,0 +1,326 @@
+{
+ "extName": {
+  "message": "Translate Switch - Interruptor de traducción"
+ },
+ "extDesc": {
+  "message": "Chrome traduce en su equipo solo el idioma elegido en los sitios elegidos. Pase el cursor para ver el original."
+ },
+ "appTitle": {
+  "message": "Translate Switch"
+ },
+ "optionsTitle": {
+  "message": "Configuración de Translate Switch"
+ },
+ "optionsIntro": {
+  "message": "Utiliza el traductor integrado de Chrome para traducir solo el texto en otros idiomas de una página web. La traducción se realiza en este equipo, por lo que el contenido de las páginas nunca sale de él. Pase el cursor sobre el texto traducido para ver el original."
+ },
+ "allSites": {
+  "message": "Todos los sitios"
+ },
+ "allSitesUse": {
+  "message": "Usar en todos los sitios"
+ },
+ "allSitesHint": {
+  "message": "Al activar esta opción, el interruptor de traducción aparece en todas las páginas web. Chrome solicita permiso de acceso la primera vez que la activa."
+ },
+ "source": {
+  "message": "De"
+ },
+ "target": {
+  "message": "A"
+ },
+ "autoTranslate": {
+  "message": "Traducir automáticamente al abrir una página"
+ },
+ "perSite": {
+  "message": "Configuración por sitio"
+ },
+ "perSiteHint": {
+  "message": "— tiene prioridad sobre la configuración de todos los sitios"
+ },
+ "colUse": {
+  "message": "Activado"
+ },
+ "colSite": {
+  "message": "Sitio"
+ },
+ "colAuto": {
+  "message": "Auto"
+ },
+ "emptySites": {
+  "message": "Aún no hay sitios. En una página que desee traducir, haga clic en el icono de la extensión de la barra de herramientas y pulse «Activar» para añadir el sitio automáticamente. También puede introducir un sitio a continuación."
+ },
+ "addPlaceholder": {
+  "message": "Añadir un sitio (p. ej., mail.example.com, *.example.jp)"
+ },
+ "add": {
+  "message": "Añadir"
+ },
+ "models": {
+  "message": "Modelos de traducción"
+ },
+ "modelsHint": {
+  "message": "El modelo de cada par de idiomas se descarga una sola vez y se comparte en Chrome. Puede tardar unos minutos, así que descargue con antelación los idiomas que lea a menudo."
+ },
+ "preDownload": {
+  "message": "Descargar ahora"
+ },
+ "shortcut": {
+  "message": "Activar o desactivar la traducción con un atajo"
+ },
+ "shortcutHint": {
+  "message": "⌘K en Mac, Ctrl+K en Windows. Funciona con distribuciones de teclado coreanas o japonesas y con el bloqueo de mayúsculas activado."
+ },
+ "pillShow": {
+  "message": "Mostrar el interruptor de traducción (botón ovalado)"
+ },
+ "pillPos": {
+  "message": "Posición del interruptor"
+ },
+ "posTopLeft": {
+  "message": "Arriba a la izquierda"
+ },
+ "posTopCenter": {
+  "message": "Arriba en el centro"
+ },
+ "posTopRight": {
+  "message": "Arriba a la derecha"
+ },
+ "posMiddleLeft": {
+  "message": "En medio a la izquierda"
+ },
+ "posMiddleRight": {
+  "message": "En medio a la derecha"
+ },
+ "posBottomLeft": {
+  "message": "Abajo a la izquierda"
+ },
+ "posBottomCenter": {
+  "message": "Abajo en el centro"
+ },
+ "posBottomRight": {
+  "message": "Abajo a la derecha"
+ },
+ "highlight": {
+  "message": "Resaltar el texto traducido"
+ },
+ "highlightHint": {
+  "message": "Añade un fondo claro y un subrayado de puntos al texto traducido para distinguirlo."
+ },
+ "highlightColor": {
+  "message": "Color de resaltado"
+ },
+ "resetColor": {
+  "message": "Color predeterminado"
+ },
+ "modelFirst": {
+  "message": "Descargue primero el modelo de traducción"
+ },
+ "modelFirstHint": {
+  "message": "Solo es necesario hacerlo una vez. El modelo se comparte en Chrome. Mantenga esta ventana abierta durante la descarga."
+ },
+ "noPage": {
+  "message": "No disponible en esta página (páginas internas de Chrome, Web Store, etc.)."
+ },
+ "useHere": {
+  "message": "Usar en este sitio"
+ },
+ "toggleNow": {
+  "message": "Activar o desactivar la traducción ahora"
+ },
+ "openOptions": {
+  "message": "Abrir toda la configuración"
+ },
+ "grantTitle": {
+  "message": "Permitir acceso - Translate Switch"
+ },
+ "grantBody": {
+  "message": "Para añadir el interruptor de traducción automáticamente cada vez que abra una página en {1}, la extensión necesita acceder a este sitio."
+ },
+ "grantBtn": {
+  "message": "Permitir acceso"
+ },
+ "grantNote": {
+  "message": "Ya se ha aplicado a la pestaña actual. Si cierra esta ventana sin más, solo funcionará durante esta visita."
+ },
+ "grantOk": {
+  "message": "Acceso permitido. A partir de ahora, el interruptor de traducción se añadirá automáticamente en este sitio. Esta ventana se cerrará."
+ },
+ "grantNo": {
+  "message": "No se ha permitido el acceso. Haga clic de nuevo para reintentarlo."
+ },
+ "noAccess": {
+  "message": "Sin acceso"
+ },
+ "delete": {
+  "message": "Eliminar"
+ },
+ "grantedOn": {
+  "message": "Acceso permitido. Se han activado el sitio y la traducción automática."
+ },
+ "noTranslator": {
+  "message": "Esta versión de Chrome no admite el traductor integrado (se requiere Chrome 138 o posterior)."
+ },
+ "noDetector": {
+  "message": "Esta versión de Chrome no admite la detección automática de idiomas."
+ },
+ "autoDetect": {
+  "message": "Detectar idioma"
+ },
+ "browserLang": {
+  "message": "Idioma del navegador ({1})"
+ },
+ "langDetect": {
+  "message": "Detección de idioma"
+ },
+ "sameLang": {
+  "message": "Los idiomas de origen y destino son iguales."
+ },
+ "alreadyHave": {
+  "message": "El modelo {1} → {2} ya está descargado."
+ },
+ "unsupportedPair": {
+  "message": "Este par de idiomas no es compatible."
+ },
+ "saved": {
+  "message": "Guardado. Las pestañas abiertas se actualizan de inmediato. Recargue la pestaña de un sitio que acabe de activar."
+ },
+ "badHost": {
+  "message": "La dirección del sitio no es válida."
+ },
+ "dupHost": {
+  "message": "Este sitio ya se ha añadido."
+ },
+ "needGrantToAdd": {
+  "message": "Debe permitir el acceso para añadir este sitio."
+ },
+ "injectFail": {
+  "message": "No se pudo aplicar a esta pestaña: {1}"
+ },
+ "noPermNote": {
+  "message": "Sin acceso, el interruptor no se añadirá automáticamente en su próxima visita —"
+ },
+ "ruleSite": {
+  "message": "Configuración del sitio"
+ },
+ "ruleSiteOf": {
+  "message": "Configuración del sitio ({1})"
+ },
+ "ruleAll": {
+  "message": "Se usa la configuración de todos los sitios"
+ },
+ "ruleNone": {
+  "message": "Este sitio aún no se ha añadido"
+ },
+ "addedApplied": {
+  "message": "Añadido y aplicado a esta pestaña."
+ },
+ "turnedOff": {
+  "message": "Desactivado para este sitio."
+ },
+ "availAvailable": {
+  "message": "Descargado"
+ },
+ "availDownloadable": {
+  "message": "Requiere descarga"
+ },
+ "availDownloading": {
+  "message": "Descargando"
+ },
+ "availUnavailable": {
+  "message": "No compatible"
+ },
+ "downloadModel": {
+  "message": "Descargar modelo"
+ },
+ "failed": {
+  "message": "Error: {1}"
+ },
+ "downloadingPct": {
+  "message": "Descargando {1}%"
+ },
+ "pillOriginal": {
+  "message": "Mostrar original"
+ },
+ "pillTranslate": {
+  "message": "Traducir"
+ },
+ "pillAuto": {
+  "message": "Auto"
+ },
+ "needHttps": {
+  "message": "El traductor integrado de Chrome no está disponible en páginas sin una conexión segura (HTTPS)."
+ },
+ "noTranslatorApi": {
+  "message": "Esta versión de Chrome no admite el traductor integrado (Translator API). Se requiere Chrome 138 o posterior."
+ },
+ "modelDownloading": {
+  "message": "Descargando modelo {1}%"
+ },
+ "needClickPair": {
+  "message": "Para iniciar la traducción {1}→{2}, haga clic una vez en el interruptor de esta página."
+ },
+ "noDetectorApi": {
+  "message": "Esta versión de Chrome no admite la detección automática de idiomas (LanguageDetector API)."
+ },
+ "detectorUnavailable": {
+  "message": "El modelo de detección de idiomas no está disponible."
+ },
+ "detectorDownloading": {
+  "message": "Descargando modelo de detección {1}%"
+ },
+ "needClickDetect": {
+  "message": "Para iniciar la detección de idiomas, haga clic una vez en el interruptor de esta página."
+ },
+ "preparing": {
+  "message": "Preparando modelo…"
+ },
+ "slowDownload": {
+  "message": "Descargando modelo… (la primera vez tarda unos minutos)"
+ },
+ "pairUnsupported": {
+  "message": "La traducción {1}→{2} no es compatible."
+ },
+ "clickToStart": {
+  "message": "Haga clic para traducir"
+ },
+ "tipOriginal": {
+  "message": "Original ({1})"
+ },
+ "pillTitle": {
+  "message": "Traducción activada/desactivada{1} · Pase el cursor sobre el texto traducido para ver el original"
+ },
+ "alertPrefix": {
+  "message": "[Traducción]"
+ },
+ "grantLater": {
+  "message": "Ahora no"
+ },
+ "saveFailed": {
+  "message": "No se pudo guardar. Puede que el almacenamiento esté lleno; elimina algunos sitios e inténtalo de nuevo."
+ },
+ "grantExpired": {
+  "message": "Esta solicitud ha caducado. Abre la ventana emergente de la extensión en el sitio e inténtalo de nuevo."
+ },
+ "grantThisSite": {
+  "message": "Permitir este sitio"
+ },
+ "grantAllSites": {
+  "message": "Permitir todos los sitios — no volver a preguntar"
+ },
+ "grantAllHint": {
+  "message": "«Permitir todos los sitios» activa la traducción de inmediato en todos los sitios. Puedes desactivarla para un sitio concreto o por completo en los ajustes."
+ },
+ "useEverywhere": {
+  "message": "Usar en todos los sitios (con un solo permiso, funciona en todas partes)"
+ },
+ "turnOn": {
+  "message": "Activar"
+ },
+ "turnOff": {
+  "message": "Desactivar"
+ },
+ "autoThisSite": {
+  "message": "Traducir este sitio automáticamente"
+ }
+}

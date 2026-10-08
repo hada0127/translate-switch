@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="optionsTitle">Translate Switch</title>
+<link rel="icon" href="icons/32.png">
+<link rel="stylesheet" href="ui.css">
+</head>
+<body>
+<main>
+  <h1><img src="icons/48.png" alt="" width="28" height="28"> <span data-i18n="appTitle"></span></h1>
+  <p class="sub" data-i18n="optionsIntro"></p>
+
+  <section>
+    <h2 data-i18n="allSites"></h2>
+    <label class="row"><span><span data-i18n="allSitesUse"></span><br><span class="hint" data-i18n="allSitesHint"></span></span><span id="allOn"></span></label>
+    <div class="langs"><span data-i18n="source"></span><span id="allSrc"></span><span class="arrow" aria-hidden="true">→</span><span id="allTgt"></span>
+      <label class="inline"><span id="allAuto"></span> <span data-i18n="autoTranslate"></span></label></div>
+  </section>
+
+  <section>
+    <h2><span data-i18n="perSite"></span> <span class="hint" data-i18n="perSiteHint"></span></h2>
+    <table>
+      <thead><tr><th class="c" data-i18n="colUse"></th><th data-i18n="colSite"></th><th data-i18n="source"></th><th></th><th data-i18n="target"></th><th class="c" data-i18n="colAuto"></th><th></th></tr></thead>
+      <tbody id="sites"></tbody>
+    </table>
+    <div class="hint" id="empty" data-i18n="emptySites"></div>
+    <div class="add">
+      <input type="text" id="newHost" data-i18n-ph="addPlaceholder">
+      <button class="btn primary" id="addBtn" data-i18n="add"></button>
+    </div>
+  </section>
+
+  <section>
+    <h2 data-i18n="models"></h2>
+    <div class="hint" style="margin-bottom:8px" data-i18n="modelsHint"></div>
+    <table><tbody id="models"></tbody></table>
+    <div class="add"><span id="preSrc"></span><span class="arrow" aria-hidden="true">→</span><span id="preTgt"></span><button class="btn" id="preBtn" data-i18n="preDownload"></button></div>
+  </section>
+
+  <section>
+    <label class="row">
+      <span><span data-i18n="shortcut"></span><br><span class="hint" data-i18n="shortcutHint"></span></span>
+      <input type="checkbox" id="shortcut">
+    </label>
+  </section>
+
+  <section>
+    <label class="row">
+      <span data-i18n="pillShow"></span>
+      <input type="checkbox" id="pill">
+    </label>
+    <div class="hint" style="margin-top:12px" data-i18n="pillPos"></div>
+    <div class="grid" id="grid">
+      <button data-pos="top-left" data-i18n="posTopLeft"></button>
+      <button data-pos="top-center" data-i18n="posTopCenter"></button>
+      <button data-pos="top-right" data-i18n="posTopRight"></button>
+      <button data-pos="middle-left" data-i18n="posMiddleLeft"></button>
+      <button class="center" tabindex="-1"></button>
+      <button data-pos="middle-right" data-i18n="posMiddleRight"></button>
+      <button data-pos="bottom-left" data-i18n="posBottomLeft"></button>
+      <button data-pos="bottom-center" data-i18n="posBottomCenter"></button>
+      <button data-pos="bottom-right" data-i18n="posBottomRight"></button>
+    </div>
+  </section>
+
+  <section>
+    <label class="row">
+      <span><span data-i18n="highlight"></span><br><span class="hint" data-i18n="highlightHint"></span></span>
+      <input type="checkbox" id="hlOn">
+    </label>
+    <div class="langs" id="hlRow">
+      <span data-i18n="highlightColor"></span>
+      <input type="color" id="hlColor">
+      <button class="btn" id="hlReset" data-i18n="resetColor"></button>
+      <span id="hlPreview" data-i18n="optionsTitle"></span>
+    </div>
+  </section>
+
+  <div id="saved"></div>
+</main>
+<script src="common.js"></script>
+<script src="ui.js"></script>
+<script src="options.js"></script>
+</body>
+</html>

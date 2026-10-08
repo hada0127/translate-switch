@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title data-i18n="grantTitle">Translate Switch</title>
+<link rel="icon" href="icons/32.png">
+<link rel="stylesheet" href="ui.css">
+<style>
+  main { margin: 0; padding: 20px; max-width: none; }
+  .host { font-weight: 600; word-break: break-all; }
+  #go { width: 100%; padding: 10px; font-size: 15px; margin-top: 14px; }
+  #goAll, #later { width: 100%; margin-top: 8px; }
+  .hint { color: var(--muted); font-size: 12px; margin-top: 8px; }
+  body { border-radius: 12px; }
+  #msg { margin-top: 10px; font-size: 13px; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <h1><img src="icons/32.png" alt="" width="22" height="22"> <span data-i18n="appTitle"></span></h1>
+  <p id="body"></p>
+  <button class="btn primary" id="go" data-i18n="grantThisSite"></button>
+  <button class="btn" id="goAll" data-i18n="grantAllSites"></button>
+  <button class="btn" id="later" data-i18n="grantLater"></button>
+  <div class="hint" data-i18n="grantAllHint"></div>
+  <div id="msg" data-i18n="grantNote"></div>
+</main>
+<script src="common.js"></script>
+<script src="ui.js"></script>
+<script src="grant.js"></script>
+</body>
+</html>

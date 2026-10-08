@@ -1,0 +1,326 @@
+{
+ "extName": {
+  "message": "Translate Switch - مفتاح الترجمة"
+ },
+ "extDesc": {
+  "message": "يترجم Chrome على جهازك اللغة المختارة فقط في المواقع المختارة. مرّر المؤشر لرؤية الأصل."
+ },
+ "appTitle": {
+  "message": "Translate Switch"
+ },
+ "optionsTitle": {
+  "message": "إعدادات Translate Switch"
+ },
+ "optionsIntro": {
+  "message": "يستخدم مترجم Chrome المدمج لترجمة النصوص المكتوبة بلغة أجنبية فقط على صفحة الويب. تتم الترجمة على هذا الكمبيوتر، لذا لا يغادره محتوى الصفحة أبدًا. مرّر المؤشر فوق النص المترجم لرؤية الأصل."
+ },
+ "allSites": {
+  "message": "كل المواقع"
+ },
+ "allSitesUse": {
+  "message": "الاستخدام على كل المواقع"
+ },
+ "allSitesHint": {
+  "message": "عند تفعيل هذا الخيار، يظهر مفتاح الترجمة على كل صفحة ويب. يطلب Chrome إذن الوصول عند تفعيله لأول مرة."
+ },
+ "source": {
+  "message": "من"
+ },
+ "target": {
+  "message": "إلى"
+ },
+ "autoTranslate": {
+  "message": "الترجمة تلقائيًا عند فتح الصفحة"
+ },
+ "perSite": {
+  "message": "إعدادات المواقع"
+ },
+ "perSiteHint": {
+  "message": "— لها الأولوية على إعدادات كل المواقع"
+ },
+ "colUse": {
+  "message": "مفعّل"
+ },
+ "colSite": {
+  "message": "الموقع"
+ },
+ "colAuto": {
+  "message": "تلقائي"
+ },
+ "emptySites": {
+  "message": "لم تُضف أي مواقع بعد. على الصفحة التي تريد ترجمتها، انقر على رمز الإضافة في شريط الأدوات ثم اضغط على «تشغيل» لإضافة الموقع تلقائيًا. يمكنك أيضًا إدخال موقع أدناه."
+ },
+ "addPlaceholder": {
+  "message": "إضافة موقع (مثل mail.example.com, *.example.jp)"
+ },
+ "add": {
+  "message": "إضافة"
+ },
+ "models": {
+  "message": "نماذج الترجمة"
+ },
+ "modelsHint": {
+  "message": "يُنزّل نموذج كل زوج من اللغات مرة واحدة ويُستخدم بشكل مشترك في Chrome. قد يستغرق ذلك بضع دقائق، لذا نزّل مسبقًا اللغات التي تقرأ بها كثيرًا."
+ },
+ "preDownload": {
+  "message": "تنزيل الآن"
+ },
+ "shortcut": {
+  "message": "تشغيل الترجمة وإيقافها باختصار لوحة المفاتيح"
+ },
+ "shortcutHint": {
+  "message": "⌘K على Mac وCtrl+K على Windows. يعمل مع تخطيطات لوحة المفاتيح الكورية أو اليابانية، ومع تفعيل Caps Lock."
+ },
+ "pillShow": {
+  "message": "إظهار مفتاح الترجمة (زر بيضاوي)"
+ },
+ "pillPos": {
+  "message": "موضع المفتاح"
+ },
+ "posTopLeft": {
+  "message": "أعلى اليسار"
+ },
+ "posTopCenter": {
+  "message": "أعلى الوسط"
+ },
+ "posTopRight": {
+  "message": "أعلى اليمين"
+ },
+ "posMiddleLeft": {
+  "message": "وسط اليسار"
+ },
+ "posMiddleRight": {
+  "message": "وسط اليمين"
+ },
+ "posBottomLeft": {
+  "message": "أسفل اليسار"
+ },
+ "posBottomCenter": {
+  "message": "أسفل الوسط"
+ },
+ "posBottomRight": {
+  "message": "أسفل اليمين"
+ },
+ "highlight": {
+  "message": "تمييز النص المترجم"
+ },
+ "highlightHint": {
+  "message": "يضيف خلفية فاتحة وتسطيرًا منقّطًا للنص المترجم لتتمكن من تمييزه."
+ },
+ "highlightColor": {
+  "message": "لون التمييز"
+ },
+ "resetColor": {
+  "message": "اللون الافتراضي"
+ },
+ "modelFirst": {
+  "message": "نزّل نموذج الترجمة أولًا"
+ },
+ "modelFirstHint": {
+  "message": "تحتاج إلى إجراء ذلك مرة واحدة فقط، إذ يُستخدم النموذج بشكل مشترك في Chrome. أبقِ هذه النافذة مفتوحة أثناء التنزيل."
+ },
+ "noPage": {
+  "message": "غير متاح على هذه الصفحة (صفحات Chrome الداخلية وWeb Store وغيرها)."
+ },
+ "useHere": {
+  "message": "الاستخدام على هذا الموقع"
+ },
+ "toggleNow": {
+  "message": "تشغيل الترجمة أو إيقافها الآن"
+ },
+ "openOptions": {
+  "message": "فتح كل الإعدادات"
+ },
+ "grantTitle": {
+  "message": "السماح بالوصول - Translate Switch"
+ },
+ "grantBody": {
+  "message": "تحتاج الإضافة إلى الوصول إلى هذا الموقع لإضافة مفتاح الترجمة تلقائيًا كلما فتحت صفحة على {1}."
+ },
+ "grantBtn": {
+  "message": "السماح بالوصول"
+ },
+ "grantNote": {
+  "message": "تم التطبيق على علامة التبويب الحالية بالفعل. إذا أغلقت هذه النافذة دون منح الإذن، فستعمل الميزة خلال هذه الزيارة فقط."
+ },
+ "grantOk": {
+  "message": "تم السماح بالوصول. سيُضاف مفتاح الترجمة تلقائيًا على هذا الموقع من الآن فصاعدًا. جارٍ إغلاق هذه النافذة."
+ },
+ "grantNo": {
+  "message": "لم يُسمح بالوصول. انقر مجددًا لإعادة المحاولة."
+ },
+ "noAccess": {
+  "message": "لا يوجد إذن وصول"
+ },
+ "delete": {
+  "message": "حذف"
+ },
+ "grantedOn": {
+  "message": "تم السماح بالوصول وتفعيل الموقع والترجمة التلقائية."
+ },
+ "noTranslator": {
+  "message": "لا يدعم هذا الإصدار من Chrome المترجم المدمج (يلزم Chrome 138 أو أحدث)."
+ },
+ "noDetector": {
+  "message": "لا يدعم هذا الإصدار من Chrome التعرّف التلقائي على اللغة."
+ },
+ "autoDetect": {
+  "message": "التعرّف على اللغة"
+ },
+ "browserLang": {
+  "message": "لغة المتصفح ({1})"
+ },
+ "langDetect": {
+  "message": "التعرّف على اللغة"
+ },
+ "sameLang": {
+  "message": "لغة المصدر واللغة الهدف متطابقتان."
+ },
+ "alreadyHave": {
+  "message": "تم تنزيل نموذج {1} → {2} بالفعل."
+ },
+ "unsupportedPair": {
+  "message": "هذا الزوج من اللغات غير مدعوم."
+ },
+ "saved": {
+  "message": "تم الحفظ. تُحدّث علامات التبويب المفتوحة فورًا. أعِد تحميل علامة تبويب الموقع الذي فعّلته للتو."
+ },
+ "badHost": {
+  "message": "عنوان الموقع غير صالح."
+ },
+ "dupHost": {
+  "message": "تمت إضافة هذا الموقع بالفعل."
+ },
+ "needGrantToAdd": {
+  "message": "يجب السماح بالوصول لإضافة هذا الموقع."
+ },
+ "injectFail": {
+  "message": "تعذّر التطبيق على علامة التبويب هذه: {1}"
+ },
+ "noPermNote": {
+  "message": "بدون إذن الوصول، لن يُضاف المفتاح تلقائيًا عند زيارتك القادمة —"
+ },
+ "ruleSite": {
+  "message": "إعداد الموقع"
+ },
+ "ruleSiteOf": {
+  "message": "إعداد الموقع ({1})"
+ },
+ "ruleAll": {
+  "message": "يُستخدم إعداد كل المواقع"
+ },
+ "ruleNone": {
+  "message": "لم تتم إضافة هذا الموقع بعد"
+ },
+ "addedApplied": {
+  "message": "تمت الإضافة والتطبيق على علامة التبويب هذه."
+ },
+ "turnedOff": {
+  "message": "تم الإيقاف لهذا الموقع."
+ },
+ "availAvailable": {
+  "message": "تم التنزيل"
+ },
+ "availDownloadable": {
+  "message": "يلزم التنزيل"
+ },
+ "availDownloading": {
+  "message": "جارٍ التنزيل"
+ },
+ "availUnavailable": {
+  "message": "غير مدعوم"
+ },
+ "downloadModel": {
+  "message": "تنزيل النموذج"
+ },
+ "failed": {
+  "message": "فشل: {1}"
+ },
+ "downloadingPct": {
+  "message": "جارٍ التنزيل {1}%"
+ },
+ "pillOriginal": {
+  "message": "عرض الأصل"
+ },
+ "pillTranslate": {
+  "message": "ترجمة"
+ },
+ "pillAuto": {
+  "message": "تلقائي"
+ },
+ "needHttps": {
+  "message": "لا يتوفر مترجم Chrome المدمج على الصفحات التي لا تستخدم اتصالًا آمنًا (HTTPS)."
+ },
+ "noTranslatorApi": {
+  "message": "لا يدعم هذا الإصدار من Chrome المترجم المدمج (Translator API). يلزم Chrome 138 أو أحدث."
+ },
+ "modelDownloading": {
+  "message": "جارٍ تنزيل النموذج {1}%"
+ },
+ "needClickPair": {
+  "message": "لبدء الترجمة {1}→{2}، انقر مرة واحدة على المفتاح في هذه الصفحة."
+ },
+ "noDetectorApi": {
+  "message": "لا يدعم هذا الإصدار من Chrome التعرّف التلقائي على اللغة (LanguageDetector API)."
+ },
+ "detectorUnavailable": {
+  "message": "نموذج التعرّف على اللغة غير متاح."
+ },
+ "detectorDownloading": {
+  "message": "جارٍ تنزيل نموذج التعرّف {1}%"
+ },
+ "needClickDetect": {
+  "message": "لبدء التعرّف على اللغة، انقر مرة واحدة على المفتاح في هذه الصفحة."
+ },
+ "preparing": {
+  "message": "جارٍ تجهيز النموذج…"
+ },
+ "slowDownload": {
+  "message": "جارٍ تنزيل النموذج… (يستغرق بضع دقائق في المرة الأولى)"
+ },
+ "pairUnsupported": {
+  "message": "الترجمة {1}→{2} غير مدعومة."
+ },
+ "clickToStart": {
+  "message": "انقر للترجمة"
+ },
+ "tipOriginal": {
+  "message": "الأصل ({1})"
+ },
+ "pillTitle": {
+  "message": "تشغيل الترجمة/إيقافها{1} · مرّر المؤشر فوق النص المترجم لرؤية الأصل"
+ },
+ "alertPrefix": {
+  "message": "[ترجمة]"
+ },
+ "grantLater": {
+  "message": "ليس الآن"
+ },
+ "saveFailed": {
+  "message": "تعذّر الحفظ. ربما امتلأت مساحة التخزين؛ احذف بعض المواقع ثم حاول مرة أخرى."
+ },
+ "grantExpired": {
+  "message": "انتهت صلاحية هذا الطلب. افتح النافذة المنبثقة للإضافة على الموقع وحاول مرة أخرى."
+ },
+ "grantThisSite": {
+  "message": "السماح لهذا الموقع"
+ },
+ "grantAllSites": {
+  "message": "السماح لجميع المواقع — عدم السؤال مجددًا"
+ },
+ "grantAllHint": {
+  "message": "يتيح خيار «السماح لجميع المواقع» تشغيل الترجمة على جميع المواقع فورًا. يمكنك إيقافها لموقع معيّن أو إيقافها بالكامل من الإعدادات."
+ },
+ "useEverywhere": {
+  "message": "الاستخدام على جميع المواقع (امنح الإذن مرة واحدة لتعمل الترجمة في كل مكان)"
+ },
+ "turnOn": {
+  "message": "تشغيل"
+ },
+ "turnOff": {
+  "message": "إيقاف"
+ },
+ "autoThisSite": {
+  "message": "ترجمة هذا الموقع تلقائيًا"
+ }
+}

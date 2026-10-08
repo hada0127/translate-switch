@@ -1,0 +1,338 @@
+{
+ "extName": {
+  "message": "Translate Switch"
+ },
+ "extDesc": {
+  "message": "Translates only the language you pick, on sites you pick, with Chrome's on-device translator. Hover to see the original."
+ },
+ "appTitle": {
+  "message": "Translate Switch"
+ },
+ "optionsTitle": {
+  "message": "Translate Switch settings"
+ },
+ "optionsIntro": {
+  "message": "Uses Chrome's built-in translator to translate only the foreign-language text on a web page. Translation runs on this computer, so page content never leaves it. Hover over translated text to see the original."
+ },
+ "allSites": {
+  "message": "All sites"
+ },
+ "allSitesUse": {
+  "message": "Use on all sites"
+ },
+ "allSitesHint": {
+  "message": "When on, the translate switch appears on every web page. Chrome asks for access the first time you turn it on."
+ },
+ "source": {
+  "message": "From"
+ },
+ "target": {
+  "message": "To"
+ },
+ "autoTranslate": {
+  "message": "Translate automatically when a page opens"
+ },
+ "perSite": {
+  "message": "Site settings"
+ },
+ "perSiteHint": {
+  "message": "— override the all-sites settings"
+ },
+ "colUse": {
+  "message": "On"
+ },
+ "colSite": {
+  "message": "Site"
+ },
+ "colAuto": {
+  "message": "Auto"
+ },
+ "emptySites": {
+  "message": "No sites yet. On a page you want translated, click the extension icon in the toolbar and press “Turn on” to add it automatically. You can also type a site below."
+ },
+ "addPlaceholder": {
+  "message": "Add a site (e.g. mail.example.com, *.example.jp)"
+ },
+ "add": {
+  "message": "Add"
+ },
+ "models": {
+  "message": "Translation models"
+ },
+ "modelsHint": {
+  "message": "Each language pair's model is downloaded once (shared across Chrome). It can take a few minutes, so download the languages you read often in advance."
+ },
+ "preDownload": {
+  "message": "Download now"
+ },
+ "shortcut": {
+  "message": "Toggle translation with a shortcut"
+ },
+ "shortcutHint": {
+  "message": "⌘K on Mac, Ctrl+K on Windows. Works with Korean or Japanese keyboard layouts and with Caps Lock on."
+ },
+ "pillShow": {
+  "message": "Show the translate switch (pill button)"
+ },
+ "pillPos": {
+  "message": "Switch position"
+ },
+ "posTopLeft": {
+  "message": "Top left"
+ },
+ "posTopCenter": {
+  "message": "Top center"
+ },
+ "posTopRight": {
+  "message": "Top right"
+ },
+ "posMiddleLeft": {
+  "message": "Middle left"
+ },
+ "posMiddleRight": {
+  "message": "Middle right"
+ },
+ "posBottomLeft": {
+  "message": "Bottom left"
+ },
+ "posBottomCenter": {
+  "message": "Bottom center"
+ },
+ "posBottomRight": {
+  "message": "Bottom right"
+ },
+ "highlight": {
+  "message": "Highlight translated text"
+ },
+ "highlightHint": {
+  "message": "Adds a light background and dotted underline to translated text so you can tell it apart."
+ },
+ "highlightColor": {
+  "message": "Highlight color"
+ },
+ "resetColor": {
+  "message": "Default color"
+ },
+ "modelFirst": {
+  "message": "Download the translation model first"
+ },
+ "modelFirstHint": {
+  "message": "You only need to do this once (shared across Chrome). Keep this window open while it downloads."
+ },
+ "noPage": {
+  "message": "Not available on this page (Chrome internal pages, the Web Store, etc.)."
+ },
+ "useHere": {
+  "message": "Use on this site"
+ },
+ "toggleNow": {
+  "message": "Turn translation on/off now"
+ },
+ "openOptions": {
+  "message": "Open all settings"
+ },
+ "grantTitle": {
+  "message": "Allow access - Translate Switch"
+ },
+ "grantBody": {
+  "message": "To add the translate switch automatically every time you open a page on {1}, the extension needs access to this site."
+ },
+ "grantBtn": {
+  "message": "Allow access"
+ },
+ "grantNote": {
+  "message": "It's already applied to the current tab. If you just close this window, it works for this visit only."
+ },
+ "grantOk": {
+  "message": "Access allowed. The translate switch will now be added automatically on this site. Closing this window."
+ },
+ "grantNo": {
+  "message": "Access was not allowed. Click again to retry."
+ },
+ "noAccess": {
+  "message": "No access"
+ },
+ "delete": {
+  "message": "Delete"
+ },
+ "grantedOn": {
+  "message": "Access allowed. Turned on the site and automatic translation."
+ },
+ "noTranslator": {
+  "message": "This version of Chrome doesn't support the built-in translator (Chrome 138 or later required)."
+ },
+ "noDetector": {
+  "message": "This version of Chrome doesn't support automatic language detection."
+ },
+ "autoDetect": {
+  "message": "Detect language"
+ },
+ "browserLang": {
+  "message": "Browser language ({1})"
+ },
+ "langDetect": {
+  "message": "Language detection"
+ },
+ "sameLang": {
+  "message": "The source and target languages are the same."
+ },
+ "alreadyHave": {
+  "message": "The {1} → {2} model is already downloaded."
+ },
+ "unsupportedPair": {
+  "message": "This language pair isn't supported."
+ },
+ "saved": {
+  "message": "Saved. Open tabs update right away; reload the tab for a site you just turned on."
+ },
+ "badHost": {
+  "message": "That isn't a valid site address."
+ },
+ "dupHost": {
+  "message": "That site is already added."
+ },
+ "needGrantToAdd": {
+  "message": "You need to allow access to add this site."
+ },
+ "injectFail": {
+  "message": "Couldn't apply to this tab: {1}"
+ },
+ "noPermNote": {
+  "message": "Without access, it won't be added automatically on your next visit —"
+ },
+ "ruleSite": {
+  "message": "Site setting"
+ },
+ "ruleSiteOf": {
+  "message": "Site setting ({1})"
+ },
+ "ruleAll": {
+  "message": "Using the all-sites setting"
+ },
+ "ruleNone": {
+  "message": "This site isn't added yet"
+ },
+ "addedApplied": {
+  "message": "Added and applied to this tab."
+ },
+ "turnedOff": {
+  "message": "Turned off for this site."
+ },
+ "availAvailable": {
+  "message": "Downloaded"
+ },
+ "availDownloadable": {
+  "message": "Download needed"
+ },
+ "availDownloading": {
+  "message": "Downloading"
+ },
+ "availUnavailable": {
+  "message": "Not supported"
+ },
+ "downloadModel": {
+  "message": "Download model"
+ },
+ "failed": {
+  "message": "Failed: {1}"
+ },
+ "downloadingPct": {
+  "message": "Downloading {1}%"
+ },
+ "pillOriginal": {
+  "message": "Show original"
+ },
+ "pillTranslate": {
+  "message": "Translate"
+ },
+ "pillAuto": {
+  "message": "Auto"
+ },
+ "needHttps": {
+  "message": "Chrome's built-in translator isn't available on pages without a secure (HTTPS) connection."
+ },
+ "noTranslatorApi": {
+  "message": "This version of Chrome doesn't support the built-in translator (Translator API). Chrome 138 or later is required."
+ },
+ "modelDownloading": {
+  "message": "Downloading model {1}%"
+ },
+ "needClickPair": {
+  "message": "To start translating {1}→{2}, click the switch on this page once."
+ },
+ "noDetectorApi": {
+  "message": "This version of Chrome doesn't support automatic language detection (LanguageDetector API)."
+ },
+ "detectorUnavailable": {
+  "message": "The language detection model isn't available."
+ },
+ "detectorDownloading": {
+  "message": "Downloading detection model {1}%"
+ },
+ "needClickDetect": {
+  "message": "To start language detection, click the switch on this page once."
+ },
+ "preparing": {
+  "message": "Preparing model…"
+ },
+ "slowDownload": {
+  "message": "Downloading model… (the first time takes a few minutes)"
+ },
+ "pairUnsupported": {
+  "message": "{1}→{2} translation isn't supported."
+ },
+ "clickToStart": {
+  "message": "Click to translate"
+ },
+ "tipOriginal": {
+  "message": "Original ({1})"
+ },
+ "pillTitle": {
+  "message": "Translation on/off{1} · Hover over translated text to see the original"
+ },
+ "alertPrefix": {
+  "message": "[Translate]"
+ },
+ "grantLater": {
+  "message": "Not now"
+ },
+ "saveFailed": {
+  "message": "Couldn’t save. Storage may be full — delete some sites and try again."
+ },
+ "grantExpired": {
+  "message": "This request has expired. Open the extension popup on the site and try again."
+ },
+ "diagCopied": {
+  "message": "Diagnostics copied to the clipboard."
+ },
+ "diagConsole": {
+  "message": "Diagnostics were written to the console."
+ },
+ "retrying": {
+  "message": "Retrying"
+ },
+ "clickAgain": {
+  "message": "A temporary error interrupted the download. Please click once more."
+ },
+ "grantThisSite": {
+  "message": "Allow this site"
+ },
+ "grantAllSites": {
+  "message": "Allow all sites — don’t ask again"
+ },
+ "grantAllHint": {
+  "message": "“Allow all sites” makes it work on every site right away. You can turn it off for a site, or entirely in settings."
+ },
+ "useEverywhere": {
+  "message": "Use on all sites (allow once, works everywhere)"
+ },
+ "turnOn": {
+  "message": "Turn on"
+ },
+ "turnOff": {
+  "message": "Turn off"
+ },
+ "autoThisSite": {
+  "message": "Auto-translate this site"
+ }
+}

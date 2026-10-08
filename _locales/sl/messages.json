@@ -1,0 +1,326 @@
+{
+ "extName": {
+  "message": "Translate Switch - Stikalo za prevajanje"
+ },
+ "extDesc": {
+  "message": "Chrome v napravi prevaja le izbrani jezik na izbranih straneh. Za izvirnik premaknite kazalec nad besedilo."
+ },
+ "appTitle": {
+  "message": "Translate Switch"
+ },
+ "optionsTitle": {
+  "message": "Nastavitve Translate Switch"
+ },
+ "optionsIntro": {
+  "message": "Z vgrajenim prevajalnikom v Chrome prevede le besedilo v tujem jeziku na spletni strani. Prevajanje poteka v tem računalniku, zato ga vsebina strani nikoli ne zapusti. Za prikaz izvirnika premaknite kazalec nad prevedeno besedilo."
+ },
+ "allSites": {
+  "message": "Vsa spletna mesta"
+ },
+ "allSitesUse": {
+  "message": "Uporabi na vseh spletnih mestih"
+ },
+ "allSitesHint": {
+  "message": "Ko je možnost vklopljena, se stikalo za prevajanje prikaže na vsaki spletni strani. Chrome ob prvem vklopu zahteva dovoljenje za dostop."
+ },
+ "source": {
+  "message": "Iz jezika"
+ },
+ "target": {
+  "message": "V jezik"
+ },
+ "autoTranslate": {
+  "message": "Samodejno prevedi ob odprtju strani"
+ },
+ "perSite": {
+  "message": "Nastavitve spletnih mest"
+ },
+ "perSiteHint": {
+  "message": "— imajo prednost pred nastavitvami za vsa spletna mesta"
+ },
+ "colUse": {
+  "message": "Vklop"
+ },
+ "colSite": {
+  "message": "Spletno mesto"
+ },
+ "colAuto": {
+  "message": "Samod."
+ },
+ "emptySites": {
+  "message": "Dodanih ni še nobenih spletnih mest. Na strani, ki jo želite prevesti, kliknite ikono razširitve v orodni vrstici in pritisnite »Vklopi«, da samodejno dodate spletno mesto. Spletno mesto lahko vnesete tudi spodaj."
+ },
+ "addPlaceholder": {
+  "message": "Dodajte spletno mesto (npr. mail.example.com, *.example.jp)"
+ },
+ "add": {
+  "message": "Dodaj"
+ },
+ "models": {
+  "message": "Prevajalski modeli"
+ },
+ "modelsHint": {
+  "message": "Model za vsak jezikovni par se prenese enkrat (in je v skupni rabi v Chrome). To lahko traja nekaj minut, zato vnaprej prenesite jezike, v katerih pogosto berete."
+ },
+ "preDownload": {
+  "message": "Prenesi zdaj"
+ },
+ "shortcut": {
+  "message": "Vklopi ali izklopi prevajanje z bližnjico"
+ },
+ "shortcutHint": {
+  "message": "⌘K v sistemu Mac, Ctrl+K v sistemu Windows. Deluje s korejsko ali japonsko razporeditvijo tipkovnice in z vklopljeno tipko Caps Lock."
+ },
+ "pillShow": {
+  "message": "Pokaži stikalo za prevajanje (ovalni gumb)"
+ },
+ "pillPos": {
+  "message": "Položaj stikala"
+ },
+ "posTopLeft": {
+  "message": "Zgoraj levo"
+ },
+ "posTopCenter": {
+  "message": "Zgoraj na sredini"
+ },
+ "posTopRight": {
+  "message": "Zgoraj desno"
+ },
+ "posMiddleLeft": {
+  "message": "Na sredini levo"
+ },
+ "posMiddleRight": {
+  "message": "Na sredini desno"
+ },
+ "posBottomLeft": {
+  "message": "Spodaj levo"
+ },
+ "posBottomCenter": {
+  "message": "Spodaj na sredini"
+ },
+ "posBottomRight": {
+  "message": "Spodaj desno"
+ },
+ "highlight": {
+  "message": "Označi prevedeno besedilo"
+ },
+ "highlightHint": {
+  "message": "Prevedenemu besedilu doda svetlo ozadje in pikčasto podčrtavo, da ga lažje prepoznate."
+ },
+ "highlightColor": {
+  "message": "Barva označevanja"
+ },
+ "resetColor": {
+  "message": "Privzeta barva"
+ },
+ "modelFirst": {
+  "message": "Najprej prenesite prevajalski model"
+ },
+ "modelFirstHint": {
+  "message": "To morate storiti le enkrat (model je v skupni rabi v Chrome). Med prenosom pustite to okno odprto."
+ },
+ "noPage": {
+  "message": "Na tej strani ni na voljo (interne strani Chrome, Web Store itd.)."
+ },
+ "useHere": {
+  "message": "Uporabi na tem spletnem mestu"
+ },
+ "toggleNow": {
+  "message": "Vklopi/izklopi prevajanje zdaj"
+ },
+ "openOptions": {
+  "message": "Odpri vse nastavitve"
+ },
+ "grantTitle": {
+  "message": "Dovoli dostop - Translate Switch"
+ },
+ "grantBody": {
+  "message": "Razširitev potrebuje dostop do tega spletnega mesta, da lahko ob vsakem odprtju strani na {1} samodejno doda stikalo za prevajanje."
+ },
+ "grantBtn": {
+  "message": "Dovoli dostop"
+ },
+ "grantNote": {
+  "message": "Stikalo je že dodano na trenutni zavihek. Če zaprete to okno, bo delovalo le med tem obiskom."
+ },
+ "grantOk": {
+  "message": "Dostop je dovoljen. Stikalo za prevajanje bo odslej samodejno dodano na tem spletnem mestu. Okno se zapira."
+ },
+ "grantNo": {
+  "message": "Dostop ni bil dovoljen. Kliknite znova in poskusite še enkrat."
+ },
+ "noAccess": {
+  "message": "Ni dostopa"
+ },
+ "delete": {
+  "message": "Izbriši"
+ },
+ "grantedOn": {
+  "message": "Dostop je dovoljen. Uporaba na spletnem mestu in samodejno prevajanje sta vklopljena."
+ },
+ "noTranslator": {
+  "message": "Ta različica Chrome ne podpira vgrajenega prevajalnika (potreben je Chrome 138 ali novejši)."
+ },
+ "noDetector": {
+  "message": "Ta različica Chrome ne podpira samodejnega zaznavanja jezika."
+ },
+ "autoDetect": {
+  "message": "Zaznaj jezik"
+ },
+ "browserLang": {
+  "message": "Jezik brskalnika ({1})"
+ },
+ "langDetect": {
+  "message": "Zaznavanje jezika"
+ },
+ "sameLang": {
+  "message": "Izvorni in ciljni jezik sta enaka."
+ },
+ "alreadyHave": {
+  "message": "Model {1} → {2} je že prenesen."
+ },
+ "unsupportedPair": {
+  "message": "Ta jezikovni par ni podprt."
+ },
+ "saved": {
+  "message": "Shranjeno. Odprti zavihki se posodobijo takoj. Znova naložite zavihek spletnega mesta, na katerem ste pravkar vklopili razširitev."
+ },
+ "badHost": {
+  "message": "To ni veljaven naslov spletnega mesta."
+ },
+ "dupHost": {
+  "message": "To spletno mesto je že dodano."
+ },
+ "needGrantToAdd": {
+  "message": "Če želite dodati to spletno mesto, morate dovoliti dostop."
+ },
+ "injectFail": {
+  "message": "Ni bilo mogoče uporabiti na tem zavihku: {1}"
+ },
+ "noPermNote": {
+  "message": "Brez dostopa se stikalo ob naslednjem obisku ne bo dodalo samodejno —"
+ },
+ "ruleSite": {
+  "message": "Nastavitev spletnega mesta"
+ },
+ "ruleSiteOf": {
+  "message": "Nastavitev spletnega mesta ({1})"
+ },
+ "ruleAll": {
+  "message": "Uporablja se nastavitev za vsa spletna mesta"
+ },
+ "ruleNone": {
+  "message": "To spletno mesto še ni dodano"
+ },
+ "addedApplied": {
+  "message": "Dodano in uporabljeno na tem zavihku."
+ },
+ "turnedOff": {
+  "message": "Izklopljeno za to spletno mesto."
+ },
+ "availAvailable": {
+  "message": "Preneseno"
+ },
+ "availDownloadable": {
+  "message": "Potreben je prenos"
+ },
+ "availDownloading": {
+  "message": "Prenašanje"
+ },
+ "availUnavailable": {
+  "message": "Ni podprto"
+ },
+ "downloadModel": {
+  "message": "Prenesi model"
+ },
+ "failed": {
+  "message": "Napaka: {1}"
+ },
+ "downloadingPct": {
+  "message": "Prenašanje {1}%"
+ },
+ "pillOriginal": {
+  "message": "Pokaži izvirnik"
+ },
+ "pillTranslate": {
+  "message": "Prevedi"
+ },
+ "pillAuto": {
+  "message": "Samod."
+ },
+ "needHttps": {
+  "message": "Vgrajeni prevajalnik v Chrome ni na voljo na straneh brez varne povezave (HTTPS)."
+ },
+ "noTranslatorApi": {
+  "message": "Ta različica Chrome ne podpira vgrajenega prevajalnika (Translator API). Potreben je Chrome 138 ali novejši."
+ },
+ "modelDownloading": {
+  "message": "Prenašanje modela {1}%"
+ },
+ "needClickPair": {
+  "message": "Za začetek prevajanja {1}→{2} enkrat kliknite stikalo na tej strani."
+ },
+ "noDetectorApi": {
+  "message": "Ta različica Chrome ne podpira samodejnega zaznavanja jezika (LanguageDetector API)."
+ },
+ "detectorUnavailable": {
+  "message": "Model za zaznavanje jezika ni na voljo."
+ },
+ "detectorDownloading": {
+  "message": "Prenašanje modela za zaznavanje {1}%"
+ },
+ "needClickDetect": {
+  "message": "Za začetek zaznavanja jezika enkrat kliknite stikalo na tej strani."
+ },
+ "preparing": {
+  "message": "Pripravljanje modela…"
+ },
+ "slowDownload": {
+  "message": "Prenašanje modela… (prvič traja nekaj minut)"
+ },
+ "pairUnsupported": {
+  "message": "Prevajanje {1}→{2} ni podprto."
+ },
+ "clickToStart": {
+  "message": "Kliknite za prevod"
+ },
+ "tipOriginal": {
+  "message": "Izvirnik ({1})"
+ },
+ "pillTitle": {
+  "message": "Prevajanje vklop/izklop{1} · Za prikaz izvirnika premaknite kazalec nad prevedeno besedilo"
+ },
+ "alertPrefix": {
+  "message": "[Prevajanje]"
+ },
+ "grantLater": {
+  "message": "Ne zdaj"
+ },
+ "saveFailed": {
+  "message": "Shranjevanje ni uspelo. Prostor je morda poln – izbrišite nekaj spletnih mest in poskusite znova."
+ },
+ "grantExpired": {
+  "message": "Ta zahteva je potekla. Na spletnem mestu odprite pojavno okno razširitve in poskusite znova."
+ },
+ "grantThisSite": {
+  "message": "Dovoli na tem spletnem mestu"
+ },
+ "grantAllSites": {
+  "message": "Dovoli na vseh spletnih mestih — ne sprašuj več"
+ },
+ "grantAllHint": {
+  "message": "Možnost »Dovoli na vseh spletnih mestih« omogoči, da razširitev takoj deluje na vseh spletnih mestih. Izklopite jo lahko za posamezno spletno mesto ali v celoti v nastavitvah."
+ },
+ "useEverywhere": {
+  "message": "Uporabi na vseh spletnih mestih (dovolite enkrat, deluje povsod)"
+ },
+ "turnOn": {
+  "message": "Vklopi"
+ },
+ "turnOff": {
+  "message": "Izklopi"
+ },
+ "autoThisSite": {
+  "message": "Samodejno prevajaj to spletno mesto"
+ }
+}

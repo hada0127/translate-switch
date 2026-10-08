@@ -1,0 +1,326 @@
+{
+ "extName": {
+  "message": "Translate Switch - Prekidač za prijevod"
+ },
+ "extDesc": {
+  "message": "Chrome na uređaju prevodi samo odabrani jezik na odabranim stranicama. Za izvornik prijeđite mišem preko teksta."
+ },
+ "appTitle": {
+  "message": "Translate Switch"
+ },
+ "optionsTitle": {
+  "message": "Postavke proširenja Translate Switch"
+ },
+ "optionsIntro": {
+  "message": "Koristi ugrađeni prevoditelj preglednika Chrome za prevođenje samo teksta na stranom jeziku na web-stranici. Prijevod se odvija na ovom računalu, pa sadržaj stranice nikad ne napušta računalo. Prijeđite pokazivačem preko prevedenog teksta da biste vidjeli izvornik."
+ },
+ "allSites": {
+  "message": "Sva web-mjesta"
+ },
+ "allSitesUse": {
+  "message": "Koristi na svim web-mjestima"
+ },
+ "allSitesHint": {
+  "message": "Kad je uključeno, prekidač za prijevod pojavljuje se na svakoj web-stranici. Chrome traži dopuštenje za pristup pri prvom uključivanju."
+ },
+ "source": {
+  "message": "S jezika"
+ },
+ "target": {
+  "message": "Na jezik"
+ },
+ "autoTranslate": {
+  "message": "Automatski prevedi pri otvaranju stranice"
+ },
+ "perSite": {
+  "message": "Postavke web-mjesta"
+ },
+ "perSiteHint": {
+  "message": "— imaju prednost pred postavkama za sva web-mjesta"
+ },
+ "colUse": {
+  "message": "Uključeno"
+ },
+ "colSite": {
+  "message": "Web-mjesto"
+ },
+ "colAuto": {
+  "message": "Automatski"
+ },
+ "emptySites": {
+  "message": "Još nema web-mjesta. Na stranici koju želite prevesti kliknite ikonu proširenja na alatnoj traci i pritisnite „Uključi” da biste automatski dodali web-mjesto. Web-mjesto možete unijeti i u nastavku."
+ },
+ "addPlaceholder": {
+  "message": "Dodajte web-mjesto (npr. mail.example.com, *.example.jp)"
+ },
+ "add": {
+  "message": "Dodaj"
+ },
+ "models": {
+  "message": "Modeli za prevođenje"
+ },
+ "modelsHint": {
+  "message": "Model za svaki jezični par preuzima se jednom i zajednički se koristi u cijelom pregledniku Chrome. To može potrajati nekoliko minuta, pa unaprijed preuzmite jezike na kojima često čitate."
+ },
+ "preDownload": {
+  "message": "Preuzmi sada"
+ },
+ "shortcut": {
+  "message": "Uključi ili isključi prijevod tipkovničkim prečacem"
+ },
+ "shortcutHint": {
+  "message": "⌘K na Macu, Ctrl+K u sustavu Windows. Radi i s korejskim ili japanskim rasporedom tipkovnice te s uključenom tipkom Caps Lock."
+ },
+ "pillShow": {
+  "message": "Prikaži prekidač za prijevod (zaobljeni gumb)"
+ },
+ "pillPos": {
+  "message": "Položaj prekidača"
+ },
+ "posTopLeft": {
+  "message": "Gore lijevo"
+ },
+ "posTopCenter": {
+  "message": "Gore u sredini"
+ },
+ "posTopRight": {
+  "message": "Gore desno"
+ },
+ "posMiddleLeft": {
+  "message": "U sredini lijevo"
+ },
+ "posMiddleRight": {
+  "message": "U sredini desno"
+ },
+ "posBottomLeft": {
+  "message": "Dolje lijevo"
+ },
+ "posBottomCenter": {
+  "message": "Dolje u sredini"
+ },
+ "posBottomRight": {
+  "message": "Dolje desno"
+ },
+ "highlight": {
+  "message": "Istakni prevedeni tekst"
+ },
+ "highlightHint": {
+  "message": "Dodaje svijetlu pozadinu i točkasto podcrtavanje prevedenom tekstu kako biste ga lakše razlikovali."
+ },
+ "highlightColor": {
+  "message": "Boja isticanja"
+ },
+ "resetColor": {
+  "message": "Zadana boja"
+ },
+ "modelFirst": {
+  "message": "Najprije preuzmite model za prevođenje"
+ },
+ "modelFirstHint": {
+  "message": "To trebate učiniti samo jednom (model se zajednički koristi u cijelom pregledniku Chrome). Ostavite ovaj prozor otvoren tijekom preuzimanja."
+ },
+ "noPage": {
+  "message": "Nije dostupno na ovoj stranici (interne stranice preglednika Chrome, web-trgovina itd.)."
+ },
+ "useHere": {
+  "message": "Koristi na ovom web-mjestu"
+ },
+ "toggleNow": {
+  "message": "Odmah uključi/isključi prijevod"
+ },
+ "openOptions": {
+  "message": "Otvori sve postavke"
+ },
+ "grantTitle": {
+  "message": "Dopusti pristup - Translate Switch"
+ },
+ "grantBody": {
+  "message": "Za automatsko dodavanje prekidača za prijevod pri svakom otvaranju stranice na web-mjestu {1}, proširenje treba pristup tom web-mjestu."
+ },
+ "grantBtn": {
+  "message": "Dopusti pristup"
+ },
+ "grantNote": {
+  "message": "Već je primijenjeno na trenutačnu karticu. Ako samo zatvorite ovaj prozor, radit će samo tijekom ovog posjeta."
+ },
+ "grantOk": {
+  "message": "Pristup je dopušten. Prekidač za prijevod odsad će se automatski dodavati na ovo web-mjesto. Prozor se zatvara."
+ },
+ "grantNo": {
+  "message": "Pristup nije dopušten. Kliknite ponovno da biste pokušali još jednom."
+ },
+ "noAccess": {
+  "message": "Nema pristupa"
+ },
+ "delete": {
+  "message": "Izbriši"
+ },
+ "grantedOn": {
+  "message": "Pristup je dopušten. Uključeni su upotreba na web-mjestu i automatsko prevođenje."
+ },
+ "noTranslator": {
+  "message": "Ova verzija preglednika Chrome ne podržava ugrađeni prevoditelj (potreban je Chrome 138 ili noviji)."
+ },
+ "noDetector": {
+  "message": "Ova verzija preglednika Chrome ne podržava automatsko prepoznavanje jezika."
+ },
+ "autoDetect": {
+  "message": "Prepoznaj jezik"
+ },
+ "browserLang": {
+  "message": "Jezik preglednika ({1})"
+ },
+ "langDetect": {
+  "message": "Prepoznavanje jezika"
+ },
+ "sameLang": {
+  "message": "Izvorni i ciljni jezik su isti."
+ },
+ "alreadyHave": {
+  "message": "Model {1} → {2} već je preuzet."
+ },
+ "unsupportedPair": {
+  "message": "Ovaj jezični par nije podržan."
+ },
+ "saved": {
+  "message": "Spremljeno. Otvorene kartice odmah se ažuriraju; ponovno učitajte karticu web-mjesta koje ste upravo uključili."
+ },
+ "badHost": {
+  "message": "Adresa web-mjesta nije valjana."
+ },
+ "dupHost": {
+  "message": "To je web-mjesto već dodano."
+ },
+ "needGrantToAdd": {
+  "message": "Za dodavanje ovog web-mjesta morate dopustiti pristup."
+ },
+ "injectFail": {
+  "message": "Nije moguće primijeniti na ovu karticu: {1}"
+ },
+ "noPermNote": {
+  "message": "Bez pristupa neće se automatski dodati pri sljedećem posjetu —"
+ },
+ "ruleSite": {
+  "message": "Postavka web-mjesta"
+ },
+ "ruleSiteOf": {
+  "message": "Postavka web-mjesta ({1})"
+ },
+ "ruleAll": {
+  "message": "Koristi se postavka za sva web-mjesta"
+ },
+ "ruleNone": {
+  "message": "Ovo web-mjesto još nije dodano"
+ },
+ "addedApplied": {
+  "message": "Dodano i primijenjeno na ovu karticu."
+ },
+ "turnedOff": {
+  "message": "Isključeno za ovo web-mjesto."
+ },
+ "availAvailable": {
+  "message": "Preuzeto"
+ },
+ "availDownloadable": {
+  "message": "Potrebno preuzimanje"
+ },
+ "availDownloading": {
+  "message": "Preuzimanje u tijeku"
+ },
+ "availUnavailable": {
+  "message": "Nije podržano"
+ },
+ "downloadModel": {
+  "message": "Preuzmi model"
+ },
+ "failed": {
+  "message": "Nije uspjelo: {1}"
+ },
+ "downloadingPct": {
+  "message": "Preuzimanje {1}%"
+ },
+ "pillOriginal": {
+  "message": "Prikaži izvornik"
+ },
+ "pillTranslate": {
+  "message": "Prevedi"
+ },
+ "pillAuto": {
+  "message": "Automatski"
+ },
+ "needHttps": {
+  "message": "Ugrađeni prevoditelj preglednika Chrome nije dostupan na stranicama bez sigurne veze (HTTPS)."
+ },
+ "noTranslatorApi": {
+  "message": "Ova verzija preglednika Chrome ne podržava ugrađeni prevoditelj (Translator API). Potreban je Chrome 138 ili noviji."
+ },
+ "modelDownloading": {
+  "message": "Preuzimanje modela {1}%"
+ },
+ "needClickPair": {
+  "message": "Za početak prevođenja {1}→{2} jednom kliknite prekidač na ovoj stranici."
+ },
+ "noDetectorApi": {
+  "message": "Ova verzija preglednika Chrome ne podržava automatsko prepoznavanje jezika (LanguageDetector API)."
+ },
+ "detectorUnavailable": {
+  "message": "Model za prepoznavanje jezika nije dostupan."
+ },
+ "detectorDownloading": {
+  "message": "Preuzimanje modela za prepoznavanje {1}%"
+ },
+ "needClickDetect": {
+  "message": "Za početak prepoznavanja jezika jednom kliknite prekidač na ovoj stranici."
+ },
+ "preparing": {
+  "message": "Priprema modela…"
+ },
+ "slowDownload": {
+  "message": "Preuzimanje modela… (prvi put traje nekoliko minuta)"
+ },
+ "pairUnsupported": {
+  "message": "Prijevod {1}→{2} nije podržan."
+ },
+ "clickToStart": {
+  "message": "Kliknite za prijevod"
+ },
+ "tipOriginal": {
+  "message": "Izvornik ({1})"
+ },
+ "pillTitle": {
+  "message": "Uključi/isključi prijevod{1} · Prijeđite pokazivačem preko prevedenog teksta za prikaz izvornika"
+ },
+ "alertPrefix": {
+  "message": "[Prijevod]"
+ },
+ "grantLater": {
+  "message": "Ne sada"
+ },
+ "saveFailed": {
+  "message": "Spremanje nije uspjelo. Prostor je možda pun – izbrišite neke web-lokacije i pokušajte ponovno."
+ },
+ "grantExpired": {
+  "message": "Ovaj je zahtjev istekao. Otvorite skočni prozor proširenja na web-lokaciji i pokušajte ponovno."
+ },
+ "grantThisSite": {
+  "message": "Dopusti ovoj web-lokaciji"
+ },
+ "grantAllSites": {
+  "message": "Dopusti svim web-lokacijama — ne pitaj ponovno"
+ },
+ "grantAllHint": {
+  "message": "Opcija „Dopusti svim web-lokacijama” omogućuje da proširenje odmah radi na svim web-lokacijama. Možete ga isključiti za pojedinu web-lokaciju ili u potpunosti u postavkama."
+ },
+ "useEverywhere": {
+  "message": "Koristi na svim web-lokacijama (dopustite jednom, radi svugdje)"
+ },
+ "turnOn": {
+  "message": "Uključi"
+ },
+ "turnOff": {
+  "message": "Isključi"
+ },
+ "autoThisSite": {
+  "message": "Automatski prevodi ovu web-lokaciju"
+ }
+}

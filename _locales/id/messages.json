@@ -1,0 +1,326 @@
+{
+ "extName": {
+  "message": "Translate Switch - Sakelar Terjemahan"
+ },
+ "extDesc": {
+  "message": "Chrome menerjemahkan di perangkat hanya bahasa pilihan di situs pilihan. Arahkan kursor untuk melihat teks asli."
+ },
+ "appTitle": {
+  "message": "Translate Switch"
+ },
+ "optionsTitle": {
+  "message": "Setelan Translate Switch"
+ },
+ "optionsIntro": {
+  "message": "Menggunakan penerjemah bawaan Chrome untuk menerjemahkan hanya teks berbahasa asing di halaman web. Terjemahan diproses di komputer ini, sehingga konten halaman tidak pernah dikirim ke luar komputer. Arahkan kursor ke teks terjemahan untuk melihat aslinya."
+ },
+ "allSites": {
+  "message": "Semua situs"
+ },
+ "allSitesUse": {
+  "message": "Gunakan di semua situs"
+ },
+ "allSitesHint": {
+  "message": "Saat aktif, sakelar terjemahan muncul di setiap halaman web. Chrome akan meminta izin akses saat Anda pertama kali mengaktifkannya."
+ },
+ "source": {
+  "message": "Bahasa sumber"
+ },
+ "target": {
+  "message": "Bahasa tujuan"
+ },
+ "autoTranslate": {
+  "message": "Terjemahkan otomatis saat halaman dibuka"
+ },
+ "perSite": {
+  "message": "Setelan per situs"
+ },
+ "perSiteHint": {
+  "message": "— menggantikan setelan semua situs"
+ },
+ "colUse": {
+  "message": "Aktif"
+ },
+ "colSite": {
+  "message": "Situs"
+ },
+ "colAuto": {
+  "message": "Otomatis"
+ },
+ "emptySites": {
+  "message": "Belum ada situs. Di halaman yang ingin diterjemahkan, klik ikon ekstensi di toolbar lalu tekan “Aktifkan” untuk menambahkan situs secara otomatis. Anda juga dapat memasukkan situs di bawah."
+ },
+ "addPlaceholder": {
+  "message": "Tambahkan situs (mis. mail.example.com, *.example.jp)"
+ },
+ "add": {
+  "message": "Tambahkan"
+ },
+ "models": {
+  "message": "Model terjemahan"
+ },
+ "modelsHint": {
+  "message": "Model setiap pasangan bahasa diunduh satu kali dan digunakan bersama di seluruh Chrome. Prosesnya bisa memakan waktu beberapa menit, jadi unduh terlebih dahulu bahasa yang sering Anda baca."
+ },
+ "preDownload": {
+  "message": "Unduh sekarang"
+ },
+ "shortcut": {
+  "message": "Aktifkan/nonaktifkan terjemahan dengan pintasan"
+ },
+ "shortcutHint": {
+  "message": "⌘K di Mac, Ctrl+K di Windows. Berfungsi dengan tata letak keyboard Korea atau Jepang dan saat Caps Lock aktif."
+ },
+ "pillShow": {
+  "message": "Tampilkan sakelar terjemahan (tombol berbentuk pil)"
+ },
+ "pillPos": {
+  "message": "Posisi sakelar"
+ },
+ "posTopLeft": {
+  "message": "Kiri atas"
+ },
+ "posTopCenter": {
+  "message": "Tengah atas"
+ },
+ "posTopRight": {
+  "message": "Kanan atas"
+ },
+ "posMiddleLeft": {
+  "message": "Kiri tengah"
+ },
+ "posMiddleRight": {
+  "message": "Kanan tengah"
+ },
+ "posBottomLeft": {
+  "message": "Kiri bawah"
+ },
+ "posBottomCenter": {
+  "message": "Tengah bawah"
+ },
+ "posBottomRight": {
+  "message": "Kanan bawah"
+ },
+ "highlight": {
+  "message": "Sorot teks terjemahan"
+ },
+ "highlightHint": {
+  "message": "Menambahkan latar berwarna terang dan garis bawah bertitik pada teks terjemahan agar mudah dibedakan."
+ },
+ "highlightColor": {
+  "message": "Warna sorotan"
+ },
+ "resetColor": {
+  "message": "Warna default"
+ },
+ "modelFirst": {
+  "message": "Unduh model terjemahan terlebih dahulu"
+ },
+ "modelFirstHint": {
+  "message": "Anda hanya perlu melakukannya sekali (digunakan bersama di seluruh Chrome). Biarkan jendela ini terbuka selama pengunduhan."
+ },
+ "noPage": {
+  "message": "Tidak tersedia di halaman ini (halaman internal Chrome, Web Store, dll.)."
+ },
+ "useHere": {
+  "message": "Gunakan di situs ini"
+ },
+ "toggleNow": {
+  "message": "Aktifkan/nonaktifkan terjemahan sekarang"
+ },
+ "openOptions": {
+  "message": "Buka semua setelan"
+ },
+ "grantTitle": {
+  "message": "Izinkan akses - Translate Switch"
+ },
+ "grantBody": {
+  "message": "Untuk menambahkan sakelar terjemahan secara otomatis setiap kali Anda membuka halaman di {1}, ekstensi memerlukan akses ke situs ini."
+ },
+ "grantBtn": {
+  "message": "Izinkan akses"
+ },
+ "grantNote": {
+  "message": "Sudah diterapkan pada tab saat ini. Jika Anda langsung menutup jendela ini, fitur hanya berfungsi untuk kunjungan kali ini."
+ },
+ "grantOk": {
+  "message": "Akses diizinkan. Sakelar terjemahan kini akan ditambahkan secara otomatis di situs ini. Jendela ini akan ditutup."
+ },
+ "grantNo": {
+  "message": "Akses tidak diizinkan. Klik lagi untuk mencoba kembali."
+ },
+ "noAccess": {
+  "message": "Tidak ada akses"
+ },
+ "delete": {
+  "message": "Hapus"
+ },
+ "grantedOn": {
+  "message": "Akses diizinkan. Penggunaan di situs dan terjemahan otomatis telah diaktifkan."
+ },
+ "noTranslator": {
+  "message": "Versi Chrome ini tidak mendukung penerjemah bawaan (memerlukan Chrome 138 atau yang lebih baru)."
+ },
+ "noDetector": {
+  "message": "Versi Chrome ini tidak mendukung deteksi bahasa otomatis."
+ },
+ "autoDetect": {
+  "message": "Deteksi bahasa"
+ },
+ "browserLang": {
+  "message": "Bahasa browser ({1})"
+ },
+ "langDetect": {
+  "message": "Deteksi bahasa"
+ },
+ "sameLang": {
+  "message": "Bahasa sumber dan bahasa tujuan sama."
+ },
+ "alreadyHave": {
+  "message": "Model {1} → {2} sudah diunduh."
+ },
+ "unsupportedPair": {
+  "message": "Pasangan bahasa ini tidak didukung."
+ },
+ "saved": {
+  "message": "Tersimpan. Tab yang terbuka langsung diperbarui; muat ulang tab untuk situs yang baru saja Anda aktifkan."
+ },
+ "badHost": {
+  "message": "Alamat situs tidak valid."
+ },
+ "dupHost": {
+  "message": "Situs tersebut sudah ditambahkan."
+ },
+ "needGrantToAdd": {
+  "message": "Anda perlu mengizinkan akses untuk menambahkan situs ini."
+ },
+ "injectFail": {
+  "message": "Tidak dapat diterapkan pada tab ini: {1}"
+ },
+ "noPermNote": {
+  "message": "Tanpa akses, sakelar tidak akan ditambahkan secara otomatis pada kunjungan berikutnya —"
+ },
+ "ruleSite": {
+  "message": "Setelan situs"
+ },
+ "ruleSiteOf": {
+  "message": "Setelan situs ({1})"
+ },
+ "ruleAll": {
+  "message": "Menggunakan setelan semua situs"
+ },
+ "ruleNone": {
+  "message": "Situs ini belum ditambahkan"
+ },
+ "addedApplied": {
+  "message": "Ditambahkan dan diterapkan pada tab ini."
+ },
+ "turnedOff": {
+  "message": "Dinonaktifkan untuk situs ini."
+ },
+ "availAvailable": {
+  "message": "Sudah diunduh"
+ },
+ "availDownloadable": {
+  "message": "Perlu diunduh"
+ },
+ "availDownloading": {
+  "message": "Sedang mengunduh"
+ },
+ "availUnavailable": {
+  "message": "Tidak didukung"
+ },
+ "downloadModel": {
+  "message": "Unduh model"
+ },
+ "failed": {
+  "message": "Gagal: {1}"
+ },
+ "downloadingPct": {
+  "message": "Mengunduh {1}%"
+ },
+ "pillOriginal": {
+  "message": "Tampilkan teks asli"
+ },
+ "pillTranslate": {
+  "message": "Terjemahkan"
+ },
+ "pillAuto": {
+  "message": "Otomatis"
+ },
+ "needHttps": {
+  "message": "Penerjemah bawaan Chrome tidak tersedia pada halaman tanpa koneksi aman (HTTPS)."
+ },
+ "noTranslatorApi": {
+  "message": "Versi Chrome ini tidak mendukung penerjemah bawaan (Translator API). Memerlukan Chrome 138 atau yang lebih baru."
+ },
+ "modelDownloading": {
+  "message": "Mengunduh model {1}%"
+ },
+ "needClickPair": {
+  "message": "Untuk mulai menerjemahkan {1}→{2}, klik sekali sakelar di halaman ini."
+ },
+ "noDetectorApi": {
+  "message": "Versi Chrome ini tidak mendukung deteksi bahasa otomatis (LanguageDetector API)."
+ },
+ "detectorUnavailable": {
+  "message": "Model deteksi bahasa tidak tersedia."
+ },
+ "detectorDownloading": {
+  "message": "Mengunduh model deteksi {1}%"
+ },
+ "needClickDetect": {
+  "message": "Untuk memulai deteksi bahasa, klik sekali sakelar di halaman ini."
+ },
+ "preparing": {
+  "message": "Menyiapkan model…"
+ },
+ "slowDownload": {
+  "message": "Mengunduh model… (pertama kali memerlukan beberapa menit)"
+ },
+ "pairUnsupported": {
+  "message": "Terjemahan {1}→{2} tidak didukung."
+ },
+ "clickToStart": {
+  "message": "Klik untuk menerjemahkan"
+ },
+ "tipOriginal": {
+  "message": "Teks asli ({1})"
+ },
+ "pillTitle": {
+  "message": "Terjemahan aktif/nonaktif{1} · Arahkan kursor ke teks terjemahan untuk melihat aslinya"
+ },
+ "alertPrefix": {
+  "message": "[Terjemahan]"
+ },
+ "grantLater": {
+  "message": "Nanti saja"
+ },
+ "saveFailed": {
+  "message": "Gagal menyimpan. Penyimpanan mungkin penuh—hapus beberapa situs lalu coba lagi."
+ },
+ "grantExpired": {
+  "message": "Permintaan ini sudah kedaluwarsa. Buka popup ekstensi di situs lalu coba lagi."
+ },
+ "grantThisSite": {
+  "message": "Izinkan situs ini"
+ },
+ "grantAllSites": {
+  "message": "Izinkan semua situs — jangan tanyakan lagi"
+ },
+ "grantAllHint": {
+  "message": "“Izinkan semua situs” membuat ekstensi langsung berfungsi di setiap situs. Anda dapat menonaktifkannya untuk situs tertentu, atau sepenuhnya melalui setelan."
+ },
+ "useEverywhere": {
+  "message": "Gunakan di semua situs (izinkan sekali, berfungsi di mana saja)"
+ },
+ "turnOn": {
+  "message": "Aktifkan"
+ },
+ "turnOff": {
+  "message": "Nonaktifkan"
+ },
+ "autoThisSite": {
+  "message": "Terjemahkan situs ini secara otomatis"
+ }
+}

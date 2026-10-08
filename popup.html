@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title data-i18n="appTitle">Translate Switch</title>
+<link rel="stylesheet" href="ui.css">
+<style>
+  body { width: 360px; }
+  main { margin: 0; padding: 14px 16px 12px; }
+  h1 { font-size: 15px; margin-bottom: 10px; }
+  .host { font-weight: 600; word-break: break-all; }
+  .box { border: 1px solid var(--line); border-radius: 8px; padding: 10px; margin: 10px 0; }
+  .langs { margin-top: 8px; }
+  .langs { flex-wrap: nowrap; }
+  .langs select { flex: 1; min-width: 0; max-width: none; }
+  .langs > span:not(:nth-child(2)) { flex: 1; min-width: 0; display: flex; }
+  .foot { display: flex; justify-content: space-between; gap: 8px; margin-top: 10px; }
+  .foot .btn { flex: 1; }
+  #models td { padding: 4px 2px; font-size: 12px; }
+  #models progress { width: 70px; }
+  #msg { color: var(--red); font-size: 12px; min-height: 16px; margin-top: 6px; }
+</style>
+</head>
+<body>
+<main>
+  <h1><img src="icons/32.png" alt="" width="20" height="20"> <span data-i18n="appTitle"></span></h1>
+  <div class="box" id="modelBox" hidden>
+    <b data-i18n="modelFirst"></b>
+    <div class="hint" data-i18n="modelFirstHint"></div>
+    <table><tbody id="models"></tbody></table>
+  </div>
+  <div id="noPage" class="hint" hidden data-i18n="noPage"></div>
+  <div id="page" hidden>
+    <div class="host" id="host"></div>
+    <div class="hint" id="ruleFrom"></div>
+    <div class="box">
+      <div class="langs" id="langs"><span id="src"></span><span class="arrow" aria-hidden="true">→</span><span id="tgt"></span></div>
+      <label class="inline" style="margin-top:8px" id="autoRow"><span id="auto"></span> <span data-i18n="autoThisSite"></span></label>
+    </div>
+    <button class="btn primary" id="toggle" style="width:100%"></button>
+    <button class="btn" id="useAll" style="width:100%;margin-top:8px" data-i18n="useEverywhere"></button>
+  </div>
+  <div id="msg"></div>
+  <div class="foot"><button class="btn" id="openOptions" data-i18n="openOptions"></button></div>
+</main>
+<script src="common.js"></script>
+<script src="ui.js"></script>
+<script src="popup.js"></script>
+</body>
+</html>

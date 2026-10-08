@@ -1,0 +1,326 @@
+{
+ "extName": {
+  "message": "Translate Switch - 翻譯開關"
+ },
+ "extDesc": {
+  "message": "使用 Chrome 裝置端翻譯工具，僅在您選擇的網站翻譯您選擇的語言。將滑鼠游標移至譯文上即可查看原文。"
+ },
+ "appTitle": {
+  "message": "Translate Switch"
+ },
+ "optionsTitle": {
+  "message": "Translate Switch 設定"
+ },
+ "optionsIntro": {
+  "message": "使用 Chrome 內建翻譯工具，僅翻譯網頁中的外語文字。翻譯在本機完成，網頁內容不會離開本機。將滑鼠游標移至譯文上即可查看原文。"
+ },
+ "allSites": {
+  "message": "所有網站"
+ },
+ "allSitesUse": {
+  "message": "在所有網站上使用"
+ },
+ "allSitesHint": {
+  "message": "開啟後，翻譯開關會出現在每個網頁上。首次開啟時，Chrome 會要求存取權限。"
+ },
+ "source": {
+  "message": "來源語言"
+ },
+ "target": {
+  "message": "目標語言"
+ },
+ "autoTranslate": {
+  "message": "開啟網頁時自動翻譯"
+ },
+ "perSite": {
+  "message": "網站設定"
+ },
+ "perSiteHint": {
+  "message": "— 優先於所有網站的設定"
+ },
+ "colUse": {
+  "message": "啟用"
+ },
+ "colSite": {
+  "message": "網站"
+ },
+ "colAuto": {
+  "message": "自動"
+ },
+ "emptySites": {
+  "message": "尚未新增網站。在您想翻譯的網頁上，點選工具列中的擴充功能圖示，再按下「開啟」即可自動新增。您也可以在下方輸入網站網址。"
+ },
+ "addPlaceholder": {
+  "message": "新增網站（例如 mail.example.com、*.example.jp）"
+ },
+ "add": {
+  "message": "新增"
+ },
+ "models": {
+  "message": "翻譯模型"
+ },
+ "modelsHint": {
+  "message": "每組語言配對的模型只需下載一次（在 Chrome 中共用）。下載可能需要幾分鐘，建議事先下載您經常閱讀的語言。"
+ },
+ "preDownload": {
+  "message": "立即下載"
+ },
+ "shortcut": {
+  "message": "使用快速鍵切換翻譯"
+ },
+ "shortcutHint": {
+  "message": "Mac 使用 ⌘K，Windows 使用 Ctrl+K。支援韓文和日文鍵盤配置，也支援開啟 Caps Lock 的情況。"
+ },
+ "pillShow": {
+  "message": "顯示翻譯開關（膠囊按鈕）"
+ },
+ "pillPos": {
+  "message": "開關位置"
+ },
+ "posTopLeft": {
+  "message": "左上"
+ },
+ "posTopCenter": {
+  "message": "上方置中"
+ },
+ "posTopRight": {
+  "message": "右上"
+ },
+ "posMiddleLeft": {
+  "message": "左側置中"
+ },
+ "posMiddleRight": {
+  "message": "右側置中"
+ },
+ "posBottomLeft": {
+  "message": "左下"
+ },
+ "posBottomCenter": {
+  "message": "下方置中"
+ },
+ "posBottomRight": {
+  "message": "右下"
+ },
+ "highlight": {
+  "message": "醒目顯示譯文"
+ },
+ "highlightHint": {
+  "message": "為譯文加上淺色背景和點狀底線，方便辨識。"
+ },
+ "highlightColor": {
+  "message": "醒目提示色彩"
+ },
+ "resetColor": {
+  "message": "預設色彩"
+ },
+ "modelFirst": {
+  "message": "請先下載翻譯模型"
+ },
+ "modelFirstHint": {
+  "message": "只需下載一次（在 Chrome 中共用）。下載期間請保持此視窗開啟。"
+ },
+ "noPage": {
+  "message": "無法在此頁面使用（例如 Chrome 內部頁面、線上應用程式商店等）。"
+ },
+ "useHere": {
+  "message": "在此網站上使用"
+ },
+ "toggleNow": {
+  "message": "立即開啟或關閉翻譯"
+ },
+ "openOptions": {
+  "message": "開啟所有設定"
+ },
+ "grantTitle": {
+  "message": "允許存取 - Translate Switch"
+ },
+ "grantBody": {
+  "message": "為了在您每次開啟 {1} 上的網頁時自動加入翻譯開關，擴充功能需要此網站的存取權限。"
+ },
+ "grantBtn": {
+  "message": "允許存取"
+ },
+ "grantNote": {
+  "message": "已套用至目前分頁。如果直接關閉此視窗，則僅在本次造訪期間有效。"
+ },
+ "grantOk": {
+  "message": "已允許存取。之後會在此網站上自動加入翻譯開關。正在關閉此視窗。"
+ },
+ "grantNo": {
+  "message": "未允許存取。請再次點選以重試。"
+ },
+ "noAccess": {
+  "message": "無存取權限"
+ },
+ "delete": {
+  "message": "刪除"
+ },
+ "grantedOn": {
+  "message": "已允許存取，已啟用此網站並開啟自動翻譯。"
+ },
+ "noTranslator": {
+  "message": "此版本的 Chrome 不支援內建翻譯工具（需要 Chrome 138 以上版本）。"
+ },
+ "noDetector": {
+  "message": "此版本的 Chrome 不支援自動偵測語言。"
+ },
+ "autoDetect": {
+  "message": "偵測語言"
+ },
+ "browserLang": {
+  "message": "瀏覽器語言（{1}）"
+ },
+ "langDetect": {
+  "message": "語言偵測"
+ },
+ "sameLang": {
+  "message": "來源語言與目標語言相同。"
+ },
+ "alreadyHave": {
+  "message": "已下載 {1} → {2} 模型。"
+ },
+ "unsupportedPair": {
+  "message": "不支援此語言配對。"
+ },
+ "saved": {
+  "message": "已儲存。已開啟的分頁會立即更新；對於剛啟用的網站，請重新載入分頁。"
+ },
+ "badHost": {
+  "message": "網站網址無效。"
+ },
+ "dupHost": {
+  "message": "已新增此網站。"
+ },
+ "needGrantToAdd": {
+  "message": "您必須允許存取才能新增此網站。"
+ },
+ "injectFail": {
+  "message": "無法套用至此分頁：{1}"
+ },
+ "noPermNote": {
+  "message": "未取得存取權限，下次造訪時就不會自動加入 —"
+ },
+ "ruleSite": {
+  "message": "網站設定"
+ },
+ "ruleSiteOf": {
+  "message": "網站設定（{1}）"
+ },
+ "ruleAll": {
+  "message": "正在使用所有網站的設定"
+ },
+ "ruleNone": {
+  "message": "尚未新增此網站"
+ },
+ "addedApplied": {
+  "message": "已新增並套用至此分頁。"
+ },
+ "turnedOff": {
+  "message": "已對此網站關閉。"
+ },
+ "availAvailable": {
+  "message": "已下載"
+ },
+ "availDownloadable": {
+  "message": "需要下載"
+ },
+ "availDownloading": {
+  "message": "下載中"
+ },
+ "availUnavailable": {
+  "message": "不支援"
+ },
+ "downloadModel": {
+  "message": "下載模型"
+ },
+ "failed": {
+  "message": "失敗：{1}"
+ },
+ "downloadingPct": {
+  "message": "下載中 {1}%"
+ },
+ "pillOriginal": {
+  "message": "顯示原文"
+ },
+ "pillTranslate": {
+  "message": "翻譯"
+ },
+ "pillAuto": {
+  "message": "自動"
+ },
+ "needHttps": {
+  "message": "Chrome 內建翻譯工具無法在未使用安全連線（HTTPS）的網頁上使用。"
+ },
+ "noTranslatorApi": {
+  "message": "此版本的 Chrome 不支援內建翻譯工具（Translator API）。需要 Chrome 138 以上版本。"
+ },
+ "modelDownloading": {
+  "message": "正在下載模型 {1}%"
+ },
+ "needClickPair": {
+  "message": "若要開始 {1}→{2} 翻譯，請點選一次此頁面上的開關。"
+ },
+ "noDetectorApi": {
+  "message": "此版本的 Chrome 不支援自動偵測語言（LanguageDetector API）。"
+ },
+ "detectorUnavailable": {
+  "message": "語言偵測模型無法使用。"
+ },
+ "detectorDownloading": {
+  "message": "正在下載偵測模型 {1}%"
+ },
+ "needClickDetect": {
+  "message": "若要開始偵測語言，請點選一次此頁面上的開關。"
+ },
+ "preparing": {
+  "message": "正在準備模型…"
+ },
+ "slowDownload": {
+  "message": "正在下載模型…（首次需要幾分鐘）"
+ },
+ "pairUnsupported": {
+  "message": "不支援 {1}→{2} 翻譯。"
+ },
+ "clickToStart": {
+  "message": "點選即可翻譯"
+ },
+ "tipOriginal": {
+  "message": "原文（{1}）"
+ },
+ "pillTitle": {
+  "message": "開啟/關閉翻譯{1} · 將滑鼠游標移至譯文上即可查看原文"
+ },
+ "alertPrefix": {
+  "message": "[翻譯]"
+ },
+ "grantLater": {
+  "message": "稍後再說"
+ },
+ "saveFailed": {
+  "message": "無法儲存。儲存空間可能已滿，請刪除部分網站後再試一次。"
+ },
+ "grantExpired": {
+  "message": "此要求已過期。請在該網站開啟擴充功能彈出式視窗後再試一次。"
+ },
+ "grantThisSite": {
+  "message": "允許此網站"
+ },
+ "grantAllSites": {
+  "message": "允許所有網站 — 不再詢問"
+ },
+ "grantAllHint": {
+  "message": "選擇「允許所有網站」後，即可立即在所有網站上使用。您可以針對個別網站關閉，也可以在設定中完全關閉。"
+ },
+ "useEverywhere": {
+  "message": "在所有網站上使用（允許一次，即可在所有網站上使用）"
+ },
+ "turnOn": {
+  "message": "開啟"
+ },
+ "turnOff": {
+  "message": "關閉"
+ },
+ "autoThisSite": {
+  "message": "自動翻譯此網站"
+ }
+}

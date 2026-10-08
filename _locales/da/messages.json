@@ -1,0 +1,326 @@
+{
+ "extName": {
+  "message": "Translate Switch - Oversættelsesknap"
+ },
+ "extDesc": {
+  "message": "Chrome oversætter lokalt kun det valgte sprog på valgte sider. Hold markøren over teksten for at se originalen."
+ },
+ "appTitle": {
+  "message": "Translate Switch"
+ },
+ "optionsTitle": {
+  "message": "Indstillinger for Translate Switch"
+ },
+ "optionsIntro": {
+  "message": "Bruger den indbyggede oversætter i Chrome til kun at oversætte fremmedsproget tekst på en webside. Oversættelsen sker på denne computer, så sidens indhold aldrig forlader den. Hold markøren over oversat tekst for at se originalen."
+ },
+ "allSites": {
+  "message": "Alle websteder"
+ },
+ "allSitesUse": {
+  "message": "Brug på alle websteder"
+ },
+ "allSitesHint": {
+  "message": "Når dette er slået til, vises oversættelsesknappen på alle websider. Chrome beder om adgang, første gang du slår det til."
+ },
+ "source": {
+  "message": "Fra"
+ },
+ "target": {
+  "message": "Til"
+ },
+ "autoTranslate": {
+  "message": "Oversæt automatisk, når en side åbnes"
+ },
+ "perSite": {
+  "message": "Webstedsindstillinger"
+ },
+ "perSiteHint": {
+  "message": "— tilsidesætter indstillingerne for alle websteder"
+ },
+ "colUse": {
+  "message": "Til"
+ },
+ "colSite": {
+  "message": "Websted"
+ },
+ "colAuto": {
+  "message": "Auto"
+ },
+ "emptySites": {
+  "message": "Ingen websteder endnu. Klik på udvidelsesikonet i værktøjslinjen på en side, du vil oversætte, og tryk på ”Slå til” for at tilføje webstedet automatisk. Du kan også indtaste et websted nedenfor."
+ },
+ "addPlaceholder": {
+  "message": "Tilføj et websted (f.eks. mail.example.com, *.example.jp)"
+ },
+ "add": {
+  "message": "Tilføj"
+ },
+ "models": {
+  "message": "Oversættelsesmodeller"
+ },
+ "modelsHint": {
+  "message": "Modellen for hvert sprogpar downloades én gang og deles i Chrome. Det kan tage et par minutter, så download de sprog, du ofte læser, på forhånd."
+ },
+ "preDownload": {
+  "message": "Download nu"
+ },
+ "shortcut": {
+  "message": "Slå oversættelse til eller fra med en genvej"
+ },
+ "shortcutHint": {
+  "message": "⌘K på Mac, Ctrl+K på Windows. Virker med koreanske og japanske tastaturlayouts, og når Caps Lock er slået til."
+ },
+ "pillShow": {
+  "message": "Vis oversættelsesknappen (oval knap)"
+ },
+ "pillPos": {
+  "message": "Knappens placering"
+ },
+ "posTopLeft": {
+  "message": "Øverst til venstre"
+ },
+ "posTopCenter": {
+  "message": "Øverst i midten"
+ },
+ "posTopRight": {
+  "message": "Øverst til højre"
+ },
+ "posMiddleLeft": {
+  "message": "Midt til venstre"
+ },
+ "posMiddleRight": {
+  "message": "Midt til højre"
+ },
+ "posBottomLeft": {
+  "message": "Nederst til venstre"
+ },
+ "posBottomCenter": {
+  "message": "Nederst i midten"
+ },
+ "posBottomRight": {
+  "message": "Nederst til højre"
+ },
+ "highlight": {
+  "message": "Fremhæv oversat tekst"
+ },
+ "highlightHint": {
+  "message": "Tilføjer en lys baggrund og stiplet understregning til oversat tekst, så du kan skelne den fra resten."
+ },
+ "highlightColor": {
+  "message": "Fremhævningsfarve"
+ },
+ "resetColor": {
+  "message": "Standardfarve"
+ },
+ "modelFirst": {
+  "message": "Download først oversættelsesmodellen"
+ },
+ "modelFirstHint": {
+  "message": "Det skal kun gøres én gang. Modellen deles i Chrome. Hold dette vindue åbent under download."
+ },
+ "noPage": {
+  "message": "Ikke tilgængelig på denne side (interne Chrome-sider, Web Store osv.)."
+ },
+ "useHere": {
+  "message": "Brug på dette websted"
+ },
+ "toggleNow": {
+  "message": "Slå oversættelse til eller fra nu"
+ },
+ "openOptions": {
+  "message": "Åbn alle indstillinger"
+ },
+ "grantTitle": {
+  "message": "Tillad adgang - Translate Switch"
+ },
+ "grantBody": {
+  "message": "Udvidelsen skal have adgang til dette websted for automatisk at tilføje oversættelsesknappen, hver gang du åbner en side på {1}."
+ },
+ "grantBtn": {
+  "message": "Tillad adgang"
+ },
+ "grantNote": {
+  "message": "Allerede anvendt på den aktuelle fane. Hvis du blot lukker dette vindue, virker funktionen kun under dette besøg."
+ },
+ "grantOk": {
+  "message": "Adgang tilladt. Oversættelsesknappen tilføjes nu automatisk på dette websted. Vinduet lukkes."
+ },
+ "grantNo": {
+  "message": "Adgang blev ikke tilladt. Klik igen for at prøve igen."
+ },
+ "noAccess": {
+  "message": "Ingen adgang"
+ },
+ "delete": {
+  "message": "Slet"
+ },
+ "grantedOn": {
+  "message": "Adgang tilladt. Webstedet og automatisk oversættelse er slået til."
+ },
+ "noTranslator": {
+  "message": "Denne version af Chrome understøtter ikke den indbyggede oversætter (kræver Chrome 138 eller nyere)."
+ },
+ "noDetector": {
+  "message": "Denne version af Chrome understøtter ikke automatisk sproggenkendelse."
+ },
+ "autoDetect": {
+  "message": "Registrer sprog"
+ },
+ "browserLang": {
+  "message": "Browsersprog ({1})"
+ },
+ "langDetect": {
+  "message": "Sproggenkendelse"
+ },
+ "sameLang": {
+  "message": "Kilde- og målsprog er ens."
+ },
+ "alreadyHave": {
+  "message": "Modellen {1} → {2} er allerede downloadet."
+ },
+ "unsupportedPair": {
+  "message": "Dette sprogpar understøttes ikke."
+ },
+ "saved": {
+  "message": "Gemt. Åbne faner opdateres med det samme. Genindlæs fanen for et websted, du lige har slået til."
+ },
+ "badHost": {
+  "message": "Det er ikke en gyldig webstedsadresse."
+ },
+ "dupHost": {
+  "message": "Dette websted er allerede tilføjet."
+ },
+ "needGrantToAdd": {
+  "message": "Du skal tillade adgang for at tilføje dette websted."
+ },
+ "injectFail": {
+  "message": "Kunne ikke anvendes på denne fane: {1}"
+ },
+ "noPermNote": {
+  "message": "Uden adgang tilføjes knappen ikke automatisk ved dit næste besøg —"
+ },
+ "ruleSite": {
+  "message": "Webstedsindstilling"
+ },
+ "ruleSiteOf": {
+  "message": "Webstedsindstilling ({1})"
+ },
+ "ruleAll": {
+  "message": "Bruger indstillingen for alle websteder"
+ },
+ "ruleNone": {
+  "message": "Dette websted er ikke tilføjet endnu"
+ },
+ "addedApplied": {
+  "message": "Tilføjet og anvendt på denne fane."
+ },
+ "turnedOff": {
+  "message": "Slået fra for dette websted."
+ },
+ "availAvailable": {
+  "message": "Downloadet"
+ },
+ "availDownloadable": {
+  "message": "Download kræves"
+ },
+ "availDownloading": {
+  "message": "Downloader"
+ },
+ "availUnavailable": {
+  "message": "Understøttes ikke"
+ },
+ "downloadModel": {
+  "message": "Download model"
+ },
+ "failed": {
+  "message": "Mislykkedes: {1}"
+ },
+ "downloadingPct": {
+  "message": "Downloader {1}%"
+ },
+ "pillOriginal": {
+  "message": "Vis original"
+ },
+ "pillTranslate": {
+  "message": "Oversæt"
+ },
+ "pillAuto": {
+  "message": "Auto"
+ },
+ "needHttps": {
+  "message": "Den indbyggede oversætter i Chrome er ikke tilgængelig på sider uden en sikker forbindelse (HTTPS)."
+ },
+ "noTranslatorApi": {
+  "message": "Denne version af Chrome understøtter ikke den indbyggede oversætter (Translator API). Chrome 138 eller nyere kræves."
+ },
+ "modelDownloading": {
+  "message": "Downloader model {1}%"
+ },
+ "needClickPair": {
+  "message": "Klik én gang på knappen på denne side for at starte oversættelsen {1}→{2}."
+ },
+ "noDetectorApi": {
+  "message": "Denne version af Chrome understøtter ikke automatisk sproggenkendelse (LanguageDetector API)."
+ },
+ "detectorUnavailable": {
+  "message": "Modellen til sproggenkendelse er ikke tilgængelig."
+ },
+ "detectorDownloading": {
+  "message": "Downloader sproggenkendelsesmodel {1}%"
+ },
+ "needClickDetect": {
+  "message": "Klik én gang på knappen på denne side for at starte sproggenkendelse."
+ },
+ "preparing": {
+  "message": "Klargør model…"
+ },
+ "slowDownload": {
+  "message": "Downloader model… (det tager et par minutter første gang)"
+ },
+ "pairUnsupported": {
+  "message": "Oversættelsen {1}→{2} understøttes ikke."
+ },
+ "clickToStart": {
+  "message": "Klik for at oversætte"
+ },
+ "tipOriginal": {
+  "message": "Original ({1})"
+ },
+ "pillTitle": {
+  "message": "Oversættelse til/fra{1} · Hold markøren over oversat tekst for at se originalen"
+ },
+ "alertPrefix": {
+  "message": "[Oversættelse]"
+ },
+ "grantLater": {
+  "message": "Ikke nu"
+ },
+ "saveFailed": {
+  "message": "Kunne ikke gemme. Lageret er muligvis fyldt – slet nogle websteder, og prøv igen."
+ },
+ "grantExpired": {
+  "message": "Denne anmodning er udløbet. Åbn udvidelsens pop op-vindue på webstedet, og prøv igen."
+ },
+ "grantThisSite": {
+  "message": "Tillad dette websted"
+ },
+ "grantAllSites": {
+  "message": "Tillad alle websteder — spørg ikke igen"
+ },
+ "grantAllHint": {
+  "message": "„Tillad alle websteder“ får oversættelsen til at virke på alle websteder med det samme. Du kan slå den fra for et enkelt websted eller helt i indstillingerne."
+ },
+ "useEverywhere": {
+  "message": "Brug på alle websteder (tillad én gang, så virker det overalt)"
+ },
+ "turnOn": {
+  "message": "Slå til"
+ },
+ "turnOff": {
+  "message": "Slå fra"
+ },
+ "autoThisSite": {
+  "message": "Oversæt automatisk dette websted"
+ }
+}

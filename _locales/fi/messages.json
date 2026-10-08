@@ -1,0 +1,326 @@
+{
+ "extName": {
+  "message": "Translate Switch - Käännöskytkin"
+ },
+ "extDesc": {
+  "message": "Chrome kääntää laitteella vain valitun kielen valituilla sivuilla. Vie osoitin tekstin päälle nähdäksesi alkuperäisen."
+ },
+ "appTitle": {
+  "message": "Translate Switch"
+ },
+ "optionsTitle": {
+  "message": "Translate Switchin asetukset"
+ },
+ "optionsIntro": {
+  "message": "Kääntää vain verkkosivun vieraskieliset tekstit Chromen sisäisellä kääntäjällä. Käännös tehdään tällä tietokoneella, joten sivun sisältö ei koskaan poistu siltä. Näet alkuperäisen tekstin viemällä osoittimen käännetyn tekstin päälle."
+ },
+ "allSites": {
+  "message": "Kaikki sivustot"
+ },
+ "allSitesUse": {
+  "message": "Käytä kaikilla sivustoilla"
+ },
+ "allSitesHint": {
+  "message": "Kun tämä on käytössä, käännöskytkin näkyy jokaisella verkkosivulla. Chrome pyytää käyttöoikeutta, kun otat toiminnon käyttöön ensimmäisen kerran."
+ },
+ "source": {
+  "message": "Lähdekieli"
+ },
+ "target": {
+  "message": "Kohdekieli"
+ },
+ "autoTranslate": {
+  "message": "Käännä automaattisesti sivua avattaessa"
+ },
+ "perSite": {
+  "message": "Sivustokohtaiset asetukset"
+ },
+ "perSiteHint": {
+  "message": "— ohittavat kaikkien sivustojen asetukset"
+ },
+ "colUse": {
+  "message": "Käytössä"
+ },
+ "colSite": {
+  "message": "Sivusto"
+ },
+ "colAuto": {
+  "message": "Autom."
+ },
+ "emptySites": {
+  "message": "Ei vielä sivustoja. Avaa käännettävä sivu, napsauta laajennuksen kuvaketta työkalupalkissa ja paina ”Ota käyttöön”, niin sivusto lisätään automaattisesti. Voit myös kirjoittaa sivuston osoitteen alle."
+ },
+ "addPlaceholder": {
+  "message": "Lisää sivusto (esim. mail.example.com, *.example.jp)"
+ },
+ "add": {
+  "message": "Lisää"
+ },
+ "models": {
+  "message": "Käännösmallit"
+ },
+ "modelsHint": {
+  "message": "Kunkin kieliparin malli ladataan kerran ja sitä käytetään yhteisesti Chromessa. Lataus voi kestää muutaman minuutin, joten lataa usein lukemasi kielet etukäteen."
+ },
+ "preDownload": {
+  "message": "Lataa nyt"
+ },
+ "shortcut": {
+  "message": "Kytke käännös päälle tai pois pikanäppäimellä"
+ },
+ "shortcutHint": {
+  "message": "⌘K Macissa, Ctrl+K Windowsissa. Toimii myös korealaisella tai japanilaisella näppäinasettelulla ja Caps Lockin ollessa päällä."
+ },
+ "pillShow": {
+  "message": "Näytä käännöskytkin (ovaali painike)"
+ },
+ "pillPos": {
+  "message": "Kytkimen sijainti"
+ },
+ "posTopLeft": {
+  "message": "Ylhäällä vasemmalla"
+ },
+ "posTopCenter": {
+  "message": "Ylhäällä keskellä"
+ },
+ "posTopRight": {
+  "message": "Ylhäällä oikealla"
+ },
+ "posMiddleLeft": {
+  "message": "Keskellä vasemmalla"
+ },
+ "posMiddleRight": {
+  "message": "Keskellä oikealla"
+ },
+ "posBottomLeft": {
+  "message": "Alhaalla vasemmalla"
+ },
+ "posBottomCenter": {
+  "message": "Alhaalla keskellä"
+ },
+ "posBottomRight": {
+  "message": "Alhaalla oikealla"
+ },
+ "highlight": {
+  "message": "Korosta käännetty teksti"
+ },
+ "highlightHint": {
+  "message": "Lisää käännettyyn tekstiin vaalean taustan ja pistealleviivauksen, jotta erotat sen muusta tekstistä."
+ },
+ "highlightColor": {
+  "message": "Korostusväri"
+ },
+ "resetColor": {
+  "message": "Oletusväri"
+ },
+ "modelFirst": {
+  "message": "Lataa ensin käännösmalli"
+ },
+ "modelFirstHint": {
+  "message": "Tämä tarvitsee tehdä vain kerran. Malli on yhteiskäytössä Chromessa. Pidä tämä ikkuna auki latauksen ajan."
+ },
+ "noPage": {
+  "message": "Ei käytettävissä tällä sivulla (Chromen sisäiset sivut, Web Store jne.)."
+ },
+ "useHere": {
+  "message": "Käytä tällä sivustolla"
+ },
+ "toggleNow": {
+  "message": "Kytke käännös päälle tai pois nyt"
+ },
+ "openOptions": {
+  "message": "Avaa kaikki asetukset"
+ },
+ "grantTitle": {
+  "message": "Salli käyttöoikeus - Translate Switch"
+ },
+ "grantBody": {
+  "message": "Laajennus tarvitsee käyttöoikeuden sivustoon {1}, jotta käännöskytkin lisätään automaattisesti aina, kun avaat sivuston sivun."
+ },
+ "grantBtn": {
+  "message": "Salli käyttöoikeus"
+ },
+ "grantNote": {
+  "message": "Jo käytössä nykyisellä välilehdellä. Jos vain suljet tämän ikkunan, toiminto on käytettävissä vain tämän käynnin ajan."
+ },
+ "grantOk": {
+  "message": "Käyttöoikeus sallittu. Käännöskytkin lisätään tästä lähtien automaattisesti tälle sivustolle. Ikkuna suljetaan."
+ },
+ "grantNo": {
+  "message": "Käyttöoikeutta ei sallittu. Yritä uudelleen napsauttamalla."
+ },
+ "noAccess": {
+  "message": "Ei käyttöoikeutta"
+ },
+ "delete": {
+  "message": "Poista"
+ },
+ "grantedOn": {
+  "message": "Käyttöoikeus sallittu. Sivusto ja automaattinen käännös otettu käyttöön."
+ },
+ "noTranslator": {
+  "message": "Tämä Chrome-versio ei tue sisäistä kääntäjää (vaatii Chrome 138:n tai uudemman)."
+ },
+ "noDetector": {
+  "message": "Tämä Chrome-versio ei tue automaattista kielentunnistusta."
+ },
+ "autoDetect": {
+  "message": "Tunnista kieli"
+ },
+ "browserLang": {
+  "message": "Selaimen kieli ({1})"
+ },
+ "langDetect": {
+  "message": "Kielentunnistus"
+ },
+ "sameLang": {
+  "message": "Lähde- ja kohdekieli ovat samat."
+ },
+ "alreadyHave": {
+  "message": "Malli {1} → {2} on jo ladattu."
+ },
+ "unsupportedPair": {
+  "message": "Tätä kieliparia ei tueta."
+ },
+ "saved": {
+  "message": "Tallennettu. Avoimet välilehdet päivittyvät heti. Lataa juuri käyttöön ottamasi sivuston välilehti uudelleen."
+ },
+ "badHost": {
+  "message": "Sivuston osoite ei kelpaa."
+ },
+ "dupHost": {
+  "message": "Tämä sivusto on jo lisätty."
+ },
+ "needGrantToAdd": {
+  "message": "Salli käyttöoikeus, jotta voit lisätä tämän sivuston."
+ },
+ "injectFail": {
+  "message": "Käyttöönotto tällä välilehdellä epäonnistui: {1}"
+ },
+ "noPermNote": {
+  "message": "Ilman käyttöoikeutta kytkintä ei lisätä automaattisesti seuraavalla käynnillä —"
+ },
+ "ruleSite": {
+  "message": "Sivuston asetus"
+ },
+ "ruleSiteOf": {
+  "message": "Sivuston asetus ({1})"
+ },
+ "ruleAll": {
+  "message": "Kaikkien sivustojen asetus käytössä"
+ },
+ "ruleNone": {
+  "message": "Tätä sivustoa ei ole vielä lisätty"
+ },
+ "addedApplied": {
+  "message": "Lisätty ja otettu käyttöön tällä välilehdellä."
+ },
+ "turnedOff": {
+  "message": "Poistettu käytöstä tällä sivustolla."
+ },
+ "availAvailable": {
+  "message": "Ladattu"
+ },
+ "availDownloadable": {
+  "message": "Lataus tarvitaan"
+ },
+ "availDownloading": {
+  "message": "Ladataan"
+ },
+ "availUnavailable": {
+  "message": "Ei tuettu"
+ },
+ "downloadModel": {
+  "message": "Lataa malli"
+ },
+ "failed": {
+  "message": "Epäonnistui: {1}"
+ },
+ "downloadingPct": {
+  "message": "Ladataan {1}%"
+ },
+ "pillOriginal": {
+  "message": "Näytä alkuperäinen"
+ },
+ "pillTranslate": {
+  "message": "Käännä"
+ },
+ "pillAuto": {
+  "message": "Autom."
+ },
+ "needHttps": {
+  "message": "Chromen sisäinen kääntäjä ei ole käytettävissä sivuilla, joilla ei ole suojattua yhteyttä (HTTPS)."
+ },
+ "noTranslatorApi": {
+  "message": "Tämä Chrome-versio ei tue sisäistä kääntäjää (Translator API). Vaatii Chrome 138:n tai uudemman."
+ },
+ "modelDownloading": {
+  "message": "Ladataan mallia {1}%"
+ },
+ "needClickPair": {
+  "message": "Aloita käännös {1}→{2} napsauttamalla tämän sivun kytkintä kerran."
+ },
+ "noDetectorApi": {
+  "message": "Tämä Chrome-versio ei tue automaattista kielentunnistusta (LanguageDetector API)."
+ },
+ "detectorUnavailable": {
+  "message": "Kielentunnistusmalli ei ole käytettävissä."
+ },
+ "detectorDownloading": {
+  "message": "Ladataan tunnistusmallia {1}%"
+ },
+ "needClickDetect": {
+  "message": "Aloita kielentunnistus napsauttamalla tämän sivun kytkintä kerran."
+ },
+ "preparing": {
+  "message": "Valmistellaan mallia…"
+ },
+ "slowDownload": {
+  "message": "Ladataan mallia… (ensimmäisellä kerralla tämä kestää muutaman minuutin)"
+ },
+ "pairUnsupported": {
+  "message": "Käännöstä {1}→{2} ei tueta."
+ },
+ "clickToStart": {
+  "message": "Käännä napsauttamalla"
+ },
+ "tipOriginal": {
+  "message": "Alkuperäinen ({1})"
+ },
+ "pillTitle": {
+  "message": "Käännös päällä/pois{1} · Näet alkuperäisen tekstin viemällä osoittimen käännetyn tekstin päälle"
+ },
+ "alertPrefix": {
+  "message": "[Käännös]"
+ },
+ "grantLater": {
+  "message": "Ei nyt"
+ },
+ "saveFailed": {
+  "message": "Tallennus epäonnistui. Tallennustila voi olla täynnä – poista joitakin sivustoja ja yritä uudelleen."
+ },
+ "grantExpired": {
+  "message": "Pyyntö on vanhentunut. Avaa laajennuksen ponnahdusikkuna sivustolla ja yritä uudelleen."
+ },
+ "grantThisSite": {
+  "message": "Salli tämä sivusto"
+ },
+ "grantAllSites": {
+  "message": "Salli kaikki sivustot — älä kysy uudelleen"
+ },
+ "grantAllHint": {
+  "message": "”Salli kaikki sivustot” ottaa käännöksen heti käyttöön kaikilla sivustoilla. Voit poistaa sen käytöstä yksittäisellä sivustolla tai kokonaan asetuksista."
+ },
+ "useEverywhere": {
+  "message": "Käytä kaikilla sivustoilla (salli kerran, toimii kaikkialla)"
+ },
+ "turnOn": {
+  "message": "Ota käyttöön"
+ },
+ "turnOff": {
+  "message": "Poista käytöstä"
+ },
+ "autoThisSite": {
+  "message": "Käännä tämä sivusto automaattisesti"
+ }
+}

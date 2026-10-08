@@ -1,0 +1,326 @@
+{
+ "extName": {
+  "message": "Translate Switch - מתג תרגום"
+ },
+ "extDesc": {
+  "message": "Chrome מתרגם במכשיר רק את השפה שנבחרה באתרים שנבחרו. להצגת המקור, העבירו את הסמן מעל הטקסט."
+ },
+ "appTitle": {
+  "message": "Translate Switch"
+ },
+ "optionsTitle": {
+  "message": "הגדרות Translate Switch"
+ },
+ "optionsIntro": {
+  "message": "שימוש במתרגם המובנה של Chrome לתרגום הטקסט בשפה זרה בלבד בדף אינטרנט. התרגום מתבצע במחשב הזה, כך שתוכן הדף לעולם אינו נשלח ממנו החוצה. להצגת המקור, יש להעביר את הסמן מעל הטקסט המתורגם."
+ },
+ "allSites": {
+  "message": "כל האתרים"
+ },
+ "allSitesUse": {
+  "message": "שימוש בכל האתרים"
+ },
+ "allSitesHint": {
+  "message": "כשהאפשרות מופעלת, מתג התרגום מופיע בכל דף אינטרנט. Chrome יבקש הרשאת גישה בהפעלה הראשונה."
+ },
+ "source": {
+  "message": "משפה"
+ },
+ "target": {
+  "message": "לשפה"
+ },
+ "autoTranslate": {
+  "message": "תרגום אוטומטי בפתיחת דף"
+ },
+ "perSite": {
+  "message": "הגדרות לפי אתר"
+ },
+ "perSiteHint": {
+  "message": "— גוברות על ההגדרות לכל האתרים"
+ },
+ "colUse": {
+  "message": "פעיל"
+ },
+ "colSite": {
+  "message": "אתר"
+ },
+ "colAuto": {
+  "message": "אוטומטי"
+ },
+ "emptySites": {
+  "message": "עדיין אין אתרים. בדף שרוצים לתרגם, יש ללחוץ על סמל התוסף בסרגל הכלים ואז על „הפעלה” כדי להוסיף את האתר אוטומטית. אפשר גם להזין אתר למטה."
+ },
+ "addPlaceholder": {
+  "message": "הוספת אתר (למשל mail.example.com, *.example.jp)"
+ },
+ "add": {
+  "message": "הוספה"
+ },
+ "models": {
+  "message": "מודלים לתרגום"
+ },
+ "modelsHint": {
+  "message": "המודל לכל צמד שפות יורד פעם אחת בלבד ומשותף בכל Chrome. ההורדה עשויה להימשך כמה דקות, לכן כדאי להוריד מראש את השפות שקוראים לעיתים קרובות."
+ },
+ "preDownload": {
+  "message": "הורדה עכשיו"
+ },
+ "shortcut": {
+  "message": "הפעלה וכיבוי של התרגום באמצעות קיצור מקשים"
+ },
+ "shortcutHint": {
+  "message": "⌘K ב-Mac,‏ Ctrl+K ב-Windows. פועל גם עם פריסות מקלדת בקוריאנית או ביפנית וכאשר Caps Lock מופעל."
+ },
+ "pillShow": {
+  "message": "הצגת מתג התרגום (כפתור מעוגל)"
+ },
+ "pillPos": {
+  "message": "מיקום המתג"
+ },
+ "posTopLeft": {
+  "message": "למעלה משמאל"
+ },
+ "posTopCenter": {
+  "message": "למעלה במרכז"
+ },
+ "posTopRight": {
+  "message": "למעלה מימין"
+ },
+ "posMiddleLeft": {
+  "message": "באמצע משמאל"
+ },
+ "posMiddleRight": {
+  "message": "באמצע מימין"
+ },
+ "posBottomLeft": {
+  "message": "למטה משמאל"
+ },
+ "posBottomCenter": {
+  "message": "למטה במרכז"
+ },
+ "posBottomRight": {
+  "message": "למטה מימין"
+ },
+ "highlight": {
+  "message": "הדגשת הטקסט המתורגם"
+ },
+ "highlightHint": {
+  "message": "הוספת רקע בהיר וקו תחתון מנוקד לטקסט המתורגם כדי להבחין בינו לבין שאר הטקסט."
+ },
+ "highlightColor": {
+  "message": "צבע ההדגשה"
+ },
+ "resetColor": {
+  "message": "צבע ברירת המחדל"
+ },
+ "modelFirst": {
+  "message": "יש להוריד תחילה את מודל התרגום"
+ },
+ "modelFirstHint": {
+  "message": "נדרשת הורדה פעם אחת בלבד (המודל משותף בכל Chrome). יש להשאיר את החלון הזה פתוח בזמן ההורדה."
+ },
+ "noPage": {
+  "message": "לא זמין בדף הזה (דפים פנימיים של Chrome, חנות האינטרנט וכדומה)."
+ },
+ "useHere": {
+  "message": "שימוש באתר הזה"
+ },
+ "toggleNow": {
+  "message": "הפעלה או כיבוי של התרגום עכשיו"
+ },
+ "openOptions": {
+  "message": "פתיחת כל ההגדרות"
+ },
+ "grantTitle": {
+  "message": "אישור גישה - Translate Switch"
+ },
+ "grantBody": {
+  "message": "כדי להוסיף אוטומטית את מתג התרגום בכל פתיחה של דף באתר {1}, התוסף זקוק להרשאת גישה לאתר הזה."
+ },
+ "grantBtn": {
+  "message": "אישור גישה"
+ },
+ "grantNote": {
+  "message": "המתג כבר מופעל בכרטיסייה הנוכחית. סגירת החלון הזה ללא אישור תאפשר שימוש בביקור הנוכחי בלבד."
+ },
+ "grantOk": {
+  "message": "הגישה אושרה. מעכשיו מתג התרגום יתווסף אוטומטית באתר הזה. החלון נסגר."
+ },
+ "grantNo": {
+  "message": "הגישה לא אושרה. יש ללחוץ שוב כדי לנסות מחדש."
+ },
+ "noAccess": {
+  "message": "אין הרשאת גישה"
+ },
+ "delete": {
+  "message": "מחיקה"
+ },
+ "grantedOn": {
+  "message": "הגישה אושרה. השימוש באתר והתרגום האוטומטי הופעלו."
+ },
+ "noTranslator": {
+  "message": "הגרסה הזו של Chrome אינה תומכת במתרגם המובנה (נדרשת גרסת Chrome 138 ואילך)."
+ },
+ "noDetector": {
+  "message": "הגרסה הזו של Chrome אינה תומכת בזיהוי שפה אוטומטי."
+ },
+ "autoDetect": {
+  "message": "זיהוי שפה"
+ },
+ "browserLang": {
+  "message": "שפת הדפדפן ({1})"
+ },
+ "langDetect": {
+  "message": "זיהוי שפה"
+ },
+ "sameLang": {
+  "message": "שפת המקור ושפת היעד זהות."
+ },
+ "alreadyHave": {
+  "message": "המודל {1} → {2} כבר הורד."
+ },
+ "unsupportedPair": {
+  "message": "צמד השפות הזה אינו נתמך."
+ },
+ "saved": {
+  "message": "ההגדרות נשמרו. הכרטיסיות הפתוחות מתעדכנות מיד; יש לטעון מחדש את הכרטיסייה של אתר שהופעל כעת."
+ },
+ "badHost": {
+  "message": "כתובת האתר אינה תקינה."
+ },
+ "dupHost": {
+  "message": "האתר הזה כבר נוסף."
+ },
+ "needGrantToAdd": {
+  "message": "כדי להוסיף את האתר הזה, יש לאשר גישה."
+ },
+ "injectFail": {
+  "message": "לא ניתן להחיל על הכרטיסייה הזו: {1}"
+ },
+ "noPermNote": {
+  "message": "ללא הרשאת גישה, המתג לא יתווסף אוטומטית בביקור הבא —"
+ },
+ "ruleSite": {
+  "message": "הגדרת האתר"
+ },
+ "ruleSiteOf": {
+  "message": "הגדרת האתר ({1})"
+ },
+ "ruleAll": {
+  "message": "ההגדרה לכל האתרים בשימוש"
+ },
+ "ruleNone": {
+  "message": "האתר הזה עדיין לא נוסף"
+ },
+ "addedApplied": {
+  "message": "נוסף והוחל על הכרטיסייה הזו."
+ },
+ "turnedOff": {
+  "message": "הושבת עבור האתר הזה."
+ },
+ "availAvailable": {
+  "message": "הורד"
+ },
+ "availDownloadable": {
+  "message": "נדרשת הורדה"
+ },
+ "availDownloading": {
+  "message": "בהורדה"
+ },
+ "availUnavailable": {
+  "message": "לא נתמך"
+ },
+ "downloadModel": {
+  "message": "הורדת מודל"
+ },
+ "failed": {
+  "message": "הפעולה נכשלה: {1}"
+ },
+ "downloadingPct": {
+  "message": "בהורדה {1}%"
+ },
+ "pillOriginal": {
+  "message": "הצגת המקור"
+ },
+ "pillTranslate": {
+  "message": "תרגום"
+ },
+ "pillAuto": {
+  "message": "אוטומטי"
+ },
+ "needHttps": {
+  "message": "המתרגם המובנה של Chrome אינו זמין בדפים ללא חיבור מאובטח (HTTPS)."
+ },
+ "noTranslatorApi": {
+  "message": "הגרסה הזו של Chrome אינה תומכת במתרגם המובנה (Translator API). נדרשת גרסת Chrome 138 ואילך."
+ },
+ "modelDownloading": {
+  "message": "המודל בהורדה {1}%"
+ },
+ "needClickPair": {
+  "message": "כדי להתחיל בתרגום {1}→{2}, יש ללחוץ פעם אחת על המתג בדף הזה."
+ },
+ "noDetectorApi": {
+  "message": "הגרסה הזו של Chrome אינה תומכת בזיהוי שפה אוטומטי (LanguageDetector API)."
+ },
+ "detectorUnavailable": {
+  "message": "מודל זיהוי השפה אינו זמין."
+ },
+ "detectorDownloading": {
+  "message": "מודל הזיהוי בהורדה {1}%"
+ },
+ "needClickDetect": {
+  "message": "כדי להתחיל בזיהוי השפה, יש ללחוץ פעם אחת על המתג בדף הזה."
+ },
+ "preparing": {
+  "message": "המודל בהכנה…"
+ },
+ "slowDownload": {
+  "message": "המודל בהורדה… (בפעם הראשונה נדרשות כמה דקות)"
+ },
+ "pairUnsupported": {
+  "message": "התרגום {1}→{2} אינו נתמך."
+ },
+ "clickToStart": {
+  "message": "לחיצה לתרגום"
+ },
+ "tipOriginal": {
+  "message": "מקור ({1})"
+ },
+ "pillTitle": {
+  "message": "הפעלה/כיבוי של התרגום{1} · להצגת המקור, יש להעביר את הסמן מעל הטקסט המתורגם"
+ },
+ "alertPrefix": {
+  "message": "[תרגום]"
+ },
+ "grantLater": {
+  "message": "לא עכשיו"
+ },
+ "saveFailed": {
+  "message": "השמירה נכשלה. ייתכן שהאחסון מלא – מחקו כמה אתרים ונסו שוב."
+ },
+ "grantExpired": {
+  "message": "תוקף הבקשה פג. פתחו את החלון הקופץ של התוסף באתר ונסו שוב."
+ },
+ "grantThisSite": {
+  "message": "אפשרו גישה לאתר הזה"
+ },
+ "grantAllSites": {
+  "message": "אפשרו גישה לכל האתרים — אל תשאלו שוב"
+ },
+ "grantAllHint": {
+  "message": "האפשרות „אפשרו גישה לכל האתרים” מפעילה את התוסף מיד בכל האתרים. ניתן להשבית אותו באתר מסוים, או להשבית אותו לחלוטין בהגדרות."
+ },
+ "useEverywhere": {
+  "message": "שימוש בכל האתרים (אישור חד־פעמי לשימוש בכל אתר)"
+ },
+ "turnOn": {
+  "message": "הפעלה"
+ },
+ "turnOff": {
+  "message": "כיבוי"
+ },
+ "autoThisSite": {
+  "message": "תרגום אוטומטי של האתר הזה"
+ }
+}

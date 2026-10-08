@@ -1,0 +1,326 @@
+{
+ "extName": {
+  "message": "Translate Switch - Übersetzungsschalter"
+ },
+ "extDesc": {
+  "message": "Chrome übersetzt lokal nur die gewählte Sprache auf gewählten Websites. Fürs Original führen Sie die Maus über den Text."
+ },
+ "appTitle": {
+  "message": "Translate Switch"
+ },
+ "optionsTitle": {
+  "message": "Translate Switch – Einstellungen"
+ },
+ "optionsIntro": {
+  "message": "Übersetzt mit der integrierten Übersetzungsfunktion von Chrome nur fremdsprachige Texte auf einer Webseite. Die Übersetzung erfolgt auf diesem Computer. Seiteninhalte verlassen ihn daher nicht. Bewegen Sie den Mauszeiger über übersetzten Text, um das Original zu sehen."
+ },
+ "allSites": {
+  "message": "Alle Websites"
+ },
+ "allSitesUse": {
+  "message": "Auf allen Websites verwenden"
+ },
+ "allSitesHint": {
+  "message": "Wenn aktiviert, erscheint der Übersetzungsschalter auf jeder Webseite. Chrome fragt beim ersten Aktivieren nach der Zugriffsberechtigung."
+ },
+ "source": {
+  "message": "Von"
+ },
+ "target": {
+  "message": "Nach"
+ },
+ "autoTranslate": {
+  "message": "Beim Öffnen einer Seite automatisch übersetzen"
+ },
+ "perSite": {
+  "message": "Website-Einstellungen"
+ },
+ "perSiteHint": {
+  "message": "— haben Vorrang vor den Einstellungen für alle Websites"
+ },
+ "colUse": {
+  "message": "Ein"
+ },
+ "colSite": {
+  "message": "Website"
+ },
+ "colAuto": {
+  "message": "Automatisch"
+ },
+ "emptySites": {
+  "message": "Noch keine Websites. Klicken Sie auf einer Seite, die Sie übersetzen möchten, auf das Erweiterungssymbol in der Symbolleiste und dann auf „Einschalten“, um die Website automatisch hinzuzufügen. Sie können unten auch eine Website eingeben."
+ },
+ "addPlaceholder": {
+  "message": "Website hinzufügen (z. B. mail.example.com, *.example.jp)"
+ },
+ "add": {
+  "message": "Hinzufügen"
+ },
+ "models": {
+  "message": "Übersetzungsmodelle"
+ },
+ "modelsHint": {
+  "message": "Das Modell für jedes Sprachpaar wird einmal heruntergeladen und gemeinsam in Chrome genutzt. Dies kann einige Minuten dauern. Laden Sie daher häufig gelesene Sprachen vorab herunter."
+ },
+ "preDownload": {
+  "message": "Jetzt herunterladen"
+ },
+ "shortcut": {
+  "message": "Übersetzung per Tastenkürzel ein-/ausschalten"
+ },
+ "shortcutHint": {
+  "message": "⌘K auf dem Mac, Ctrl+K unter Windows. Funktioniert auch mit koreanischer oder japanischer Tastaturbelegung und bei aktivierter Feststelltaste."
+ },
+ "pillShow": {
+  "message": "Übersetzungsschalter anzeigen (ovale Schaltfläche)"
+ },
+ "pillPos": {
+  "message": "Position des Schalters"
+ },
+ "posTopLeft": {
+  "message": "Oben links"
+ },
+ "posTopCenter": {
+  "message": "Oben mittig"
+ },
+ "posTopRight": {
+  "message": "Oben rechts"
+ },
+ "posMiddleLeft": {
+  "message": "Mitte links"
+ },
+ "posMiddleRight": {
+  "message": "Mitte rechts"
+ },
+ "posBottomLeft": {
+  "message": "Unten links"
+ },
+ "posBottomCenter": {
+  "message": "Unten mittig"
+ },
+ "posBottomRight": {
+  "message": "Unten rechts"
+ },
+ "highlight": {
+  "message": "Übersetzten Text hervorheben"
+ },
+ "highlightHint": {
+  "message": "Kennzeichnet übersetzten Text mit einem hellen Hintergrund und einer gepunkteten Unterstreichung."
+ },
+ "highlightColor": {
+  "message": "Hervorhebungsfarbe"
+ },
+ "resetColor": {
+  "message": "Standardfarbe"
+ },
+ "modelFirst": {
+  "message": "Laden Sie zuerst das Übersetzungsmodell herunter"
+ },
+ "modelFirstHint": {
+  "message": "Dies ist nur einmal nötig. Das Modell wird gemeinsam in Chrome genutzt. Lassen Sie dieses Fenster während des Downloads geöffnet."
+ },
+ "noPage": {
+  "message": "Auf dieser Seite nicht verfügbar (interne Chrome-Seiten, Web Store usw.)."
+ },
+ "useHere": {
+  "message": "Auf dieser Website verwenden"
+ },
+ "toggleNow": {
+  "message": "Übersetzung jetzt ein-/ausschalten"
+ },
+ "openOptions": {
+  "message": "Alle Einstellungen öffnen"
+ },
+ "grantTitle": {
+  "message": "Zugriff erlauben - Translate Switch"
+ },
+ "grantBody": {
+  "message": "Damit der Übersetzungsschalter bei jedem Öffnen einer Seite auf {1} automatisch erscheint, benötigt die Erweiterung Zugriff auf diese Website."
+ },
+ "grantBtn": {
+  "message": "Zugriff erlauben"
+ },
+ "grantNote": {
+  "message": "Auf dem aktuellen Tab bereits angewendet. Wenn Sie dieses Fenster einfach schließen, funktioniert es nur für diesen Besuch."
+ },
+ "grantOk": {
+  "message": "Zugriff erlaubt. Der Übersetzungsschalter wird auf dieser Website künftig automatisch hinzugefügt. Dieses Fenster wird geschlossen."
+ },
+ "grantNo": {
+  "message": "Zugriff nicht erlaubt. Klicken Sie erneut, um es noch einmal zu versuchen."
+ },
+ "noAccess": {
+  "message": "Kein Zugriff"
+ },
+ "delete": {
+  "message": "Löschen"
+ },
+ "grantedOn": {
+  "message": "Zugriff erlaubt. Die Website und die automatische Übersetzung wurden aktiviert."
+ },
+ "noTranslator": {
+  "message": "Diese Version von Chrome unterstützt die integrierte Übersetzungsfunktion nicht (Chrome 138 oder neuer erforderlich)."
+ },
+ "noDetector": {
+  "message": "Diese Version von Chrome unterstützt die automatische Spracherkennung nicht."
+ },
+ "autoDetect": {
+  "message": "Sprache erkennen"
+ },
+ "browserLang": {
+  "message": "Browsersprache ({1})"
+ },
+ "langDetect": {
+  "message": "Spracherkennung"
+ },
+ "sameLang": {
+  "message": "Ausgangs- und Zielsprache sind identisch."
+ },
+ "alreadyHave": {
+  "message": "Das Modell {1} → {2} wurde bereits heruntergeladen."
+ },
+ "unsupportedPair": {
+  "message": "Dieses Sprachpaar wird nicht unterstützt."
+ },
+ "saved": {
+  "message": "Gespeichert. Offene Tabs werden sofort aktualisiert. Laden Sie den Tab einer gerade aktivierten Website neu."
+ },
+ "badHost": {
+  "message": "Dies ist keine gültige Website-Adresse."
+ },
+ "dupHost": {
+  "message": "Diese Website wurde bereits hinzugefügt."
+ },
+ "needGrantToAdd": {
+  "message": "Sie müssen den Zugriff erlauben, um diese Website hinzuzufügen."
+ },
+ "injectFail": {
+  "message": "Konnte nicht auf diesen Tab angewendet werden: {1}"
+ },
+ "noPermNote": {
+  "message": "Ohne Zugriff wird der Schalter beim nächsten Besuch nicht automatisch hinzugefügt —"
+ },
+ "ruleSite": {
+  "message": "Website-Einstellung"
+ },
+ "ruleSiteOf": {
+  "message": "Website-Einstellung ({1})"
+ },
+ "ruleAll": {
+  "message": "Einstellung für alle Websites wird verwendet"
+ },
+ "ruleNone": {
+  "message": "Diese Website wurde noch nicht hinzugefügt"
+ },
+ "addedApplied": {
+  "message": "Hinzugefügt und auf diesen Tab angewendet."
+ },
+ "turnedOff": {
+  "message": "Für diese Website deaktiviert."
+ },
+ "availAvailable": {
+  "message": "Heruntergeladen"
+ },
+ "availDownloadable": {
+  "message": "Download erforderlich"
+ },
+ "availDownloading": {
+  "message": "Wird heruntergeladen"
+ },
+ "availUnavailable": {
+  "message": "Nicht unterstützt"
+ },
+ "downloadModel": {
+  "message": "Modell herunterladen"
+ },
+ "failed": {
+  "message": "Fehlgeschlagen: {1}"
+ },
+ "downloadingPct": {
+  "message": "Download läuft: {1}%"
+ },
+ "pillOriginal": {
+  "message": "Original anzeigen"
+ },
+ "pillTranslate": {
+  "message": "Übersetzen"
+ },
+ "pillAuto": {
+  "message": "Automatisch"
+ },
+ "needHttps": {
+  "message": "Die integrierte Übersetzungsfunktion von Chrome ist auf Seiten ohne sichere Verbindung (HTTPS) nicht verfügbar."
+ },
+ "noTranslatorApi": {
+  "message": "Diese Version von Chrome unterstützt die integrierte Übersetzungsfunktion (Translator API) nicht. Chrome 138 oder neuer ist erforderlich."
+ },
+ "modelDownloading": {
+  "message": "Modell wird heruntergeladen: {1}%"
+ },
+ "needClickPair": {
+  "message": "Klicken Sie einmal auf den Schalter auf dieser Seite, um die Übersetzung {1}→{2} zu starten."
+ },
+ "noDetectorApi": {
+  "message": "Diese Version von Chrome unterstützt die automatische Spracherkennung (LanguageDetector API) nicht."
+ },
+ "detectorUnavailable": {
+  "message": "Das Modell zur Spracherkennung ist nicht verfügbar."
+ },
+ "detectorDownloading": {
+  "message": "Spracherkennungsmodell wird heruntergeladen: {1}%"
+ },
+ "needClickDetect": {
+  "message": "Klicken Sie einmal auf den Schalter auf dieser Seite, um die Spracherkennung zu starten."
+ },
+ "preparing": {
+  "message": "Modell wird vorbereitet…"
+ },
+ "slowDownload": {
+  "message": "Modell wird heruntergeladen… (beim ersten Mal dauert dies einige Minuten)"
+ },
+ "pairUnsupported": {
+  "message": "Die Übersetzung {1}→{2} wird nicht unterstützt."
+ },
+ "clickToStart": {
+  "message": "Zum Übersetzen klicken"
+ },
+ "tipOriginal": {
+  "message": "Original ({1})"
+ },
+ "pillTitle": {
+  "message": "Übersetzung ein/aus{1} · Bewegen Sie den Mauszeiger über übersetzten Text, um das Original zu sehen"
+ },
+ "alertPrefix": {
+  "message": "[Übersetzung]"
+ },
+ "grantLater": {
+  "message": "Nicht jetzt"
+ },
+ "saveFailed": {
+  "message": "Speichern fehlgeschlagen. Der Speicher ist möglicherweise voll – entfernen Sie einige Websites und versuchen Sie es erneut."
+ },
+ "grantExpired": {
+  "message": "Diese Anfrage ist abgelaufen. Öffnen Sie auf der Website das Pop-up der Erweiterung und versuchen Sie es erneut."
+ },
+ "grantThisSite": {
+  "message": "Diese Website zulassen"
+ },
+ "grantAllSites": {
+  "message": "Alle Websites zulassen — nicht erneut fragen"
+ },
+ "grantAllHint": {
+  "message": "„Alle Websites zulassen“ aktiviert die Übersetzung sofort auf allen Websites. Sie können sie für einzelne Websites oder in den Einstellungen vollständig deaktivieren."
+ },
+ "useEverywhere": {
+  "message": "Auf allen Websites verwenden (einmal erlauben, überall nutzen)"
+ },
+ "turnOn": {
+  "message": "Einschalten"
+ },
+ "turnOff": {
+  "message": "Ausschalten"
+ },
+ "autoThisSite": {
+  "message": "Diese Website automatisch übersetzen"
+ }
+}

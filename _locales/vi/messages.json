@@ -1,0 +1,326 @@
+{
+ "extName": {
+  "message": "Translate Switch - Công tắc dịch"
+ },
+ "extDesc": {
+  "message": "Chrome dịch ngay trên thiết bị chỉ ngôn ngữ đã chọn ở trang đã chọn. Di chuột lên chữ để xem bản gốc."
+ },
+ "appTitle": {
+  "message": "Translate Switch"
+ },
+ "optionsTitle": {
+  "message": "Cài đặt Translate Switch"
+ },
+ "optionsIntro": {
+  "message": "Sử dụng trình dịch tích hợp của Chrome để chỉ dịch văn bản tiếng nước ngoài trên trang web. Bản dịch được xử lý trên máy tính này nên nội dung trang không bao giờ rời khỏi máy. Di chuột lên văn bản đã dịch để xem bản gốc."
+ },
+ "allSites": {
+  "message": "Tất cả trang web"
+ },
+ "allSitesUse": {
+  "message": "Dùng trên tất cả trang web"
+ },
+ "allSitesHint": {
+  "message": "Khi bật, công tắc dịch sẽ xuất hiện trên mọi trang web. Chrome sẽ yêu cầu quyền truy cập khi bạn bật lần đầu."
+ },
+ "source": {
+  "message": "Ngôn ngữ nguồn"
+ },
+ "target": {
+  "message": "Ngôn ngữ đích"
+ },
+ "autoTranslate": {
+  "message": "Tự động dịch khi mở trang"
+ },
+ "perSite": {
+  "message": "Cài đặt từng trang web"
+ },
+ "perSiteHint": {
+  "message": "— ghi đè cài đặt cho tất cả trang web"
+ },
+ "colUse": {
+  "message": "Bật"
+ },
+ "colSite": {
+  "message": "Trang web"
+ },
+ "colAuto": {
+  "message": "Tự động"
+ },
+ "emptySites": {
+  "message": "Chưa có trang web nào. Trên trang bạn muốn dịch, hãy nhấp vào biểu tượng tiện ích trên thanh công cụ và nhấn “Bật” để tự động thêm trang web. Bạn cũng có thể nhập địa chỉ trang web bên dưới."
+ },
+ "addPlaceholder": {
+  "message": "Thêm trang web (ví dụ: mail.example.com, *.example.jp)"
+ },
+ "add": {
+  "message": "Thêm"
+ },
+ "models": {
+  "message": "Mô hình dịch"
+ },
+ "modelsHint": {
+  "message": "Mô hình cho mỗi cặp ngôn ngữ chỉ cần tải xuống một lần (dùng chung trong Chrome). Quá trình này có thể mất vài phút, nên hãy tải trước các ngôn ngữ bạn thường đọc."
+ },
+ "preDownload": {
+  "message": "Tải xuống ngay"
+ },
+ "shortcut": {
+  "message": "Bật/tắt bản dịch bằng phím tắt"
+ },
+ "shortcutHint": {
+  "message": "⌘K trên Mac, Ctrl+K trên Windows. Hoạt động với bố cục bàn phím tiếng Hàn hoặc tiếng Nhật và khi bật Caps Lock."
+ },
+ "pillShow": {
+  "message": "Hiển thị công tắc dịch (nút hình viên thuốc)"
+ },
+ "pillPos": {
+  "message": "Vị trí công tắc"
+ },
+ "posTopLeft": {
+  "message": "Trên cùng bên trái"
+ },
+ "posTopCenter": {
+  "message": "Trên cùng ở giữa"
+ },
+ "posTopRight": {
+  "message": "Trên cùng bên phải"
+ },
+ "posMiddleLeft": {
+  "message": "Ở giữa bên trái"
+ },
+ "posMiddleRight": {
+  "message": "Ở giữa bên phải"
+ },
+ "posBottomLeft": {
+  "message": "Dưới cùng bên trái"
+ },
+ "posBottomCenter": {
+  "message": "Dưới cùng ở giữa"
+ },
+ "posBottomRight": {
+  "message": "Dưới cùng bên phải"
+ },
+ "highlight": {
+  "message": "Làm nổi bật văn bản đã dịch"
+ },
+ "highlightHint": {
+  "message": "Thêm nền nhạt và gạch chân nét chấm cho văn bản đã dịch để dễ phân biệt."
+ },
+ "highlightColor": {
+  "message": "Màu đánh dấu"
+ },
+ "resetColor": {
+  "message": "Màu mặc định"
+ },
+ "modelFirst": {
+  "message": "Vui lòng tải mô hình dịch trước"
+ },
+ "modelFirstHint": {
+  "message": "Bạn chỉ cần thực hiện một lần (dùng chung trong Chrome). Hãy giữ cửa sổ này mở trong khi tải xuống."
+ },
+ "noPage": {
+  "message": "Không dùng được trên trang này (trang nội bộ Chrome, Cửa hàng trực tuyến, v.v.)."
+ },
+ "useHere": {
+  "message": "Dùng trên trang web này"
+ },
+ "toggleNow": {
+  "message": "Bật/tắt bản dịch ngay"
+ },
+ "openOptions": {
+  "message": "Mở tất cả cài đặt"
+ },
+ "grantTitle": {
+  "message": "Cho phép truy cập - Translate Switch"
+ },
+ "grantBody": {
+  "message": "Để tự động thêm công tắc dịch mỗi khi bạn mở một trang trên {1}, tiện ích cần quyền truy cập trang web này."
+ },
+ "grantBtn": {
+  "message": "Cho phép truy cập"
+ },
+ "grantNote": {
+  "message": "Đã áp dụng cho thẻ hiện tại. Nếu bạn đóng cửa sổ này, tính năng chỉ hoạt động trong lần truy cập này."
+ },
+ "grantOk": {
+  "message": "Đã cho phép truy cập. Công tắc dịch sẽ được tự động thêm vào trang web này từ bây giờ. Đang đóng cửa sổ."
+ },
+ "grantNo": {
+  "message": "Chưa được phép truy cập. Hãy nhấp lại để thử lại."
+ },
+ "noAccess": {
+  "message": "Không có quyền truy cập"
+ },
+ "delete": {
+  "message": "Xóa"
+ },
+ "grantedOn": {
+  "message": "Đã cho phép truy cập. Đã bật trang web và tính năng dịch tự động."
+ },
+ "noTranslator": {
+  "message": "Phiên bản Chrome này không hỗ trợ trình dịch tích hợp (cần Chrome 138 trở lên)."
+ },
+ "noDetector": {
+  "message": "Phiên bản Chrome này không hỗ trợ tự động phát hiện ngôn ngữ."
+ },
+ "autoDetect": {
+  "message": "Phát hiện ngôn ngữ"
+ },
+ "browserLang": {
+  "message": "Ngôn ngữ trình duyệt ({1})"
+ },
+ "langDetect": {
+  "message": "Phát hiện ngôn ngữ"
+ },
+ "sameLang": {
+  "message": "Ngôn ngữ nguồn và ngôn ngữ đích giống nhau."
+ },
+ "alreadyHave": {
+  "message": "Đã tải xuống mô hình {1} → {2}."
+ },
+ "unsupportedPair": {
+  "message": "Cặp ngôn ngữ này không được hỗ trợ."
+ },
+ "saved": {
+  "message": "Đã lưu. Các thẻ đang mở sẽ cập nhật ngay; hãy tải lại thẻ của trang web bạn vừa bật."
+ },
+ "badHost": {
+  "message": "Địa chỉ trang web không hợp lệ."
+ },
+ "dupHost": {
+  "message": "Trang web này đã được thêm."
+ },
+ "needGrantToAdd": {
+  "message": "Bạn cần cho phép truy cập để thêm trang web này."
+ },
+ "injectFail": {
+  "message": "Không thể áp dụng cho thẻ này: {1}"
+ },
+ "noPermNote": {
+  "message": "Nếu không có quyền truy cập, công tắc sẽ không được tự động thêm vào lần truy cập sau —"
+ },
+ "ruleSite": {
+  "message": "Cài đặt trang web"
+ },
+ "ruleSiteOf": {
+  "message": "Cài đặt trang web ({1})"
+ },
+ "ruleAll": {
+  "message": "Đang dùng cài đặt cho tất cả trang web"
+ },
+ "ruleNone": {
+  "message": "Trang web này chưa được thêm"
+ },
+ "addedApplied": {
+  "message": "Đã thêm và áp dụng cho thẻ này."
+ },
+ "turnedOff": {
+  "message": "Đã tắt cho trang web này."
+ },
+ "availAvailable": {
+  "message": "Đã tải xuống"
+ },
+ "availDownloadable": {
+  "message": "Cần tải xuống"
+ },
+ "availDownloading": {
+  "message": "Đang tải xuống"
+ },
+ "availUnavailable": {
+  "message": "Không hỗ trợ"
+ },
+ "downloadModel": {
+  "message": "Tải mô hình"
+ },
+ "failed": {
+  "message": "Không thành công: {1}"
+ },
+ "downloadingPct": {
+  "message": "Đang tải xuống {1}%"
+ },
+ "pillOriginal": {
+  "message": "Hiện bản gốc"
+ },
+ "pillTranslate": {
+  "message": "Dịch"
+ },
+ "pillAuto": {
+  "message": "Tự động"
+ },
+ "needHttps": {
+  "message": "Trình dịch tích hợp của Chrome không dùng được trên các trang không có kết nối bảo mật (HTTPS)."
+ },
+ "noTranslatorApi": {
+  "message": "Phiên bản Chrome này không hỗ trợ trình dịch tích hợp (Translator API). Cần Chrome 138 trở lên."
+ },
+ "modelDownloading": {
+  "message": "Đang tải mô hình {1}%"
+ },
+ "needClickPair": {
+  "message": "Để bắt đầu dịch {1}→{2}, hãy nhấp vào công tắc trên trang này một lần."
+ },
+ "noDetectorApi": {
+  "message": "Phiên bản Chrome này không hỗ trợ tự động phát hiện ngôn ngữ (LanguageDetector API)."
+ },
+ "detectorUnavailable": {
+  "message": "Mô hình phát hiện ngôn ngữ không khả dụng."
+ },
+ "detectorDownloading": {
+  "message": "Đang tải mô hình phát hiện ngôn ngữ {1}%"
+ },
+ "needClickDetect": {
+  "message": "Để bắt đầu phát hiện ngôn ngữ, hãy nhấp vào công tắc trên trang này một lần."
+ },
+ "preparing": {
+  "message": "Đang chuẩn bị mô hình…"
+ },
+ "slowDownload": {
+  "message": "Đang tải mô hình… (lần đầu mất vài phút)"
+ },
+ "pairUnsupported": {
+  "message": "Không hỗ trợ dịch {1}→{2}."
+ },
+ "clickToStart": {
+  "message": "Nhấp để dịch"
+ },
+ "tipOriginal": {
+  "message": "Bản gốc ({1})"
+ },
+ "pillTitle": {
+  "message": "Bật/tắt bản dịch{1} · Di chuột lên văn bản đã dịch để xem bản gốc"
+ },
+ "alertPrefix": {
+  "message": "[Dịch]"
+ },
+ "grantLater": {
+  "message": "Để sau"
+ },
+ "saveFailed": {
+  "message": "Không lưu được. Bộ nhớ có thể đã đầy—hãy xóa bớt vài trang web rồi thử lại."
+ },
+ "grantExpired": {
+  "message": "Yêu cầu này đã hết hạn. Hãy mở cửa sổ bật lên của tiện ích trên trang web rồi thử lại."
+ },
+ "grantThisSite": {
+  "message": "Cho phép trang web này"
+ },
+ "grantAllSites": {
+  "message": "Cho phép tất cả trang web — không hỏi lại"
+ },
+ "grantAllHint": {
+  "message": "“Cho phép tất cả trang web” giúp tính năng hoạt động ngay trên mọi trang web. Bạn có thể tắt tính năng này cho một trang web hoặc tắt hoàn toàn trong phần cài đặt."
+ },
+ "useEverywhere": {
+  "message": "Sử dụng trên tất cả trang web (cho phép một lần, dùng trên mọi trang web)"
+ },
+ "turnOn": {
+  "message": "Bật"
+ },
+ "turnOff": {
+  "message": "Tắt"
+ },
+ "autoThisSite": {
+  "message": "Tự động dịch trang web này"
+ }
+}

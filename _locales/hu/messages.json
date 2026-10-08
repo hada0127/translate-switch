@@ -1,0 +1,326 @@
+{
+ "extName": {
+  "message": "Translate Switch - Fordításkapcsoló"
+ },
+ "extDesc": {
+  "message": "A Chrome helyben csak a kijelölt nyelvet fordítja a kijelölt oldalakon. Az eredetihez vigye a szöveg fölé az egeret."
+ },
+ "appTitle": {
+  "message": "Translate Switch"
+ },
+ "optionsTitle": {
+  "message": "A Translate Switch beállításai"
+ },
+ "optionsIntro": {
+  "message": "A Chrome beépített fordítójával csak a weboldal idegen nyelvű szövegét fordítja le. A fordítás ezen a számítógépen történik, így az oldal tartalma soha nem hagyja el a gépet. Az eredeti szöveg megtekintéséhez vigye az egérmutatót a lefordított szöveg fölé."
+ },
+ "allSites": {
+  "message": "Összes webhely"
+ },
+ "allSitesUse": {
+  "message": "Használat minden webhelyen"
+ },
+ "allSitesHint": {
+  "message": "Ha be van kapcsolva, a fordításkapcsoló minden weboldalon megjelenik. A Chrome az első bekapcsoláskor hozzáférési engedélyt kér."
+ },
+ "source": {
+  "message": "Forrásnyelv"
+ },
+ "target": {
+  "message": "Célnyelv"
+ },
+ "autoTranslate": {
+  "message": "Automatikus fordítás az oldal megnyitásakor"
+ },
+ "perSite": {
+  "message": "Webhelyenkénti beállítások"
+ },
+ "perSiteHint": {
+  "message": "— felülírják az összes webhelyre vonatkozó beállításokat"
+ },
+ "colUse": {
+  "message": "Be"
+ },
+ "colSite": {
+  "message": "Webhely"
+ },
+ "colAuto": {
+  "message": "Auto"
+ },
+ "emptySites": {
+  "message": "Még nincsenek webhelyek. A lefordítandó oldalon kattintson a bővítmény ikonjára az eszköztáron, majd nyomja meg a „Bekapcsolás” gombot a webhely automatikus hozzáadásához. Alább is megadhat egy webhelyet."
+ },
+ "addPlaceholder": {
+  "message": "Webhely hozzáadása (pl. mail.example.com, *.example.jp)"
+ },
+ "add": {
+  "message": "Hozzáadás"
+ },
+ "models": {
+  "message": "Fordítási modellek"
+ },
+ "modelsHint": {
+  "message": "Az egyes nyelvpárok modelljét csak egyszer kell letölteni, és a Chrome egészében használható. A letöltés néhány percig tarthat, ezért a gyakran olvasott nyelvek modelljeit érdemes előre letölteni."
+ },
+ "preDownload": {
+  "message": "Letöltés most"
+ },
+ "shortcut": {
+  "message": "Fordítás be- és kikapcsolása billentyűparanccsal"
+ },
+ "shortcutHint": {
+  "message": "Macen ⌘K, Windowson Ctrl+K. Koreai vagy japán billentyűzetkiosztással és bekapcsolt Caps Lock mellett is működik."
+ },
+ "pillShow": {
+  "message": "Fordításkapcsoló megjelenítése (lekerekített gomb)"
+ },
+ "pillPos": {
+  "message": "A kapcsoló helye"
+ },
+ "posTopLeft": {
+  "message": "Balra fent"
+ },
+ "posTopCenter": {
+  "message": "Középen fent"
+ },
+ "posTopRight": {
+  "message": "Jobbra fent"
+ },
+ "posMiddleLeft": {
+  "message": "Balra középen"
+ },
+ "posMiddleRight": {
+  "message": "Jobbra középen"
+ },
+ "posBottomLeft": {
+  "message": "Balra lent"
+ },
+ "posBottomCenter": {
+  "message": "Középen lent"
+ },
+ "posBottomRight": {
+  "message": "Jobbra lent"
+ },
+ "highlight": {
+  "message": "Lefordított szöveg kiemelése"
+ },
+ "highlightHint": {
+  "message": "Világos hátteret és pontozott aláhúzást ad a lefordított szöveghez, hogy könnyen felismerhető legyen."
+ },
+ "highlightColor": {
+  "message": "Kiemelés színe"
+ },
+ "resetColor": {
+  "message": "Alapértelmezett szín"
+ },
+ "modelFirst": {
+  "message": "Először töltse le a fordítási modellt"
+ },
+ "modelFirstHint": {
+  "message": "Ezt csak egyszer kell megtennie (a modell a Chrome egészében használható). Letöltés közben hagyja nyitva ezt az ablakot."
+ },
+ "noPage": {
+  "message": "Ezen az oldalon nem érhető el (a Chrome belső oldalai, a Webáruház stb.)."
+ },
+ "useHere": {
+  "message": "Használat ezen a webhelyen"
+ },
+ "toggleNow": {
+  "message": "Fordítás be-/kikapcsolása most"
+ },
+ "openOptions": {
+  "message": "Összes beállítás megnyitása"
+ },
+ "grantTitle": {
+  "message": "Hozzáférés engedélyezése - Translate Switch"
+ },
+ "grantBody": {
+  "message": "Ahhoz, hogy a fordításkapcsoló automatikusan megjelenjen a(z) {1} webhely minden megnyitott oldalán, a bővítménynek hozzáférésre van szüksége ehhez a webhelyhez."
+ },
+ "grantBtn": {
+  "message": "Hozzáférés engedélyezése"
+ },
+ "grantNote": {
+  "message": "Az aktuális lapon már alkalmazva van. Ha egyszerűen bezárja ezt az ablakot, csak a mostani látogatás során fog működni."
+ },
+ "grantOk": {
+  "message": "Hozzáférés engedélyezve. A fordításkapcsoló mostantól automatikusan megjelenik ezen a webhelyen. Az ablak bezárul."
+ },
+ "grantNo": {
+  "message": "A hozzáférés nem lett engedélyezve. Kattintson újra az ismételt próbálkozáshoz."
+ },
+ "noAccess": {
+  "message": "Nincs hozzáférés"
+ },
+ "delete": {
+  "message": "Törlés"
+ },
+ "grantedOn": {
+  "message": "Hozzáférés engedélyezve. A webhelyen való használat és az automatikus fordítás bekapcsolva."
+ },
+ "noTranslator": {
+  "message": "A Chrome ezen verziója nem támogatja a beépített fordítót (Chrome 138 vagy újabb szükséges)."
+ },
+ "noDetector": {
+  "message": "A Chrome ezen verziója nem támogatja az automatikus nyelvfelismerést."
+ },
+ "autoDetect": {
+  "message": "Nyelv felismerése"
+ },
+ "browserLang": {
+  "message": "Böngésző nyelve ({1})"
+ },
+ "langDetect": {
+  "message": "Nyelvfelismerés"
+ },
+ "sameLang": {
+  "message": "A forrásnyelv és a célnyelv megegyezik."
+ },
+ "alreadyHave": {
+  "message": "A(z) {1} → {2} modell már le van töltve."
+ },
+ "unsupportedPair": {
+  "message": "Ez a nyelvpár nem támogatott."
+ },
+ "saved": {
+  "message": "Mentve. A megnyitott lapok azonnal frissülnek; az újonnan bekapcsolt webhely lapját töltse be újra."
+ },
+ "badHost": {
+  "message": "Ez nem érvényes webhelycím."
+ },
+ "dupHost": {
+  "message": "Ez a webhely már hozzá van adva."
+ },
+ "needGrantToAdd": {
+  "message": "A webhely hozzáadásához engedélyeznie kell a hozzáférést."
+ },
+ "injectFail": {
+  "message": "Nem sikerült alkalmazni ezen a lapon: {1}"
+ },
+ "noPermNote": {
+  "message": "Hozzáférés nélkül a következő látogatáskor nem jelenik meg automatikusan —"
+ },
+ "ruleSite": {
+  "message": "Webhely beállítása"
+ },
+ "ruleSiteOf": {
+  "message": "Webhely beállítása ({1})"
+ },
+ "ruleAll": {
+  "message": "Az összes webhelyre vonatkozó beállítás érvényes"
+ },
+ "ruleNone": {
+  "message": "Ez a webhely még nincs hozzáadva"
+ },
+ "addedApplied": {
+  "message": "Hozzáadva és alkalmazva ezen a lapon."
+ },
+ "turnedOff": {
+  "message": "Kikapcsolva ezen a webhelyen."
+ },
+ "availAvailable": {
+  "message": "Letöltve"
+ },
+ "availDownloadable": {
+  "message": "Letöltés szükséges"
+ },
+ "availDownloading": {
+  "message": "Letöltés folyamatban"
+ },
+ "availUnavailable": {
+  "message": "Nem támogatott"
+ },
+ "downloadModel": {
+  "message": "Modell letöltése"
+ },
+ "failed": {
+  "message": "Sikertelen: {1}"
+ },
+ "downloadingPct": {
+  "message": "Letöltés: {1}%"
+ },
+ "pillOriginal": {
+  "message": "Eredeti megjelenítése"
+ },
+ "pillTranslate": {
+  "message": "Fordítás"
+ },
+ "pillAuto": {
+  "message": "Auto"
+ },
+ "needHttps": {
+  "message": "A Chrome beépített fordítója nem érhető el biztonságos (HTTPS) kapcsolat nélküli oldalakon."
+ },
+ "noTranslatorApi": {
+  "message": "A Chrome ezen verziója nem támogatja a beépített fordítót (Translator API). Chrome 138 vagy újabb szükséges."
+ },
+ "modelDownloading": {
+  "message": "Modell letöltése: {1}%"
+ },
+ "needClickPair": {
+  "message": "A(z) {1}→{2} fordítás elindításához kattintson egyszer az oldalon lévő kapcsolóra."
+ },
+ "noDetectorApi": {
+  "message": "A Chrome ezen verziója nem támogatja az automatikus nyelvfelismerést (LanguageDetector API)."
+ },
+ "detectorUnavailable": {
+  "message": "A nyelvfelismerő modell nem érhető el."
+ },
+ "detectorDownloading": {
+  "message": "Felismerőmodell letöltése: {1}%"
+ },
+ "needClickDetect": {
+  "message": "A nyelvfelismerés elindításához kattintson egyszer az oldalon lévő kapcsolóra."
+ },
+ "preparing": {
+  "message": "Modell előkészítése…"
+ },
+ "slowDownload": {
+  "message": "Modell letöltése… (az első alkalom néhány percet vesz igénybe)"
+ },
+ "pairUnsupported": {
+  "message": "A(z) {1}→{2} fordítás nem támogatott."
+ },
+ "clickToStart": {
+  "message": "Kattintson a fordításhoz"
+ },
+ "tipOriginal": {
+  "message": "Eredeti ({1})"
+ },
+ "pillTitle": {
+  "message": "Fordítás be-/kikapcsolása{1} · Az eredeti megtekintéséhez vigye az egérmutatót a lefordított szöveg fölé"
+ },
+ "alertPrefix": {
+  "message": "[Fordítás]"
+ },
+ "grantLater": {
+  "message": "Most nem"
+ },
+ "saveFailed": {
+  "message": "A mentés nem sikerült. Lehet, hogy megtelt a tárhely – töröljön néhány webhelyet, és próbálja újra."
+ },
+ "grantExpired": {
+  "message": "A kérés lejárt. Nyissa meg a bővítmény felugró ablakát a webhelyen, és próbálja újra."
+ },
+ "grantThisSite": {
+  "message": "Ezen webhely engedélyezése"
+ },
+ "grantAllSites": {
+  "message": "Az összes webhely engedélyezése — ne kérdezze újra"
+ },
+ "grantAllHint": {
+  "message": "„Az összes webhely engedélyezése” beállítással a bővítmény azonnal működik minden webhelyen. Egy adott webhelyen külön is kikapcsolhatja, vagy a beállításokban teljesen letilthatja."
+ },
+ "useEverywhere": {
+  "message": "Használat minden webhelyen (egyszeri engedélyezéssel mindenhol működik)"
+ },
+ "turnOn": {
+  "message": "Bekapcsolás"
+ },
+ "turnOff": {
+  "message": "Kikapcsolás"
+ },
+ "autoThisSite": {
+  "message": "A webhely automatikus fordítása"
+ }
+}

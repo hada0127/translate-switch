@@ -1,0 +1,326 @@
+{
+ "extName": {
+  "message": "Translate Switch - Comutator de traducere"
+ },
+ "extDesc": {
+  "message": "Chrome traduce local doar limba aleasă pe site-urile alese. Treceți cursorul peste text pentru a vedea originalul."
+ },
+ "appTitle": {
+  "message": "Translate Switch"
+ },
+ "optionsTitle": {
+  "message": "Setări Translate Switch"
+ },
+ "optionsIntro": {
+  "message": "Folosește traducătorul integrat în Chrome pentru a traduce doar textul într-o limbă străină de pe o pagină web. Traducerea se face pe acest computer, astfel încât conținutul paginii nu îl părăsește niciodată. Treceți cursorul peste textul tradus pentru a vedea originalul."
+ },
+ "allSites": {
+  "message": "Toate site-urile"
+ },
+ "allSitesUse": {
+  "message": "Folosiți pe toate site-urile"
+ },
+ "allSitesHint": {
+  "message": "Când opțiunea este activată, comutatorul de traducere apare pe fiecare pagină web. Chrome solicită acces la prima activare."
+ },
+ "source": {
+  "message": "Din"
+ },
+ "target": {
+  "message": "În"
+ },
+ "autoTranslate": {
+  "message": "Traduceți automat la deschiderea unei pagini"
+ },
+ "perSite": {
+  "message": "Setări pe site"
+ },
+ "perSiteHint": {
+  "message": "— au prioritate față de setările pentru toate site-urile"
+ },
+ "colUse": {
+  "message": "Activ"
+ },
+ "colSite": {
+  "message": "Site"
+ },
+ "colAuto": {
+  "message": "Auto"
+ },
+ "emptySites": {
+  "message": "Nu există încă site-uri. Pe o pagină pe care doriți să o traduceți, faceți clic pe pictograma extensiei din bara de instrumente și apăsați „Activați” pentru a adăuga automat site-ul. Puteți și să introduceți un site mai jos."
+ },
+ "addPlaceholder": {
+  "message": "Adăugați un site (de ex. mail.example.com, *.example.jp)"
+ },
+ "add": {
+  "message": "Adăugați"
+ },
+ "models": {
+  "message": "Modele de traducere"
+ },
+ "modelsHint": {
+  "message": "Modelul fiecărei perechi de limbi se descarcă o singură dată (și este partajat în Chrome). Poate dura câteva minute, așa că descărcați din timp limbile în care citiți des."
+ },
+ "preDownload": {
+  "message": "Descărcați acum"
+ },
+ "shortcut": {
+  "message": "Activați sau dezactivați traducerea cu o scurtătură"
+ },
+ "shortcutHint": {
+  "message": "⌘K pe Mac, Ctrl+K pe Windows. Funcționează cu aranjamente de tastatură coreene sau japoneze și cu Caps Lock activat."
+ },
+ "pillShow": {
+  "message": "Afișați comutatorul de traducere (buton oval)"
+ },
+ "pillPos": {
+  "message": "Poziția comutatorului"
+ },
+ "posTopLeft": {
+  "message": "Stânga sus"
+ },
+ "posTopCenter": {
+  "message": "Centru sus"
+ },
+ "posTopRight": {
+  "message": "Dreapta sus"
+ },
+ "posMiddleLeft": {
+  "message": "Stânga la mijloc"
+ },
+ "posMiddleRight": {
+  "message": "Dreapta la mijloc"
+ },
+ "posBottomLeft": {
+  "message": "Stânga jos"
+ },
+ "posBottomCenter": {
+  "message": "Centru jos"
+ },
+ "posBottomRight": {
+  "message": "Dreapta jos"
+ },
+ "highlight": {
+  "message": "Evidențiați textul tradus"
+ },
+ "highlightHint": {
+  "message": "Adaugă un fundal deschis și o subliniere punctată textului tradus, pentru a-l putea distinge."
+ },
+ "highlightColor": {
+  "message": "Culoarea evidențierii"
+ },
+ "resetColor": {
+  "message": "Culoare implicită"
+ },
+ "modelFirst": {
+  "message": "Descărcați mai întâi modelul de traducere"
+ },
+ "modelFirstHint": {
+  "message": "Trebuie să faceți acest lucru o singură dată (modelul este partajat în Chrome). Lăsați această fereastră deschisă în timpul descărcării."
+ },
+ "noPage": {
+  "message": "Indisponibil pe această pagină (pagini interne Chrome, Web Store etc.)."
+ },
+ "useHere": {
+  "message": "Folosiți pe acest site"
+ },
+ "toggleNow": {
+  "message": "Activați/dezactivați traducerea acum"
+ },
+ "openOptions": {
+  "message": "Deschideți toate setările"
+ },
+ "grantTitle": {
+  "message": "Permiteți accesul - Translate Switch"
+ },
+ "grantBody": {
+  "message": "Pentru a adăuga automat comutatorul de traducere de fiecare dată când deschideți o pagină pe {1}, extensia are nevoie de acces la acest site."
+ },
+ "grantBtn": {
+  "message": "Permiteți accesul"
+ },
+ "grantNote": {
+  "message": "Comutatorul este deja aplicat filei curente. Dacă închideți această fereastră, va funcționa doar la această vizită."
+ },
+ "grantOk": {
+  "message": "Acces permis. Comutatorul de traducere va fi adăugat automat pe acest site. Fereastra se închide."
+ },
+ "grantNo": {
+  "message": "Accesul nu a fost permis. Faceți clic din nou pentru a reîncerca."
+ },
+ "noAccess": {
+  "message": "Fără acces"
+ },
+ "delete": {
+  "message": "Ștergeți"
+ },
+ "grantedOn": {
+  "message": "Acces permis. Au fost activate utilizarea pe acest site și traducerea automată."
+ },
+ "noTranslator": {
+  "message": "Această versiune de Chrome nu acceptă traducătorul integrat (este necesar Chrome 138 sau o versiune ulterioară)."
+ },
+ "noDetector": {
+  "message": "Această versiune de Chrome nu acceptă detectarea automată a limbii."
+ },
+ "autoDetect": {
+  "message": "Detectați limba"
+ },
+ "browserLang": {
+  "message": "Limba browserului ({1})"
+ },
+ "langDetect": {
+  "message": "Detectarea limbii"
+ },
+ "sameLang": {
+  "message": "Limba sursă și limba țintă sunt identice."
+ },
+ "alreadyHave": {
+  "message": "Modelul {1} → {2} este deja descărcat."
+ },
+ "unsupportedPair": {
+  "message": "Această pereche de limbi nu este acceptată."
+ },
+ "saved": {
+  "message": "Salvat. Filele deschise se actualizează imediat; reîncărcați fila unui site pe care tocmai l-ați activat."
+ },
+ "badHost": {
+  "message": "Această adresă de site nu este validă."
+ },
+ "dupHost": {
+  "message": "Acest site este deja adăugat."
+ },
+ "needGrantToAdd": {
+  "message": "Trebuie să permiteți accesul pentru a adăuga acest site."
+ },
+ "injectFail": {
+  "message": "Nu s-a putut aplica în această filă: {1}"
+ },
+ "noPermNote": {
+  "message": "Fără acces, comutatorul nu va fi adăugat automat la următoarea vizită —"
+ },
+ "ruleSite": {
+  "message": "Setare pentru site"
+ },
+ "ruleSiteOf": {
+  "message": "Setare pentru site ({1})"
+ },
+ "ruleAll": {
+  "message": "Se folosește setarea pentru toate site-urile"
+ },
+ "ruleNone": {
+  "message": "Acest site nu este încă adăugat"
+ },
+ "addedApplied": {
+  "message": "Adăugat și aplicat în această filă."
+ },
+ "turnedOff": {
+  "message": "Dezactivat pentru acest site."
+ },
+ "availAvailable": {
+  "message": "Descărcat"
+ },
+ "availDownloadable": {
+  "message": "Necesită descărcare"
+ },
+ "availDownloading": {
+  "message": "Se descarcă"
+ },
+ "availUnavailable": {
+  "message": "Neacceptat"
+ },
+ "downloadModel": {
+  "message": "Descărcați modelul"
+ },
+ "failed": {
+  "message": "Eroare: {1}"
+ },
+ "downloadingPct": {
+  "message": "Se descarcă {1}%"
+ },
+ "pillOriginal": {
+  "message": "Afișați originalul"
+ },
+ "pillTranslate": {
+  "message": "Traduceți"
+ },
+ "pillAuto": {
+  "message": "Auto"
+ },
+ "needHttps": {
+  "message": "Traducătorul integrat în Chrome nu este disponibil pe paginile fără o conexiune securizată (HTTPS)."
+ },
+ "noTranslatorApi": {
+  "message": "Această versiune de Chrome nu acceptă traducătorul integrat (Translator API). Este necesar Chrome 138 sau o versiune ulterioară."
+ },
+ "modelDownloading": {
+  "message": "Se descarcă modelul {1}%"
+ },
+ "needClickPair": {
+  "message": "Pentru a începe traducerea {1}→{2}, faceți clic o dată pe comutatorul de pe această pagină."
+ },
+ "noDetectorApi": {
+  "message": "Această versiune de Chrome nu acceptă detectarea automată a limbii (LanguageDetector API)."
+ },
+ "detectorUnavailable": {
+  "message": "Modelul de detectare a limbii nu este disponibil."
+ },
+ "detectorDownloading": {
+  "message": "Se descarcă modelul de detectare {1}%"
+ },
+ "needClickDetect": {
+  "message": "Pentru a începe detectarea limbii, faceți clic o dată pe comutatorul de pe această pagină."
+ },
+ "preparing": {
+  "message": "Se pregătește modelul…"
+ },
+ "slowDownload": {
+  "message": "Se descarcă modelul… (prima dată durează câteva minute)"
+ },
+ "pairUnsupported": {
+  "message": "Traducerea {1}→{2} nu este acceptată."
+ },
+ "clickToStart": {
+  "message": "Faceți clic pentru a traduce"
+ },
+ "tipOriginal": {
+  "message": "Original ({1})"
+ },
+ "pillTitle": {
+  "message": "Traducere activată/dezactivată{1} · Treceți cursorul peste textul tradus pentru a vedea originalul"
+ },
+ "alertPrefix": {
+  "message": "[Traducere]"
+ },
+ "grantLater": {
+  "message": "Nu acum"
+ },
+ "saveFailed": {
+  "message": "Salvarea nu a reușit. Spațiul de stocare poate fi plin – ștergeți câteva site-uri și încercați din nou."
+ },
+ "grantExpired": {
+  "message": "Această solicitare a expirat. Deschideți fereastra extensiei pe site și încercați din nou."
+ },
+ "grantThisSite": {
+  "message": "Permiteți pe acest site"
+ },
+ "grantAllSites": {
+  "message": "Permiteți pe toate site-urile — nu mai întrebați"
+ },
+ "grantAllHint": {
+  "message": "Opțiunea „Permiteți pe toate site-urile” face ca extensia să funcționeze imediat pe toate site-urile. O puteți dezactiva pentru un anumit site sau complet din setări."
+ },
+ "useEverywhere": {
+  "message": "Utilizați pe toate site-urile (permiteți o singură dată, funcționează peste tot)"
+ },
+ "turnOn": {
+  "message": "Activați"
+ },
+ "turnOff": {
+  "message": "Dezactivați"
+ },
+ "autoThisSite": {
+  "message": "Traduceți automat acest site"
+ }
+}

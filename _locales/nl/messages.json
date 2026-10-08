@@ -1,0 +1,326 @@
+{
+ "extName": {
+  "message": "Translate Switch - Vertaalschakelaar"
+ },
+ "extDesc": {
+  "message": "Chrome vertaalt lokaal alleen de gekozen taal op gekozen sites. Wijs de tekst aan om het origineel te zien."
+ },
+ "appTitle": {
+  "message": "Translate Switch"
+ },
+ "optionsTitle": {
+  "message": "Instellingen van Translate Switch"
+ },
+ "optionsIntro": {
+  "message": "Gebruikt de ingebouwde vertaler van Chrome om alleen tekst in een vreemde taal op een webpagina te vertalen. De vertaling gebeurt op deze computer, dus de pagina-inhoud verlaat deze nooit. Wijs vertaalde tekst aan om het origineel te zien."
+ },
+ "allSites": {
+  "message": "Alle sites"
+ },
+ "allSitesUse": {
+  "message": "Op alle sites gebruiken"
+ },
+ "allSitesHint": {
+  "message": "Als dit is ingeschakeld, verschijnt de vertaalschakelaar op elke webpagina. Chrome vraagt om toegang wanneer u dit voor het eerst inschakelt."
+ },
+ "source": {
+  "message": "Van"
+ },
+ "target": {
+  "message": "Naar"
+ },
+ "autoTranslate": {
+  "message": "Automatisch vertalen bij het openen van een pagina"
+ },
+ "perSite": {
+  "message": "Site-instellingen"
+ },
+ "perSiteHint": {
+  "message": "— hebben voorrang op de instellingen voor alle sites"
+ },
+ "colUse": {
+  "message": "Aan"
+ },
+ "colSite": {
+  "message": "Site"
+ },
+ "colAuto": {
+  "message": "Auto"
+ },
+ "emptySites": {
+  "message": "Nog geen sites. Klik op een pagina die u wilt vertalen op het extensiepictogram in de werkbalk en vervolgens op “Inschakelen” om de site automatisch toe te voegen. U kunt hieronder ook een site invoeren."
+ },
+ "addPlaceholder": {
+  "message": "Site toevoegen (bijv. mail.example.com, *.example.jp)"
+ },
+ "add": {
+  "message": "Toevoegen"
+ },
+ "models": {
+  "message": "Vertaalmodellen"
+ },
+ "modelsHint": {
+  "message": "Het model voor elk talenpaar wordt één keer gedownload (en gedeeld binnen Chrome). Dit kan enkele minuten duren. Download daarom vooraf de talen die u vaak leest."
+ },
+ "preDownload": {
+  "message": "Nu downloaden"
+ },
+ "shortcut": {
+  "message": "Vertaling in- of uitschakelen met een sneltoets"
+ },
+ "shortcutHint": {
+  "message": "⌘K op Mac, Ctrl+K op Windows. Werkt ook met Koreaanse of Japanse toetsenbordindelingen en met Caps Lock ingeschakeld."
+ },
+ "pillShow": {
+  "message": "Vertaalschakelaar tonen (pilvormige knop)"
+ },
+ "pillPos": {
+  "message": "Positie van de schakelaar"
+ },
+ "posTopLeft": {
+  "message": "Linksboven"
+ },
+ "posTopCenter": {
+  "message": "Middenboven"
+ },
+ "posTopRight": {
+  "message": "Rechtsboven"
+ },
+ "posMiddleLeft": {
+  "message": "Links in het midden"
+ },
+ "posMiddleRight": {
+  "message": "Rechts in het midden"
+ },
+ "posBottomLeft": {
+  "message": "Linksonder"
+ },
+ "posBottomCenter": {
+  "message": "Middenonder"
+ },
+ "posBottomRight": {
+  "message": "Rechtsonder"
+ },
+ "highlight": {
+  "message": "Vertaalde tekst markeren"
+ },
+ "highlightHint": {
+  "message": "Geeft vertaalde tekst een lichte achtergrond en een gestippelde onderstreping, zodat u deze kunt herkennen."
+ },
+ "highlightColor": {
+  "message": "Markeringskleur"
+ },
+ "resetColor": {
+  "message": "Standaardkleur"
+ },
+ "modelFirst": {
+  "message": "Download eerst het vertaalmodel"
+ },
+ "modelFirstHint": {
+  "message": "Dit hoeft maar één keer (het model wordt gedeeld binnen Chrome). Houd dit venster open tijdens het downloaden."
+ },
+ "noPage": {
+  "message": "Niet beschikbaar op deze pagina (interne Chrome-pagina’s, de Web Store enz.)."
+ },
+ "useHere": {
+  "message": "Op deze site gebruiken"
+ },
+ "toggleNow": {
+  "message": "Vertaling nu in-/uitschakelen"
+ },
+ "openOptions": {
+  "message": "Alle instellingen openen"
+ },
+ "grantTitle": {
+  "message": "Toegang toestaan - Translate Switch"
+ },
+ "grantBody": {
+  "message": "Om de vertaalschakelaar automatisch toe te voegen telkens wanneer u een pagina op {1} opent, heeft de extensie toegang tot deze site nodig."
+ },
+ "grantBtn": {
+  "message": "Toegang toestaan"
+ },
+ "grantNote": {
+  "message": "De schakelaar is al toegevoegd aan het huidige tabblad. Als u dit venster sluit, werkt deze alleen tijdens dit bezoek."
+ },
+ "grantOk": {
+  "message": "Toegang toegestaan. De vertaalschakelaar wordt voortaan automatisch toegevoegd op deze site. Dit venster wordt gesloten."
+ },
+ "grantNo": {
+  "message": "Toegang is niet toegestaan. Klik opnieuw om het nogmaals te proberen."
+ },
+ "noAccess": {
+  "message": "Geen toegang"
+ },
+ "delete": {
+  "message": "Verwijderen"
+ },
+ "grantedOn": {
+  "message": "Toegang toegestaan. Gebruik op deze site en automatische vertaling zijn ingeschakeld."
+ },
+ "noTranslator": {
+  "message": "Deze versie van Chrome ondersteunt de ingebouwde vertaler niet (Chrome 138 of hoger vereist)."
+ },
+ "noDetector": {
+  "message": "Deze versie van Chrome ondersteunt automatische taalherkenning niet."
+ },
+ "autoDetect": {
+  "message": "Taal herkennen"
+ },
+ "browserLang": {
+  "message": "Browsertaal ({1})"
+ },
+ "langDetect": {
+  "message": "Taalherkenning"
+ },
+ "sameLang": {
+  "message": "De bron- en doeltaal zijn hetzelfde."
+ },
+ "alreadyHave": {
+  "message": "Het model {1} → {2} is al gedownload."
+ },
+ "unsupportedPair": {
+  "message": "Dit talenpaar wordt niet ondersteund."
+ },
+ "saved": {
+  "message": "Opgeslagen. Open tabbladen worden direct bijgewerkt; laad het tabblad opnieuw voor een site die u zojuist hebt ingeschakeld."
+ },
+ "badHost": {
+  "message": "Dit is geen geldig siteadres."
+ },
+ "dupHost": {
+  "message": "Deze site is al toegevoegd."
+ },
+ "needGrantToAdd": {
+  "message": "U moet toegang toestaan om deze site toe te voegen."
+ },
+ "injectFail": {
+  "message": "Kon niet worden toegepast op dit tabblad: {1}"
+ },
+ "noPermNote": {
+  "message": "Zonder toegang wordt de schakelaar bij uw volgende bezoek niet automatisch toegevoegd —"
+ },
+ "ruleSite": {
+  "message": "Site-instelling"
+ },
+ "ruleSiteOf": {
+  "message": "Site-instelling ({1})"
+ },
+ "ruleAll": {
+  "message": "De instelling voor alle sites wordt gebruikt"
+ },
+ "ruleNone": {
+  "message": "Deze site is nog niet toegevoegd"
+ },
+ "addedApplied": {
+  "message": "Toegevoegd en toegepast op dit tabblad."
+ },
+ "turnedOff": {
+  "message": "Uitgeschakeld voor deze site."
+ },
+ "availAvailable": {
+  "message": "Gedownload"
+ },
+ "availDownloadable": {
+  "message": "Download nodig"
+ },
+ "availDownloading": {
+  "message": "Bezig met downloaden"
+ },
+ "availUnavailable": {
+  "message": "Niet ondersteund"
+ },
+ "downloadModel": {
+  "message": "Model downloaden"
+ },
+ "failed": {
+  "message": "Mislukt: {1}"
+ },
+ "downloadingPct": {
+  "message": "Downloaden: {1}%"
+ },
+ "pillOriginal": {
+  "message": "Origineel tonen"
+ },
+ "pillTranslate": {
+  "message": "Vertalen"
+ },
+ "pillAuto": {
+  "message": "Auto"
+ },
+ "needHttps": {
+  "message": "De ingebouwde vertaler van Chrome is niet beschikbaar op pagina’s zonder beveiligde verbinding (HTTPS)."
+ },
+ "noTranslatorApi": {
+  "message": "Deze versie van Chrome ondersteunt de ingebouwde vertaler (Translator API) niet. Chrome 138 of hoger is vereist."
+ },
+ "modelDownloading": {
+  "message": "Model downloaden: {1}%"
+ },
+ "needClickPair": {
+  "message": "Klik eenmaal op de schakelaar op deze pagina om te beginnen met vertalen van {1}→{2}."
+ },
+ "noDetectorApi": {
+  "message": "Deze versie van Chrome ondersteunt automatische taalherkenning (LanguageDetector API) niet."
+ },
+ "detectorUnavailable": {
+  "message": "Het taalherkenningsmodel is niet beschikbaar."
+ },
+ "detectorDownloading": {
+  "message": "Taalherkenningsmodel downloaden: {1}%"
+ },
+ "needClickDetect": {
+  "message": "Klik eenmaal op de schakelaar op deze pagina om taalherkenning te starten."
+ },
+ "preparing": {
+  "message": "Model voorbereiden…"
+ },
+ "slowDownload": {
+  "message": "Model downloaden… (de eerste keer duurt dit enkele minuten)"
+ },
+ "pairUnsupported": {
+  "message": "Vertalen van {1}→{2} wordt niet ondersteund."
+ },
+ "clickToStart": {
+  "message": "Klik om te vertalen"
+ },
+ "tipOriginal": {
+  "message": "Origineel ({1})"
+ },
+ "pillTitle": {
+  "message": "Vertaling aan/uit{1} · Wijs vertaalde tekst aan om het origineel te zien"
+ },
+ "alertPrefix": {
+  "message": "[Vertalen]"
+ },
+ "grantLater": {
+  "message": "Niet nu"
+ },
+ "saveFailed": {
+  "message": "Opslaan mislukt. De opslag is mogelijk vol – verwijder enkele sites en probeer het opnieuw."
+ },
+ "grantExpired": {
+  "message": "Dit verzoek is verlopen. Open de pop-up van de extensie op de site en probeer het opnieuw."
+ },
+ "grantThisSite": {
+  "message": "Deze site toestaan"
+ },
+ "grantAllSites": {
+  "message": "Alle sites toestaan — niet opnieuw vragen"
+ },
+ "grantAllHint": {
+  "message": "Met “Alle sites toestaan” werkt de extensie meteen op elke site. U kunt deze voor een afzonderlijke site uitschakelen of volledig uitschakelen in de instellingen."
+ },
+ "useEverywhere": {
+  "message": "Op alle sites gebruiken (eenmalig toestaan, werkt overal)"
+ },
+ "turnOn": {
+  "message": "Inschakelen"
+ },
+ "turnOff": {
+  "message": "Uitschakelen"
+ },
+ "autoThisSite": {
+  "message": "Deze site automatisch vertalen"
+ }
+}

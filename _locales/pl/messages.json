@@ -1,0 +1,326 @@
+{
+ "extName": {
+  "message": "Translate Switch - Przełącznik tłumaczenia"
+ },
+ "extDesc": {
+  "message": "Chrome tłumaczy na urządzeniu tylko wybrany język na wybranych stronach. Najedź kursorem, aby zobaczyć oryginał."
+ },
+ "appTitle": {
+  "message": "Translate Switch"
+ },
+ "optionsTitle": {
+  "message": "Ustawienia Translate Switch"
+ },
+ "optionsIntro": {
+  "message": "Używa wbudowanego tłumacza Chrome do tłumaczenia wyłącznie tekstu w języku obcym na stronie internetowej. Tłumaczenie odbywa się na tym komputerze, więc treść strony nigdy go nie opuszcza. Najedź kursorem na przetłumaczony tekst, aby zobaczyć oryginał."
+ },
+ "allSites": {
+  "message": "Wszystkie witryny"
+ },
+ "allSitesUse": {
+  "message": "Używaj we wszystkich witrynach"
+ },
+ "allSitesHint": {
+  "message": "Po włączeniu przełącznik tłumaczenia pojawia się na każdej stronie internetowej. Chrome poprosi o dostęp przy pierwszym włączeniu."
+ },
+ "source": {
+  "message": "Z języka"
+ },
+ "target": {
+  "message": "Na język"
+ },
+ "autoTranslate": {
+  "message": "Tłumacz automatycznie po otwarciu strony"
+ },
+ "perSite": {
+  "message": "Ustawienia witryn"
+ },
+ "perSiteHint": {
+  "message": "— zastępują ustawienia dla wszystkich witryn"
+ },
+ "colUse": {
+  "message": "Wł."
+ },
+ "colSite": {
+  "message": "Witryna"
+ },
+ "colAuto": {
+  "message": "Auto"
+ },
+ "emptySites": {
+  "message": "Nie dodano jeszcze żadnych witryn. Na stronie, którą chcesz przetłumaczyć, kliknij ikonę rozszerzenia na pasku narzędzi i naciśnij „Włącz”, aby automatycznie dodać witrynę. Możesz też wpisać adres witryny poniżej."
+ },
+ "addPlaceholder": {
+  "message": "Dodaj witrynę (np. mail.example.com, *.example.jp)"
+ },
+ "add": {
+  "message": "Dodaj"
+ },
+ "models": {
+  "message": "Modele tłumaczenia"
+ },
+ "modelsHint": {
+  "message": "Model dla każdej pary języków jest pobierany raz (i współdzielony w Chrome). Może to potrwać kilka minut, więc pobierz wcześniej modele języków, w których często czytasz."
+ },
+ "preDownload": {
+  "message": "Pobierz teraz"
+ },
+ "shortcut": {
+  "message": "Przełączaj tłumaczenie skrótem klawiszowym"
+ },
+ "shortcutHint": {
+  "message": "⌘K na Macu, Ctrl+K w Windows. Działa z koreańskim i japońskim układem klawiatury oraz przy włączonym Caps Lock."
+ },
+ "pillShow": {
+  "message": "Pokaż przełącznik tłumaczenia (zaokrąglony przycisk)"
+ },
+ "pillPos": {
+  "message": "Położenie przełącznika"
+ },
+ "posTopLeft": {
+  "message": "U góry po lewej"
+ },
+ "posTopCenter": {
+  "message": "U góry na środku"
+ },
+ "posTopRight": {
+  "message": "U góry po prawej"
+ },
+ "posMiddleLeft": {
+  "message": "Na środku po lewej"
+ },
+ "posMiddleRight": {
+  "message": "Na środku po prawej"
+ },
+ "posBottomLeft": {
+  "message": "U dołu po lewej"
+ },
+ "posBottomCenter": {
+  "message": "U dołu na środku"
+ },
+ "posBottomRight": {
+  "message": "U dołu po prawej"
+ },
+ "highlight": {
+  "message": "Wyróżniaj przetłumaczony tekst"
+ },
+ "highlightHint": {
+  "message": "Dodaje jasne tło i kropkowane podkreślenie do przetłumaczonego tekstu, aby łatwo go rozpoznać."
+ },
+ "highlightColor": {
+  "message": "Kolor wyróżnienia"
+ },
+ "resetColor": {
+  "message": "Kolor domyślny"
+ },
+ "modelFirst": {
+  "message": "Najpierw pobierz model tłumaczenia"
+ },
+ "modelFirstHint": {
+  "message": "Wystarczy zrobić to raz (model jest współdzielony w Chrome). Nie zamykaj tego okna podczas pobierania."
+ },
+ "noPage": {
+  "message": "Niedostępne na tej stronie (wewnętrzne strony Chrome, Web Store itp.)."
+ },
+ "useHere": {
+  "message": "Używaj w tej witrynie"
+ },
+ "toggleNow": {
+  "message": "Włącz/wyłącz tłumaczenie teraz"
+ },
+ "openOptions": {
+  "message": "Otwórz wszystkie ustawienia"
+ },
+ "grantTitle": {
+  "message": "Zezwól na dostęp - Translate Switch"
+ },
+ "grantBody": {
+  "message": "Aby automatycznie dodawać przełącznik tłumaczenia przy każdym otwarciu strony w witrynie {1}, rozszerzenie potrzebuje dostępu do tej witryny."
+ },
+ "grantBtn": {
+  "message": "Zezwól na dostęp"
+ },
+ "grantNote": {
+  "message": "Przełącznik jest już dodany do bieżącej karty. Jeśli zamkniesz to okno, będzie działać tylko podczas tej wizyty."
+ },
+ "grantOk": {
+  "message": "Przyznano dostęp. Przełącznik tłumaczenia będzie teraz automatycznie dodawany w tej witrynie. Okno zostanie zamknięte."
+ },
+ "grantNo": {
+  "message": "Nie przyznano dostępu. Kliknij ponownie, aby spróbować jeszcze raz."
+ },
+ "noAccess": {
+  "message": "Brak dostępu"
+ },
+ "delete": {
+  "message": "Usuń"
+ },
+ "grantedOn": {
+  "message": "Przyznano dostęp. Włączono działanie w witrynie i automatyczne tłumaczenie."
+ },
+ "noTranslator": {
+  "message": "Ta wersja Chrome nie obsługuje wbudowanego tłumacza (wymagana wersja Chrome 138 lub nowsza)."
+ },
+ "noDetector": {
+  "message": "Ta wersja Chrome nie obsługuje automatycznego wykrywania języka."
+ },
+ "autoDetect": {
+  "message": "Wykryj język"
+ },
+ "browserLang": {
+  "message": "Język przeglądarki ({1})"
+ },
+ "langDetect": {
+  "message": "Wykrywanie języka"
+ },
+ "sameLang": {
+  "message": "Język źródłowy i docelowy są takie same."
+ },
+ "alreadyHave": {
+  "message": "Model {1} → {2} jest już pobrany."
+ },
+ "unsupportedPair": {
+  "message": "Ta para języków nie jest obsługiwana."
+ },
+ "saved": {
+  "message": "Zapisano. Otwarte karty są aktualizowane od razu. Jeśli właśnie włączono działanie w danej witrynie, odśwież jej kartę."
+ },
+ "badHost": {
+  "message": "To nie jest prawidłowy adres witryny."
+ },
+ "dupHost": {
+  "message": "Ta witryna jest już dodana."
+ },
+ "needGrantToAdd": {
+  "message": "Aby dodać tę witrynę, zezwól na dostęp."
+ },
+ "injectFail": {
+  "message": "Nie udało się zastosować w tej karcie: {1}"
+ },
+ "noPermNote": {
+  "message": "Bez dostępu przełącznik nie zostanie dodany automatycznie przy następnej wizycie —"
+ },
+ "ruleSite": {
+  "message": "Ustawienie witryny"
+ },
+ "ruleSiteOf": {
+  "message": "Ustawienie witryny ({1})"
+ },
+ "ruleAll": {
+  "message": "Używane jest ustawienie dla wszystkich witryn"
+ },
+ "ruleNone": {
+  "message": "Ta witryna nie jest jeszcze dodana"
+ },
+ "addedApplied": {
+  "message": "Dodano i zastosowano w tej karcie."
+ },
+ "turnedOff": {
+  "message": "Wyłączono w tej witrynie."
+ },
+ "availAvailable": {
+  "message": "Pobrano"
+ },
+ "availDownloadable": {
+  "message": "Wymaga pobrania"
+ },
+ "availDownloading": {
+  "message": "Pobieranie"
+ },
+ "availUnavailable": {
+  "message": "Nieobsługiwane"
+ },
+ "downloadModel": {
+  "message": "Pobierz model"
+ },
+ "failed": {
+  "message": "Niepowodzenie: {1}"
+ },
+ "downloadingPct": {
+  "message": "Pobieranie {1}%"
+ },
+ "pillOriginal": {
+  "message": "Pokaż oryginał"
+ },
+ "pillTranslate": {
+  "message": "Przetłumacz"
+ },
+ "pillAuto": {
+  "message": "Auto"
+ },
+ "needHttps": {
+  "message": "Wbudowany tłumacz Chrome nie jest dostępny na stronach bez bezpiecznego połączenia (HTTPS)."
+ },
+ "noTranslatorApi": {
+  "message": "Ta wersja Chrome nie obsługuje wbudowanego tłumacza (Translator API). Wymagana jest wersja Chrome 138 lub nowsza."
+ },
+ "modelDownloading": {
+  "message": "Pobieranie modelu {1}%"
+ },
+ "needClickPair": {
+  "message": "Aby rozpocząć tłumaczenie {1}→{2}, kliknij raz przełącznik na tej stronie."
+ },
+ "noDetectorApi": {
+  "message": "Ta wersja Chrome nie obsługuje automatycznego wykrywania języka (LanguageDetector API)."
+ },
+ "detectorUnavailable": {
+  "message": "Model wykrywania języka jest niedostępny."
+ },
+ "detectorDownloading": {
+  "message": "Pobieranie modelu wykrywania języka {1}%"
+ },
+ "needClickDetect": {
+  "message": "Aby rozpocząć wykrywanie języka, kliknij raz przełącznik na tej stronie."
+ },
+ "preparing": {
+  "message": "Przygotowywanie modelu…"
+ },
+ "slowDownload": {
+  "message": "Pobieranie modelu… (za pierwszym razem trwa to kilka minut)"
+ },
+ "pairUnsupported": {
+  "message": "Tłumaczenie {1}→{2} nie jest obsługiwane."
+ },
+ "clickToStart": {
+  "message": "Kliknij, aby przetłumaczyć"
+ },
+ "tipOriginal": {
+  "message": "Oryginał ({1})"
+ },
+ "pillTitle": {
+  "message": "Tłumaczenie wł./wył.{1} · Najedź kursorem na przetłumaczony tekst, aby zobaczyć oryginał"
+ },
+ "alertPrefix": {
+  "message": "[Tłumaczenie]"
+ },
+ "grantLater": {
+  "message": "Nie teraz"
+ },
+ "saveFailed": {
+  "message": "Nie udało się zapisać. Pamięć może być pełna – usuń kilka witryn i spróbuj ponownie."
+ },
+ "grantExpired": {
+  "message": "To żądanie wygasło. Otwórz okienko rozszerzenia na stronie i spróbuj ponownie."
+ },
+ "grantThisSite": {
+  "message": "Zezwól na tej witrynie"
+ },
+ "grantAllSites": {
+  "message": "Zezwól na wszystkich witrynach — nie pytaj ponownie"
+ },
+ "grantAllHint": {
+  "message": "Opcja „Zezwól na wszystkich witrynach” sprawia, że rozszerzenie od razu działa w każdej witrynie. Można je wyłączyć dla wybranej witryny lub całkowicie w ustawieniach."
+ },
+ "useEverywhere": {
+  "message": "Używaj we wszystkich witrynach (zezwól raz, działa wszędzie)"
+ },
+ "turnOn": {
+  "message": "Włącz"
+ },
+ "turnOff": {
+  "message": "Wyłącz"
+ },
+ "autoThisSite": {
+  "message": "Automatycznie tłumacz tę witrynę"
+ }
+}

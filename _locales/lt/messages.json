@@ -1,0 +1,326 @@
+{
+ "extName": {
+  "message": "Translate Switch - Vertimo jungiklis"
+ },
+ "extDesc": {
+  "message": "Chrome įrenginyje verčia tik pasirinktą kalbą pasirinktose svetainėse. Užveskite žymeklį ir pamatysite originalą."
+ },
+ "appTitle": {
+  "message": "Translate Switch"
+ },
+ "optionsTitle": {
+  "message": "„Translate Switch“ nustatymai"
+ },
+ "optionsIntro": {
+  "message": "Naudoja įtaisytąjį „Chrome“ vertėją, kad išverstų tik tinklalapyje esantį tekstą užsienio kalba. Vertimas atliekamas šiame kompiuteryje, todėl puslapio turinys niekada iš jo neišsiunčiamas. Užveskite žymeklį ant išversto teksto, kad pamatytumėte originalą."
+ },
+ "allSites": {
+  "message": "Visos svetainės"
+ },
+ "allSitesUse": {
+  "message": "Naudoti visose svetainėse"
+ },
+ "allSitesHint": {
+  "message": "Įjungus vertimo jungiklis rodomas kiekviename tinklalapyje. Pirmą kartą įjungus, „Chrome“ paprašo prieigos leidimo."
+ },
+ "source": {
+  "message": "Iš kalbos"
+ },
+ "target": {
+  "message": "Į kalbą"
+ },
+ "autoTranslate": {
+  "message": "Automatiškai versti atidarius puslapį"
+ },
+ "perSite": {
+  "message": "Svetainių nustatymai"
+ },
+ "perSiteHint": {
+  "message": "— turi pirmenybę prieš visoms svetainėms taikomus nustatymus"
+ },
+ "colUse": {
+  "message": "Įjungta"
+ },
+ "colSite": {
+  "message": "Svetainė"
+ },
+ "colAuto": {
+  "message": "Autom."
+ },
+ "emptySites": {
+  "message": "Svetainių dar nėra. Norimame išversti puslapyje spustelėkite plėtinio piktogramą įrankių juostoje ir paspauskite „Įjungti“, kad svetainė būtų pridėta automatiškai. Svetainę taip pat galite įvesti toliau."
+ },
+ "addPlaceholder": {
+  "message": "Pridėkite svetainę (pvz., mail.example.com, *.example.jp)"
+ },
+ "add": {
+  "message": "Pridėti"
+ },
+ "models": {
+  "message": "Vertimo modeliai"
+ },
+ "modelsHint": {
+  "message": "Kiekvienos kalbų poros modelis atsisiunčiamas vieną kartą ir naudojamas visoje „Chrome“ naršyklėje. Tai gali užtrukti kelias minutes, todėl iš anksto atsisiųskite dažnai skaitomų kalbų modelius."
+ },
+ "preDownload": {
+  "message": "Atsisiųsti dabar"
+ },
+ "shortcut": {
+  "message": "Įjungti arba išjungti vertimą sparčiuoju klavišu"
+ },
+ "shortcutHint": {
+  "message": "„Mac“: ⌘K, „Windows“: Ctrl+K. Veikia su korėjiečių ar japonų klaviatūros išdėstymais ir įjungus „Caps Lock“."
+ },
+ "pillShow": {
+  "message": "Rodyti vertimo jungiklį (suapvalintą mygtuką)"
+ },
+ "pillPos": {
+  "message": "Jungiklio vieta"
+ },
+ "posTopLeft": {
+  "message": "Viršuje kairėje"
+ },
+ "posTopCenter": {
+  "message": "Viršuje centre"
+ },
+ "posTopRight": {
+  "message": "Viršuje dešinėje"
+ },
+ "posMiddleLeft": {
+  "message": "Viduryje kairėje"
+ },
+ "posMiddleRight": {
+  "message": "Viduryje dešinėje"
+ },
+ "posBottomLeft": {
+  "message": "Apačioje kairėje"
+ },
+ "posBottomCenter": {
+  "message": "Apačioje centre"
+ },
+ "posBottomRight": {
+  "message": "Apačioje dešinėje"
+ },
+ "highlight": {
+  "message": "Paryškinti išverstą tekstą"
+ },
+ "highlightHint": {
+  "message": "Išverstam tekstui pridedamas šviesus fonas ir taškinis pabraukimas, kad jį būtų lengva atskirti."
+ },
+ "highlightColor": {
+  "message": "Paryškinimo spalva"
+ },
+ "resetColor": {
+  "message": "Numatytoji spalva"
+ },
+ "modelFirst": {
+  "message": "Pirmiausia atsisiųskite vertimo modelį"
+ },
+ "modelFirstHint": {
+  "message": "Tai reikia padaryti tik vieną kartą (modelis naudojamas visoje „Chrome“ naršyklėje). Kol atsisiunčiama, palikite šį langą atidarytą."
+ },
+ "noPage": {
+  "message": "Šiame puslapyje nepasiekiama (vidiniai „Chrome“ puslapiai, internetinė parduotuvė ir kt.)."
+ },
+ "useHere": {
+  "message": "Naudoti šioje svetainėje"
+ },
+ "toggleNow": {
+  "message": "Įjungti / išjungti vertimą dabar"
+ },
+ "openOptions": {
+  "message": "Atidaryti visus nustatymus"
+ },
+ "grantTitle": {
+  "message": "Leisti prieigą - Translate Switch"
+ },
+ "grantBody": {
+  "message": "Kad vertimo jungiklis būtų automatiškai pridedamas kaskart atidarius puslapį svetainėje {1}, plėtiniui reikia prieigos prie šios svetainės."
+ },
+ "grantBtn": {
+  "message": "Leisti prieigą"
+ },
+ "grantNote": {
+  "message": "Jau pritaikyta dabartiniam skirtukui. Jei tiesiog uždarysite šį langą, veiks tik šio apsilankymo metu."
+ },
+ "grantOk": {
+  "message": "Prieiga suteikta. Nuo šiol vertimo jungiklis šioje svetainėje bus pridedamas automatiškai. Šis langas uždaromas."
+ },
+ "grantNo": {
+  "message": "Prieiga nesuteikta. Spustelėkite dar kartą, kad bandytumėte iš naujo."
+ },
+ "noAccess": {
+  "message": "Nėra prieigos"
+ },
+ "delete": {
+  "message": "Ištrinti"
+ },
+ "grantedOn": {
+  "message": "Prieiga suteikta. Įjungtas naudojimas svetainėje ir automatinis vertimas."
+ },
+ "noTranslator": {
+  "message": "Ši „Chrome“ versija nepalaiko įtaisytojo vertėjo (reikia „Chrome 138“ arba naujesnės versijos)."
+ },
+ "noDetector": {
+  "message": "Ši „Chrome“ versija nepalaiko automatinio kalbos aptikimo."
+ },
+ "autoDetect": {
+  "message": "Aptikti kalbą"
+ },
+ "browserLang": {
+  "message": "Naršyklės kalba ({1})"
+ },
+ "langDetect": {
+  "message": "Kalbos aptikimas"
+ },
+ "sameLang": {
+  "message": "Pradinė ir vertimo kalbos sutampa."
+ },
+ "alreadyHave": {
+  "message": "Modelis {1} → {2} jau atsisiųstas."
+ },
+ "unsupportedPair": {
+  "message": "Ši kalbų pora nepalaikoma."
+ },
+ "saved": {
+  "message": "Išsaugota. Atidaryti skirtukai atnaujinami iš karto; iš naujo įkelkite svetainės, kurią ką tik įjungėte, skirtuką."
+ },
+ "badHost": {
+  "message": "Netinkamas svetainės adresas."
+ },
+ "dupHost": {
+  "message": "Ši svetainė jau pridėta."
+ },
+ "needGrantToAdd": {
+  "message": "Norėdami pridėti šią svetainę, turite suteikti prieigą."
+ },
+ "injectFail": {
+  "message": "Nepavyko pritaikyti šiam skirtukui: {1}"
+ },
+ "noPermNote": {
+  "message": "Be prieigos kito apsilankymo metu jungiklis nebus pridėtas automatiškai —"
+ },
+ "ruleSite": {
+  "message": "Svetainės nustatymas"
+ },
+ "ruleSiteOf": {
+  "message": "Svetainės nustatymas ({1})"
+ },
+ "ruleAll": {
+  "message": "Naudojamas visoms svetainėms taikomas nustatymas"
+ },
+ "ruleNone": {
+  "message": "Ši svetainė dar nepridėta"
+ },
+ "addedApplied": {
+  "message": "Pridėta ir pritaikyta šiam skirtukui."
+ },
+ "turnedOff": {
+  "message": "Šioje svetainėje išjungta."
+ },
+ "availAvailable": {
+  "message": "Atsisiųsta"
+ },
+ "availDownloadable": {
+  "message": "Reikia atsisiųsti"
+ },
+ "availDownloading": {
+  "message": "Atsisiunčiama"
+ },
+ "availUnavailable": {
+  "message": "Nepalaikoma"
+ },
+ "downloadModel": {
+  "message": "Atsisiųsti modelį"
+ },
+ "failed": {
+  "message": "Nepavyko: {1}"
+ },
+ "downloadingPct": {
+  "message": "Atsisiunčiama {1}%"
+ },
+ "pillOriginal": {
+  "message": "Rodyti originalą"
+ },
+ "pillTranslate": {
+  "message": "Versti"
+ },
+ "pillAuto": {
+  "message": "Autom."
+ },
+ "needHttps": {
+  "message": "Įtaisytasis „Chrome“ vertėjas nepasiekiamas puslapiuose be saugaus ryšio (HTTPS)."
+ },
+ "noTranslatorApi": {
+  "message": "Ši „Chrome“ versija nepalaiko įtaisytojo vertėjo (Translator API). Reikia „Chrome 138“ arba naujesnės versijos."
+ },
+ "modelDownloading": {
+  "message": "Atsisiunčiamas modelis {1}%"
+ },
+ "needClickPair": {
+  "message": "Norėdami pradėti versti {1}→{2}, vieną kartą spustelėkite jungiklį šiame puslapyje."
+ },
+ "noDetectorApi": {
+  "message": "Ši „Chrome“ versija nepalaiko automatinio kalbos aptikimo (LanguageDetector API)."
+ },
+ "detectorUnavailable": {
+  "message": "Kalbos aptikimo modelis nepasiekiamas."
+ },
+ "detectorDownloading": {
+  "message": "Atsisiunčiamas aptikimo modelis {1}%"
+ },
+ "needClickDetect": {
+  "message": "Norėdami pradėti kalbos aptikimą, vieną kartą spustelėkite jungiklį šiame puslapyje."
+ },
+ "preparing": {
+  "message": "Ruošiamas modelis…"
+ },
+ "slowDownload": {
+  "message": "Atsisiunčiamas modelis… (pirmą kartą tai trunka kelias minutes)"
+ },
+ "pairUnsupported": {
+  "message": "Vertimas {1}→{2} nepalaikomas."
+ },
+ "clickToStart": {
+  "message": "Spustelėkite, kad išverstumėte"
+ },
+ "tipOriginal": {
+  "message": "Originalas ({1})"
+ },
+ "pillTitle": {
+  "message": "Vertimo įjungimas / išjungimas{1} · Užveskite žymeklį ant išversto teksto, kad pamatytumėte originalą"
+ },
+ "alertPrefix": {
+  "message": "[Vertimas]"
+ },
+ "grantLater": {
+  "message": "Ne dabar"
+ },
+ "saveFailed": {
+  "message": "Nepavyko išsaugoti. Saugykla gali būti pilna – ištrinkite kelias svetaines ir bandykite dar kartą."
+ },
+ "grantExpired": {
+  "message": "Šios užklausos galiojimas baigėsi. Svetainėje atidarykite plėtinio iššokantįjį langą ir bandykite dar kartą."
+ },
+ "grantThisSite": {
+  "message": "Leisti šiai svetainei"
+ },
+ "grantAllSites": {
+  "message": "Leisti visoms svetainėms — daugiau neklausti"
+ },
+ "grantAllHint": {
+  "message": "Pasirinkus „Leisti visoms svetainėms“, plėtinys iš karto veikia visose svetainėse. Galite jį išjungti atskiroje svetainėje arba visiškai išjungti nustatymuose."
+ },
+ "useEverywhere": {
+  "message": "Naudoti visose svetainėse (suteikite leidimą vieną kartą ir veiks visur)"
+ },
+ "turnOn": {
+  "message": "Įjungti"
+ },
+ "turnOff": {
+  "message": "Išjungti"
+ },
+ "autoThisSite": {
+  "message": "Automatiškai versti šią svetainę"
+ }
+}

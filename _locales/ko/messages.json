@@ -1,0 +1,338 @@
+{
+ "extName": {
+  "message": "번역 스위치 - Translate Switch"
+ },
+ "extDesc": {
+  "message": "고른 사이트에서 정한 언어만 Chrome 내장 번역기로 바꿔 보여 줍니다. 번역은 이 컴퓨터 안에서 처리되며 원문은 마우스를 올리면 볼 수 있습니다."
+ },
+ "appTitle": {
+  "message": "번역 스위치"
+ },
+ "optionsTitle": {
+  "message": "번역 스위치 설정"
+ },
+ "optionsIntro": {
+  "message": "Chrome 내장 번역기로 웹 페이지의 외국어만 바꿔 보여 줍니다. 번역은 이 컴퓨터 안에서 처리되므로 페이지 내용이 밖으로 나가지 않습니다. 번역된 부분에 마우스를 올리면 원문이 나타납니다."
+ },
+ "allSites": {
+  "message": "모든 사이트"
+ },
+ "allSitesUse": {
+  "message": "모든 사이트에서 사용"
+ },
+ "allSitesHint": {
+  "message": "켜면 모든 웹 페이지에 번역 스위치가 붙습니다. 처음 켤 때 Chrome이 접근 권한을 묻습니다."
+ },
+ "source": {
+  "message": "원문"
+ },
+ "target": {
+  "message": "번역"
+ },
+ "autoTranslate": {
+  "message": "페이지를 열면 자동 번역"
+ },
+ "perSite": {
+  "message": "사이트별 설정"
+ },
+ "perSiteHint": {
+  "message": "— 모든 사이트 설정보다 우선합니다"
+ },
+ "colUse": {
+  "message": "사용"
+ },
+ "colSite": {
+  "message": "사이트"
+ },
+ "colAuto": {
+  "message": "자동 번역"
+ },
+ "emptySites": {
+  "message": "아직 등록한 사이트가 없습니다. 번역하고 싶은 페이지에서 툴바의 확장 아이콘을 누르고 「켜기」를 누르면 자동으로 추가됩니다. 아래에 직접 입력해도 됩니다."
+ },
+ "addPlaceholder": {
+  "message": "사이트 추가 (예: mail.example.com, *.example.jp)"
+ },
+ "add": {
+  "message": "추가"
+ },
+ "models": {
+  "message": "번역 모델"
+ },
+ "modelsHint": {
+  "message": "번역 모델은 언어 쌍마다 처음 한 번 내려받습니다(Chrome 전체에서 함께 씁니다). 몇 분 걸릴 수 있으니 자주 보는 언어는 미리 받아 두세요."
+ },
+ "preDownload": {
+  "message": "미리 받기"
+ },
+ "shortcut": {
+  "message": "단축키로 번역 켜고 끄기"
+ },
+ "shortcutHint": {
+  "message": "맥은 ⌘K, 윈도우는 Ctrl+K입니다. 한글·일본어 자판이나 대문자 상태에서도 동작합니다."
+ },
+ "pillShow": {
+  "message": "번역 스위치(알약 버튼) 보이기"
+ },
+ "pillPos": {
+  "message": "스위치 위치"
+ },
+ "posTopLeft": {
+  "message": "왼쪽 위"
+ },
+ "posTopCenter": {
+  "message": "위 가운데"
+ },
+ "posTopRight": {
+  "message": "오른쪽 위"
+ },
+ "posMiddleLeft": {
+  "message": "왼쪽 가운데"
+ },
+ "posMiddleRight": {
+  "message": "오른쪽 가운데"
+ },
+ "posBottomLeft": {
+  "message": "왼쪽 아래"
+ },
+ "posBottomCenter": {
+  "message": "아래 가운데"
+ },
+ "posBottomRight": {
+  "message": "오른쪽 아래"
+ },
+ "highlight": {
+  "message": "번역된 부분 표시"
+ },
+ "highlightHint": {
+  "message": "번역된 부분에 옅은 배경과 점선 밑줄을 붙여 원문과 구분합니다."
+ },
+ "highlightColor": {
+  "message": "표시 색상"
+ },
+ "resetColor": {
+  "message": "기본 색상"
+ },
+ "modelFirst": {
+  "message": "먼저 번역 모델을 받아 주세요"
+ },
+ "modelFirstHint": {
+  "message": "처음 한 번만 받으면 됩니다(Chrome 전체에서 함께 씁니다). 받는 동안에는 이 창을 닫지 마세요."
+ },
+ "noPage": {
+  "message": "이 페이지에서는 쓸 수 없습니다(Chrome 내부 페이지, 웹 스토어 등)."
+ },
+ "useHere": {
+  "message": "이 사이트에서 사용"
+ },
+ "toggleNow": {
+  "message": "지금 번역 켜기/끄기"
+ },
+ "openOptions": {
+  "message": "전체 설정 열기"
+ },
+ "grantTitle": {
+  "message": "접근 허용 - 번역 스위치"
+ },
+ "grantBody": {
+  "message": "{1}에서 페이지를 열 때마다 번역 스위치가 자동으로 붙게 하려면 이 사이트에 대한 접근 권한이 필요합니다."
+ },
+ "grantBtn": {
+  "message": "접근 허용"
+ },
+ "grantNote": {
+  "message": "지금 탭에는 이미 적용됐습니다. 이 창을 그냥 닫으면 이번 방문에서만 쓸 수 있습니다."
+ },
+ "grantOk": {
+  "message": "허용했습니다. 이제 이 사이트를 열면 번역 스위치가 자동으로 붙습니다. 창을 닫습니다."
+ },
+ "grantNo": {
+  "message": "허용하지 않았습니다. 다시 누르면 됩니다."
+ },
+ "noAccess": {
+  "message": "접근 권한 없음"
+ },
+ "delete": {
+  "message": "삭제"
+ },
+ "grantedOn": {
+  "message": "허용했습니다. 사용과 자동 번역을 켰습니다."
+ },
+ "noTranslator": {
+  "message": "이 Chrome은 내장 번역기를 지원하지 않습니다(Chrome 138 이상 필요)."
+ },
+ "noDetector": {
+  "message": "이 Chrome은 언어 자동 감지를 지원하지 않습니다."
+ },
+ "autoDetect": {
+  "message": "자동 감지"
+ },
+ "browserLang": {
+  "message": "브라우저 언어 ({1})"
+ },
+ "langDetect": {
+  "message": "언어 자동 감지"
+ },
+ "sameLang": {
+  "message": "원문과 번역 언어가 같습니다."
+ },
+ "alreadyHave": {
+  "message": "{1} → {2} 모델은 이미 받아 두었습니다."
+ },
+ "unsupportedPair": {
+  "message": "지원하지 않는 언어 쌍입니다."
+ },
+ "saved": {
+  "message": "저장했습니다. 열린 탭에는 바로 반영되고 새로 켠 사이트는 탭을 새로고침하면 적용됩니다."
+ },
+ "badHost": {
+  "message": "사이트 주소 형식이 아닙니다."
+ },
+ "dupHost": {
+  "message": "이미 등록된 사이트입니다."
+ },
+ "needGrantToAdd": {
+  "message": "접근 권한을 허용해야 추가할 수 있습니다."
+ },
+ "injectFail": {
+  "message": "이 탭에 적용하지 못했습니다: {1}"
+ },
+ "noPermNote": {
+  "message": "접근 권한이 없어 다음 방문에는 자동으로 붙지 않습니다 —"
+ },
+ "ruleSite": {
+  "message": "사이트별 설정"
+ },
+ "ruleSiteOf": {
+  "message": "사이트별 설정 ({1})"
+ },
+ "ruleAll": {
+  "message": "모든 사이트 설정을 따르고 있습니다"
+ },
+ "ruleNone": {
+  "message": "아직 등록되지 않은 사이트입니다"
+ },
+ "addedApplied": {
+  "message": "추가했습니다. 이 탭에 바로 적용했습니다."
+ },
+ "turnedOff": {
+  "message": "이 사이트에서 껐습니다."
+ },
+ "availAvailable": {
+  "message": "받아 둠"
+ },
+ "availDownloadable": {
+  "message": "받기 필요"
+ },
+ "availDownloading": {
+  "message": "받는 중"
+ },
+ "availUnavailable": {
+  "message": "지원 안 함"
+ },
+ "downloadModel": {
+  "message": "모델 받기"
+ },
+ "failed": {
+  "message": "실패: {1}"
+ },
+ "downloadingPct": {
+  "message": "받는 중 {1}%"
+ },
+ "pillOriginal": {
+  "message": "원문 보기"
+ },
+ "pillTranslate": {
+  "message": "번역"
+ },
+ "pillAuto": {
+  "message": "자동"
+ },
+ "needHttps": {
+  "message": "보안 연결(HTTPS)이 아닌 페이지에서는 Chrome 내장 번역기를 쓸 수 없습니다."
+ },
+ "noTranslatorApi": {
+  "message": "이 Chrome은 내장 번역기(Translator API)를 지원하지 않습니다. Chrome 138 이상이 필요합니다."
+ },
+ "modelDownloading": {
+  "message": "모델 받는 중 {1}%"
+ },
+ "needClickPair": {
+  "message": "{1}→{2} 번역을 시작하려면 이 페이지에서 스위치를 한 번 눌러 주세요."
+ },
+ "noDetectorApi": {
+  "message": "이 Chrome은 언어 자동 감지(LanguageDetector API)를 지원하지 않습니다."
+ },
+ "detectorUnavailable": {
+  "message": "언어 자동 감지 모델을 쓸 수 없습니다."
+ },
+ "detectorDownloading": {
+  "message": "감지 모델 받는 중 {1}%"
+ },
+ "needClickDetect": {
+  "message": "언어 감지를 시작하려면 이 페이지에서 스위치를 한 번 눌러 주세요."
+ },
+ "preparing": {
+  "message": "모델 준비 중…"
+ },
+ "slowDownload": {
+  "message": "모델 받는 중… (처음에는 몇 분 걸립니다)"
+ },
+ "pairUnsupported": {
+  "message": "{1}→{2} 번역은 지원하지 않습니다."
+ },
+ "clickToStart": {
+  "message": "눌러서 번역 시작"
+ },
+ "tipOriginal": {
+  "message": "원문({1})"
+ },
+ "pillTitle": {
+  "message": "번역 켜기/끄기{1} · 번역된 부분에 마우스를 올리면 원문이 보입니다"
+ },
+ "alertPrefix": {
+  "message": "[번역]"
+ },
+ "grantLater": {
+  "message": "나중에"
+ },
+ "saveFailed": {
+  "message": "저장하지 못했습니다. 저장 공간이 가득 찼을 수 있으니 사이트 몇 개를 지운 뒤 다시 시도해 주세요."
+ },
+ "grantExpired": {
+  "message": "요청이 만료되었습니다. 해당 사이트에서 확장 프로그램 팝업을 열고 다시 시도해 주세요."
+ },
+ "diagCopied": {
+  "message": "진단 정보를 클립보드에 복사했습니다."
+ },
+ "diagConsole": {
+  "message": "진단 정보를 콘솔에 남겼습니다."
+ },
+ "retrying": {
+  "message": "다시 시도 중"
+ },
+ "clickAgain": {
+  "message": "일시적인 오류로 중단됐습니다. 한 번 더 눌러 주세요."
+ },
+ "grantThisSite": {
+  "message": "이 사이트만 허용"
+ },
+ "grantAllSites": {
+  "message": "모든 사이트 허용 — 다시 묻지 않음"
+ },
+ "grantAllHint": {
+  "message": "「모든 사이트 허용」을 고르면 어떤 사이트에서든 바로 동작합니다. 특정 사이트만 끄거나, 설정에서 전체를 끌 수 있습니다."
+ },
+ "useEverywhere": {
+  "message": "모든 사이트에서 사용 (한 번 허용하면 어디서든 동작)"
+ },
+ "turnOn": {
+  "message": "켜기"
+ },
+ "turnOff": {
+  "message": "끄기"
+ },
+ "autoThisSite": {
+  "message": "이 사이트 자동 번역"
+ }
+}

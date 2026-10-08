@@ -1,0 +1,326 @@
+{
+ "extName": {
+  "message": "Translate Switch - Prepínač prekladu"
+ },
+ "extDesc": {
+  "message": "Chrome v zariadení prekladá iba vybraný jazyk na vybraných weboch. Originál zobrazíte prejdením myšou."
+ },
+ "appTitle": {
+  "message": "Translate Switch"
+ },
+ "optionsTitle": {
+  "message": "Nastavenia Translate Switch"
+ },
+ "optionsIntro": {
+  "message": "Pomocou vstavaného prekladača v Chrome prekladá iba cudzojazyčný text na webovej stránke. Preklad prebieha v tomto počítači, takže obsah stránky ho nikdy neopustí. Ak chcete zobraziť originál, podržte kurzor nad preloženým textom."
+ },
+ "allSites": {
+  "message": "Všetky weby"
+ },
+ "allSitesUse": {
+  "message": "Používať na všetkých weboch"
+ },
+ "allSitesHint": {
+  "message": "Po zapnutí sa prepínač prekladu zobrazí na každej webovej stránke. Pri prvom zapnutí Chrome požiada o prístup."
+ },
+ "source": {
+  "message": "Z jazyka"
+ },
+ "target": {
+  "message": "Do jazyka"
+ },
+ "autoTranslate": {
+  "message": "Prekladať automaticky pri otvorení stránky"
+ },
+ "perSite": {
+  "message": "Nastavenia webov"
+ },
+ "perSiteHint": {
+  "message": "— majú prednosť pred nastaveniami pre všetky weby"
+ },
+ "colUse": {
+  "message": "Zap."
+ },
+ "colSite": {
+  "message": "Web"
+ },
+ "colAuto": {
+  "message": "Auto"
+ },
+ "emptySites": {
+  "message": "Zatiaľ nie sú pridané žiadne weby. Na stránke, ktorú chcete preložiť, kliknite na ikonu rozšírenia na paneli nástrojov a stlačte „Zapnúť“, aby sa web pridal automaticky. Web môžete zadať aj nižšie."
+ },
+ "addPlaceholder": {
+  "message": "Pridať web (napr. mail.example.com, *.example.jp)"
+ },
+ "add": {
+  "message": "Pridať"
+ },
+ "models": {
+  "message": "Prekladové modely"
+ },
+ "modelsHint": {
+  "message": "Model pre každú jazykovú dvojicu sa sťahuje raz (a zdieľa sa v Chrome). Môže to trvať niekoľko minút, preto si vopred stiahnite jazyky, v ktorých často čítate."
+ },
+ "preDownload": {
+  "message": "Stiahnuť teraz"
+ },
+ "shortcut": {
+  "message": "Zapínať a vypínať preklad klávesovou skratkou"
+ },
+ "shortcutHint": {
+  "message": "⌘K na Macu, Ctrl+K vo Windows. Funguje aj s kórejským alebo japonským rozložením klávesnice a so zapnutým Caps Lock."
+ },
+ "pillShow": {
+  "message": "Zobraziť prepínač prekladu (oválne tlačidlo)"
+ },
+ "pillPos": {
+  "message": "Poloha prepínača"
+ },
+ "posTopLeft": {
+  "message": "Vľavo hore"
+ },
+ "posTopCenter": {
+  "message": "V strede hore"
+ },
+ "posTopRight": {
+  "message": "Vpravo hore"
+ },
+ "posMiddleLeft": {
+  "message": "Vľavo v strede"
+ },
+ "posMiddleRight": {
+  "message": "Vpravo v strede"
+ },
+ "posBottomLeft": {
+  "message": "Vľavo dole"
+ },
+ "posBottomCenter": {
+  "message": "V strede dole"
+ },
+ "posBottomRight": {
+  "message": "Vpravo dole"
+ },
+ "highlight": {
+  "message": "Zvýrazniť preložený text"
+ },
+ "highlightHint": {
+  "message": "Pridá preloženému textu svetlé pozadie a bodkované podčiarknutie, aby ste ho ľahko rozpoznali."
+ },
+ "highlightColor": {
+  "message": "Farba zvýraznenia"
+ },
+ "resetColor": {
+  "message": "Predvolená farba"
+ },
+ "modelFirst": {
+  "message": "Najprv stiahnite prekladový model"
+ },
+ "modelFirstHint": {
+  "message": "Stačí to urobiť raz (model sa zdieľa v Chrome). Počas sťahovania nechajte toto okno otvorené."
+ },
+ "noPage": {
+  "message": "Na tejto stránke nie je funkcia dostupná (interné stránky Chrome, Web Store a pod.)."
+ },
+ "useHere": {
+  "message": "Používať na tomto webe"
+ },
+ "toggleNow": {
+  "message": "Teraz zapnúť/vypnúť preklad"
+ },
+ "openOptions": {
+  "message": "Otvoriť všetky nastavenia"
+ },
+ "grantTitle": {
+  "message": "Povoliť prístup - Translate Switch"
+ },
+ "grantBody": {
+  "message": "Aby sa prepínač prekladu automaticky pridal pri každom otvorení stránky na webe {1}, rozšírenie potrebuje prístup k tomuto webu."
+ },
+ "grantBtn": {
+  "message": "Povoliť prístup"
+ },
+ "grantNote": {
+  "message": "Prepínač je už pridaný na aktuálnej karte. Ak toto okno zatvoríte, bude fungovať iba počas tejto návštevy."
+ },
+ "grantOk": {
+  "message": "Prístup bol povolený. Prepínač prekladu sa bude na tomto webe pridávať automaticky. Okno sa zatvára."
+ },
+ "grantNo": {
+  "message": "Prístup nebol povolený. Kliknite znova a skúste to ešte raz."
+ },
+ "noAccess": {
+  "message": "Bez prístupu"
+ },
+ "delete": {
+  "message": "Odstrániť"
+ },
+ "grantedOn": {
+  "message": "Prístup bol povolený. Používanie na webe a automatický preklad sú zapnuté."
+ },
+ "noTranslator": {
+  "message": "Táto verzia Chrome nepodporuje vstavaný prekladač (vyžaduje sa Chrome 138 alebo novší)."
+ },
+ "noDetector": {
+  "message": "Táto verzia Chrome nepodporuje automatické rozpoznávanie jazyka."
+ },
+ "autoDetect": {
+  "message": "Rozpoznať jazyk"
+ },
+ "browserLang": {
+  "message": "Jazyk prehliadača ({1})"
+ },
+ "langDetect": {
+  "message": "Rozpoznávanie jazyka"
+ },
+ "sameLang": {
+  "message": "Zdrojový a cieľový jazyk sú rovnaké."
+ },
+ "alreadyHave": {
+  "message": "Model {1} → {2} je už stiahnutý."
+ },
+ "unsupportedPair": {
+  "message": "Táto jazyková dvojica nie je podporovaná."
+ },
+ "saved": {
+  "message": "Uložené. Otvorené karty sa aktualizujú okamžite. Kartu webu, na ktorom ste práve zapli rozšírenie, načítajte znova."
+ },
+ "badHost": {
+  "message": "Toto nie je platná adresa webu."
+ },
+ "dupHost": {
+  "message": "Tento web je už pridaný."
+ },
+ "needGrantToAdd": {
+  "message": "Na pridanie tohto webu musíte povoliť prístup."
+ },
+ "injectFail": {
+  "message": "Nepodarilo sa použiť na tejto karte: {1}"
+ },
+ "noPermNote": {
+  "message": "Bez prístupu sa prepínač pri ďalšej návšteve nepridá automaticky —"
+ },
+ "ruleSite": {
+  "message": "Nastavenie webu"
+ },
+ "ruleSiteOf": {
+  "message": "Nastavenie webu ({1})"
+ },
+ "ruleAll": {
+  "message": "Používa sa nastavenie pre všetky weby"
+ },
+ "ruleNone": {
+  "message": "Tento web ešte nie je pridaný"
+ },
+ "addedApplied": {
+  "message": "Pridané a použité na tejto karte."
+ },
+ "turnedOff": {
+  "message": "Vypnuté pre tento web."
+ },
+ "availAvailable": {
+  "message": "Stiahnuté"
+ },
+ "availDownloadable": {
+  "message": "Vyžaduje stiahnutie"
+ },
+ "availDownloading": {
+  "message": "Sťahuje sa"
+ },
+ "availUnavailable": {
+  "message": "Nepodporované"
+ },
+ "downloadModel": {
+  "message": "Stiahnuť model"
+ },
+ "failed": {
+  "message": "Zlyhanie: {1}"
+ },
+ "downloadingPct": {
+  "message": "Sťahuje sa {1}%"
+ },
+ "pillOriginal": {
+  "message": "Zobraziť originál"
+ },
+ "pillTranslate": {
+  "message": "Preložiť"
+ },
+ "pillAuto": {
+  "message": "Auto"
+ },
+ "needHttps": {
+  "message": "Vstavaný prekladač v Chrome nie je dostupný na stránkach bez zabezpečeného pripojenia (HTTPS)."
+ },
+ "noTranslatorApi": {
+  "message": "Táto verzia Chrome nepodporuje vstavaný prekladač (Translator API). Vyžaduje sa Chrome 138 alebo novší."
+ },
+ "modelDownloading": {
+  "message": "Sťahuje sa model {1}%"
+ },
+ "needClickPair": {
+  "message": "Ak chcete spustiť preklad {1}→{2}, kliknite raz na prepínač na tejto stránke."
+ },
+ "noDetectorApi": {
+  "message": "Táto verzia Chrome nepodporuje automatické rozpoznávanie jazyka (LanguageDetector API)."
+ },
+ "detectorUnavailable": {
+  "message": "Model rozpoznávania jazyka nie je dostupný."
+ },
+ "detectorDownloading": {
+  "message": "Sťahuje sa model rozpoznávania {1}%"
+ },
+ "needClickDetect": {
+  "message": "Ak chcete spustiť rozpoznávanie jazyka, kliknite raz na prepínač na tejto stránke."
+ },
+ "preparing": {
+  "message": "Pripravuje sa model…"
+ },
+ "slowDownload": {
+  "message": "Sťahuje sa model… (prvýkrát to trvá niekoľko minút)"
+ },
+ "pairUnsupported": {
+  "message": "Preklad {1}→{2} nie je podporovaný."
+ },
+ "clickToStart": {
+  "message": "Kliknutím preložíte"
+ },
+ "tipOriginal": {
+  "message": "Originál ({1})"
+ },
+ "pillTitle": {
+  "message": "Preklad zap./vyp.{1} · Podržaním kurzora nad preloženým textom zobrazíte originál"
+ },
+ "alertPrefix": {
+  "message": "[Preklad]"
+ },
+ "grantLater": {
+  "message": "Teraz nie"
+ },
+ "saveFailed": {
+  "message": "Uloženie zlyhalo. Úložisko môže byť plné – odstráňte niektoré weby a skúste to znova."
+ },
+ "grantExpired": {
+  "message": "Platnosť tejto žiadosti vypršala. Otvorte na webe kontextové okno rozšírenia a skúste to znova."
+ },
+ "grantThisSite": {
+  "message": "Povoliť na tomto webe"
+ },
+ "grantAllSites": {
+  "message": "Povoliť na všetkých weboch — znova sa nepýtať"
+ },
+ "grantAllHint": {
+  "message": "Možnosť „Povoliť na všetkých weboch“ umožní rozšíreniu okamžite fungovať na každom webe. Môžete ho vypnúť pre konkrétny web alebo úplne v nastaveniach."
+ },
+ "useEverywhere": {
+  "message": "Používať na všetkých weboch (stačí povoliť raz a funguje všade)"
+ },
+ "turnOn": {
+  "message": "Zapnúť"
+ },
+ "turnOff": {
+  "message": "Vypnúť"
+ },
+ "autoThisSite": {
+  "message": "Automaticky prekladať tento web"
+ }
+}
