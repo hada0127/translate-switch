@@ -597,6 +597,7 @@
     waitingDetect = [];
     failed = [];
     retries = 0;
+    cache.clear(); // 번역 결과는 메모리에만 있고, 끄면 바로 비운다
     for (const k of failedPairs) translators.delete(k);
     failedPairs.clear();
     pendingNeed = null;
@@ -692,6 +693,7 @@
     // 규칙이 바뀌면(사이트를 다시 켜거나 언어를 바꾸면) 자동 번역을 다시 시작할 수 있게 한다.
     // 하위 프레임은 부모에게 현재 상태를 다시 묻는다(부모가 먼저 재시작해 보낸 신호를 놓쳤을 수 있다).
     if (rk !== ruleKey) { ruleKey = rk; if (!on) autoDone = false; readySent = false; }
+    if (on && next.site?.auto) autoDone = true; // 켜진 채 자동 번역을 켜면 자동 시작은 이미 된 것으로 본다
     settings = next;
     restyle();
     if (!settings.site && on) disable();
