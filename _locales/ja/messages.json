@@ -281,6 +281,15 @@
  "pairUnsupported": {
   "message": "{1}→{2} の翻訳には対応していません。"
  },
+ "serviceUnavailable": {
+  "message": "Chrome 内蔵の翻訳機能は現在利用できません。翻訳中のほかのタブを閉じるか、このページを再読み込みしてください。それでも解決しない場合は Chrome を再起動してください。"
+ },
+ "availServiceUnavailable": {
+  "message": "現在利用できません"
+ },
+ "legacyRefresh": {
+  "message": "拡張機能が更新されました。このページを再読み込みしてください。"
+ },
  "clickToStart": {
   "message": "クリックして翻訳"
  },

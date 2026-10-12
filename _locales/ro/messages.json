@@ -281,6 +281,15 @@
  "pairUnsupported": {
   "message": "Traducerea {1}→{2} nu este acceptată."
  },
+ "serviceUnavailable": {
+  "message": "Traducătorul integrat în Chrome nu este disponibil momentan. Închideți celelalte file în care se traduce sau reîncărcați această pagină. Dacă problema persistă, reporniți Chrome."
+ },
+ "availServiceUnavailable": {
+  "message": "Indisponibil momentan"
+ },
+ "legacyRefresh": {
+  "message": "Extensia a fost actualizată. Reîncărcați această pagină."
+ },
  "clickToStart": {
   "message": "Faceți clic pentru a traduce"
  },

@@ -281,6 +281,15 @@
  "pairUnsupported": {
   "message": "ไม่รองรับการแปล {1}→{2}"
  },
+ "serviceUnavailable": {
+  "message": "ตัวแปลภาษาในตัวของ Chrome ยังไม่พร้อมใช้งานในขณะนี้ ปิดแท็บอื่นที่กำลังแปลหรือโหลดหน้านี้ใหม่ หากยังใช้ไม่ได้ ให้เริ่ม Chrome ใหม่"
+ },
+ "availServiceUnavailable": {
+  "message": "ยังไม่พร้อมใช้งานในขณะนี้"
+ },
+ "legacyRefresh": {
+  "message": "อัปเดตส่วนขยายแล้ว โปรดโหลดหน้านี้ใหม่"
+ },
  "clickToStart": {
   "message": "คลิกเพื่อแปล"
  },

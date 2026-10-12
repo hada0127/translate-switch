@@ -281,6 +281,15 @@
  "pairUnsupported": {
   "message": "Preklad {1}→{2} nie je podporovaný."
  },
+ "serviceUnavailable": {
+  "message": "Vstavaný prekladač Chrome teraz nie je dostupný. Zatvorte ostatné karty, v ktorých prebieha preklad, alebo znova načítajte túto stránku. Ak problém pretrváva, reštartujte Chrome."
+ },
+ "availServiceUnavailable": {
+  "message": "Teraz nie je dostupný"
+ },
+ "legacyRefresh": {
+  "message": "Rozšírenie bolo aktualizované. Znova načítajte túto stránku."
+ },
  "clickToStart": {
   "message": "Kliknutím preložíte"
  },

@@ -3,8 +3,8 @@
 // 원래 Text 노드는 떼어 내지 않고 글자(nodeValue)만 바꾼다. 노드를 갈아 끼우면 React 같은 프레임워크가
 // 들고 있던 노드 참조가 끊겨 페이지가 깨진다. 표시는 CSS Custom Highlight API 로 칠한다(DOM 변경 없음).
 (() => {
-  if (globalThis.__gwTS) return;
-  globalThis.__gwTS = true;
+  if (globalThis.__gwTS2) return;
+  const VERSION = chrome.runtime.getManifest().version;
 
   const MSG = '__gwJa2Ko';
   const XHTML = 'http://www.w3.org/1999/xhtml';
@@ -52,9 +52,61 @@
   let autoDone = false;
   let observer = null;
   const roots = new Set();             // 관찰 중인 shadow root
-  const translators = new Map();       // 'ja>ko' -> Promise<Translator|null>
+  const translators = gwSlots();       // 'ja>ko' -> Promise<Translator|null>
   const failedPairs = new Set();       // 만들지 못해 null 로 끝난 쌍 — 잠시 뒤·껐다 켜면 다시 시도
-  let detectorP = null;
+  const detector = gwSlots();
+  let suspended = false;
+  let initializing = false;
+  let releaseWanted = false;
+  let deferredEnable = false;
+  let torn = false;
+  let released = 0;
+  let releaseEpoch = 0; // 해제 중 기다리던 생성은 복귀 뒤에도 무효다
+  let hideTimer = 0;
+  const HIDE_RELEASE_MS = 60000; // UNVERIFIED: 서비스 유휴 시간은 실 Chrome QA 에서 확인
+  const ALIVE_CHECK_MS = 15000;
+  const BOOT_EVENT = '__gwTranslateSwitchBoot_v1';
+  const bootToken = crypto.getRandomValues(new Uint32Array(4)).join('-'); // 문서에 보내는 값은 설정과 무관한 인스턴스 표식뿐이다
+  function onInstanceBoot(e) {
+    if (e.detail === bootToken || torn) return;
+    if (!alive()) teardown();
+  }
+  function releaseAll() { releaseEpoch++; released += translators.releaseAll() + detector.releaseAll(); failedPairs.clear(); }
+  function alive() { try { return !torn && !!chrome.runtime?.id; } catch { return false; } }
+  function hiddenRelease() {
+    hideTimer = 0;
+    if (torn || !document.hidden) return;
+    suspended = true;
+    if (initializing || workers) { releaseWanted = true; return; }
+    releaseAll();
+  }
+  function unsuspend() {
+    suspended = false;
+    releaseWanted = false;
+    if (deferredEnable) { deferredEnable = false; setState(true); return; }
+    if (on) {
+      retries = 0;
+      scanShadows();
+      if (pendingNeed) { needClick = true; restoreNeedClick(); }
+      else enqueue([]);
+    }
+  }
+  function syncVisibility() {
+    if (torn) return;
+    if (document.hidden) {
+      if (!hideTimer && !suspended) hideTimer = setTimeout(hiddenRelease, HIDE_RELEASE_MS);
+    } else {
+      clearTimeout(hideTimer); hideTimer = 0;
+      if (suspended || deferredEnable || on) unsuspend();
+    }
+  }
+  function suspendNow() {
+    if (torn) return;
+    suspended = true; releaseWanted = false;
+    clearTimeout(hideTimer); hideTimer = 0;
+    releaseAll();
+  }
+  function onPageShow(e) { if (e.persisted) syncVisibility(); }
   const cache = new Map();             // 'ja>ko|줄' -> 번역(최근 3000개까지)
   const CACHE_MAX = 3000;
   const done = new Map();              // Text -> { orig, text, lines:[{s,e,orig,lang}] }
@@ -68,8 +120,11 @@
   let lastErr = null;         // 마지막 오류 { name, message }
   let retries = 0;            // 전부 실패했을 때의 자동 재시도 횟수(켤 때마다 0)
 
-  const t = (k, ...a) => (chrome.i18n.getMessage(k) || k).replace(/\{(\d)\}/g, (_, n) => String(a[n - 1] ?? ''));
-  const langName = (code) => { try { return new Intl.DisplayNames([chrome.i18n.getUILanguage()], { type: 'language' }).of(code) || code; } catch { return code; } };
+  const t = (k, ...a) => {
+    if (torn) return k;
+    try { return (chrome.i18n.getMessage(k) || k).replace(/\{(\d)\}/g, (_, n) => String(a[n - 1] ?? '')); } catch { teardown(); return k; }
+  };
+  const langName = (code) => { try { return new Intl.DisplayNames([chrome.i18n.getUILanguage()], { type: 'language' }).of(code) || code; } catch { if (!alive()) teardown(); return code; } };
   const status = (text) => { if (btn) btn.textContent = text; };
   function pillLabel() {
     const r = settings?.site;
@@ -145,12 +200,12 @@
   // 그래서 켜져 있는 동안 화면이 바뀐 뒤 쉬는 틈에 새 shadow root 를 훑어 찾는다(3초에 한 번까지).
   let scanTimer = 0;
   function scanShadows() {
-    if (scanTimer || !on) return;
+    if (torn || scanTimer || !on || suspended) return;
     scanTimer = setTimeout(() => {
       scanTimer = 0;
-      if (!on) return;
+      if (torn || !on || suspended) return;
       scanShadows(); // 켜져 있는 동안 계속 — 화면 변화가 없어도 나중에 붙은 shadow root 를 찾는다
-      if (document.hidden) return;
+      if (document.hidden || suspended) return;
       const found = [];
       const look = (root) => {
         for (const el of root.querySelectorAll('*')) {
@@ -187,6 +242,7 @@
     return run;
   }
   async function createNow(api, opts, label, gestureMsg, feature, need) {
+    if (torn) throw new Error('Extension context invalidated');
     // 페이지의 권한 정책이 이 기능을 막으면 클릭으로도 풀리지 않는 진짜 오류다.
     const pp = document.permissionsPolicy || document.featurePolicy;
     if (pp?.allowsFeature && !pp.allowsFeature(feature)) throw new Error(t('noTranslatorApi'));
@@ -194,13 +250,15 @@
     try {
       let x;
       for (let attempt = 1; ; attempt++) {
+        if (torn) throw new Error('Extension context invalidated');
         try {
           x = await api.create({
             ...opts,
-            monitor(m) { m.addEventListener('downloadprogress', (e) => { if (mon && e.loaded < 1) status(e.loaded > 0 ? t(label, Math.min(99, Math.round(e.loaded * 100))) : t('slowDownload')); }); },
+            monitor(m) { m.addEventListener('downloadprogress', (e) => { if (!torn && !suspended && mon && e.loaded < 1) status(e.loaded > 0 ? t(label, Math.min(99, Math.round(e.loaded * 100))) : t('slowDownload')); }); },
           });
           break;
         } catch (e) {
+          if (torn) throw e;
           // 번역 서비스가 막 뜰 때 생성이 간헐적으로 실패한다(「Unable to create translator…」 등) — 잠깐 쉬고 다시 시도한다.
           // 클릭이 필요하다는 거절(NotAllowedError)은 재시도로 풀리지 않는다.
           if (e?.name === 'NotAllowedError' || attempt >= 4) throw e;
@@ -216,38 +274,33 @@
       throw e;
     } finally {
       mon = false; // 다 만들어진 뒤에 오는 진행률(0→100%)로 알약이 「받는 중」에 머물지 않게
-      restoreStatus();
+      if (!torn) restoreStatus();
     }
   }
   function getTranslator(src, tgt) {
     const key = `${src}>${tgt}`;
-    if (translators.has(key)) return translators.get(key);
-    const p = (async () => {
-      if (!self.isSecureContext) throw new Error(t('needHttps'));
-      if (!('Translator' in self)) throw new Error(t('noTranslatorApi'));
+    if (translators.has(key)) return translators.promiseOf(key);
+    const p = translators.get(key, async () => {
+      if (!self.isSecureContext) { const e = new Error(t('needHttps')); e.gwKind = 'api'; throw e; }
+      if (!('Translator' in self)) { const e = new Error(t('noTranslatorApi')); e.gwKind = 'api'; throw e; }
       const opts = { sourceLanguage: src, targetLanguage: tgt };
       if ((await Translator.availability(opts).catch(() => 'unavailable')) === 'unavailable') return null;
       return create(Translator, opts, 'modelDownloading', t('needClickPair', langName(src), langName(tgt)), 'translator', { kind: 'tr', src, tgt });
-    })();
-    translators.set(key, p);
-    p.catch(() => translators.delete(key));
+    });
     p.then((v) => {
-      if (v !== null) return;
+      if (torn || v !== null || translators.promiseOf(key) !== p) return;
       failedPairs.add(key);
-      setTimeout(() => { if (translators.get(key) === p) { translators.delete(key); failedPairs.delete(key); } }, 60000);
+      setTimeout(() => { if (!torn && translators.promiseOf(key) === p) { translators.release(key); failedPairs.delete(key); } }, 60000);
     }, () => {});
     return p;
   }
   function getDetector() {
-    if (detectorP) return detectorP;
-    detectorP = (async () => {
+    return detector.get('det', async () => {
       if (!self.isSecureContext) throw new Error(t('needHttps'));
       if (!('LanguageDetector' in self)) throw new Error(t('noDetectorApi'));
       if ((await LanguageDetector.availability().catch(() => 'unavailable')) === 'unavailable') throw new Error(t('detectorUnavailable'));
       return create(LanguageDetector, {}, 'detectorDownloading', t('needClickDetect'), 'language-detector', { kind: 'det' });
-    })();
-    detectorP.catch(() => { detectorP = null; });
-    return detectorP;
+    });
   }
 
   // 줄의 원문 언어. { lang, sure } — sure 는 글자만 보고 확실히 정한 경우(감지기 안 씀).
@@ -271,7 +324,9 @@
     // (예: 한국어 그룹웨어 안의 일본어 메일 — 「件名」「添付資料」 같은 줄). 감지기를 안 써서 클릭도 덜 필요하다.
     if (HAN_ANY.test(line) && kanaSeen.size >= 3) return { lang: 'ja', sure: true };
     // 감지기는 필요할 때만 만든다(만들 때도 클릭이 필요할 수 있어 아낀다).
+    const epoch = releaseEpoch;
     const d = await getDetector();
+    if (epoch !== releaseEpoch) throw new Error('detector released');
     const top = (await d.detect(line))[0];
     const letters = (line.match(/\p{L}/gu) || []).length;
     // 글자가 적을수록 감지가 불안정해 더 높은 확신을 요구한다.
@@ -289,32 +344,33 @@
   function enqueue(nodes) {
     if (wGen !== gen) { wGen = gen; workers = 0; }
     queue.push(...nodes);
-    while (on && !needClick && workers < 4 && queue.length) {
+    while (on && !suspended && !document.hidden && !needClick && workers < 4 && queue.length) {
       workers++;
       const g = gen;
       work(g).finally(() => {
         if (wGen !== g) return;
         workers--;
-        if (on && !needClick && queue.length) enqueue([]);
-        else if (on && !needClick && !workers) onDrain();
+        if (releaseWanted && !workers && !initializing) { releaseAll(); releaseWanted = false; }
+        if (on && !suspended && !document.hidden && !needClick && queue.length) enqueue([]);
+        else if (on && !suspended && !document.hidden && !needClick && !workers) onDrain();
       });
     }
     // 넣을 노드가 없어 작업자가 안 떴으면(재시도 목록이 전부 빠진 경우 등) 바로 마무리 판정을 한다.
-    if (on && !needClick && !workers && !queue.length) onDrain();
+    if (on && !suspended && !document.hidden && !needClick && !workers && !queue.length) onDrain();
   }
   // 큐가 비고 작업자도 없을 때: 실패 재시도 → 실패 알림 → 감지기 대기 처리 → 하위 프레임 요청 표시 순으로 «모두» 본다.
   let draining = false;
   function onDrain() {
-    if (draining) return;
+    if (torn || suspended || document.hidden || draining) return;
     draining = true;
     try {
       if (failed.length && retries < 2) {
         // 번역 실패가 남아 있다 — 모델을 막 받은 직후 번역기가 잠깐 불안정한 경우가 있어, 번역기를 새로 만들어 다시 시도한다.
         retries++;
         const again = failed.splice(0);
-        translators.clear();
+        released += translators.releaseAll();
         failedPairs.clear();
-        setTimeout(() => { if (on) enqueue(again.filter((x) => x.isConnected)); }, 1500);
+        setTimeout(() => { if (torn) return; if (on && !suspended) enqueue(again.filter((x) => x.isConnected)); else if (on) failed.push(...again); }, 1500);
         return;
       }
       if (failed.length && lastErr) {
@@ -342,10 +398,11 @@
   }
   async function work(myGen) {
     const rule = settings.site; // 이 실행이 시작될 때의 규칙
-    while (on && gen === myGen && queue.length && !needClick) {
+    while (on && !suspended && !document.hidden && gen === myGen && queue.length && !needClick) {
       const n = queue.shift();
       if (!eligible(n)) continue;
       const src = n.nodeValue;
+      const epoch = releaseEpoch;
       try {
         // 한 덩어리 텍스트(텍스트 메일 본문 등)는 줄 단위로 번역해 줄바꿈을 지킨다.
         const parts = src.split(/(\r?\n)/);
@@ -358,6 +415,8 @@
           if (!line || !RE.test(line)) { out.push(part); continue; }
           let so;
           try { so = await sourceOf(line); } catch (e) {
+            if (!on || gen !== myGen) return;
+            if (suspended || document.hidden || epoch !== releaseEpoch) { queue.unshift(n); return; }
             if (e?.needsGesture && e.need?.kind !== 'det') throw e; // 번역기 클릭 대기는 위에서 처리
             // 감지기 문제는 이 줄만의 문제다 — 클릭이 필요하면 미루고, 쓸 수 없으면(지원 안 함 등) 원문 그대로 둔다.
             // 같은 노드의 다른 줄(가나 줄 등)은 계속 번역한다.
@@ -367,6 +426,7 @@
             continue;
           }
           if (!on || gen !== myGen) return;
+          if (suspended || document.hidden || epoch !== releaseEpoch) { queue.unshift(n); return; }
           if (!so || so.lang === rule.target) { out.push(part); continue; }
           const pair = `${so.lang}>${rule.target}`;
           // 감지기로만 정한 언어는 서로 다른 3줄에서 나와야 번역기를 만든다(잘못 감지된 한두 줄로 엉뚱한 모델을 받지 않게).
@@ -382,15 +442,18 @@
           if (tr === undefined) {
             const tl = await getTranslator(so.lang, rule.target);
             if (!on || gen !== myGen) return;
+            if (suspended || document.hidden || epoch !== releaseEpoch) { queue.unshift(n); return; }
             if (!tl) { out.push(part); continue; }
             tr = await tl.translate(line);
             if (!on || gen !== myGen) return;
             remember(ck, tr);
+            if (suspended || document.hidden || epoch !== releaseEpoch) { queue.unshift(n); return; }
           }
           any = true;
           out.push({ pre: part.match(/^\s*/)[0], tr, post: part.match(/\s*$/)[0], orig: line, lang: so.lang });
         }
         if (!on || gen !== myGen) return;
+        if (suspended || document.hidden || epoch !== releaseEpoch) { queue.unshift(n); return; }
         if (!any || n.nodeValue !== src) {
           if (n.nodeValue !== src) queue.push(n);
           else { settleHeld(n, heldLangs, rule); if (detDeferred) deferDetect(n); }
@@ -414,6 +477,7 @@
         if (detDeferred) deferDetect(n); // 감지기가 생기면(또는 가나가 3줄 모이면) 원문으로 되돌려 다시 번역
       } catch (e) {
         if (!on || gen !== myGen) return; // 이미 꺼졌거나 다시 시작된 실행의 늦은 오류는 무시
+        if (suspended || document.hidden || epoch !== releaseEpoch) { queue.unshift(n); return; }
         if (e?.needsGesture && e.need?.kind === 'det') {
           // 감지기만 없는 노드는 따로 미룬다 — 확실한 언어(일본어 등) 번역은 계속하고, 남으면 마지막에 클릭을 한 번 더 받는다.
           waitingDetect.push(n);
@@ -466,29 +530,58 @@
   }
   function askClick(message, need) {
     if (need && !pendingNeed) pendingNeed = need;
-    if (!isTop && sameOriginWin(window.top)) window.top.postMessage({ [MSG + 'NeedClick']: message }, self.origin);
     needClick = true;
     waiting.push(...queue.splice(0));
+    if (suspended || document.hidden) return;
+    if (!isTop && sameOriginWin(window.top)) window.top.postMessage({ [MSG + 'NeedClick']: message }, self.origin);
     status(t('clickToStart'));
     if (btn) { btn.title = message; btn.style.display = ''; }
   }
+  // 중단 중 잃은 클릭 요청은 보이는 순간 부모에게도 다시 알린다(모델은 pendingNeed 에 보존).
+  function restoreNeedClick() {
+    if (torn || suspended || document.hidden) return;
+    const message = t('clickToStart');
+    if (torn) return;
+    if (!isTop && sameOriginWin(window.top)) window.top.postMessage({ [MSG + 'NeedClick']: message }, self.origin);
+    applyPill();
+    if (torn) return;
+    restoreStatus();
+  }
   // 「눌러서 시작」 상태에서 알약 클릭·단축키 → 그 클릭으로 번역기를 만들고 기다리던 노드를 이어서 번역한다.
   async function resume() {
+    if (torn || suspended || document.hidden) return;
     needClick = false;
     applyPill();
+    if (torn) return;
     const back = waiting.splice(0);
     const need = pendingNeed;
     pendingNeed = null;
     restoreStatus();
+    if (torn) return;
     // 클릭 하나로는 모델 하나만 만들 수 있다 — 멈추게 한 그 모델을 지금(클릭이 살아 있을 때) 먼저 만든다.
     const myGen = gen;
+    const epoch = releaseEpoch;
     if (need) {
       try {
         if (need.kind === 'det') await getDetector();
         else await getTranslator(need.src, need.tgt);
         if (!on || gen !== myGen) return; // 그사이 꺼졌으면 아무것도 하지 않는다
+        if (suspended || document.hidden || epoch !== releaseEpoch) {
+          waiting.push(...back); pendingNeed = need; needClick = true;
+          if (!suspended && !document.hidden) restoreNeedClick();
+          return;
+        }
       } catch (e) {
         if (!on || gen !== myGen) return;
+        if (suspended || document.hidden || epoch !== releaseEpoch) {
+          waiting.push(...back);
+          // 감지기와 번역기 모두, 거부된 생성의 요청을 복귀 후 클릭까지 보존한다.
+          if (need.kind === 'det') pendingNeed = { kind: 'det' };
+          else pendingNeed = { kind: 'tr', src: need.src, tgt: need.tgt };
+          needClick = true;
+          if (!suspended && !document.hidden) restoreNeedClick();
+          return;
+        }
         if (e?.needsGesture) { waiting.push(...back); askClick(e.message, e.need); return; }
         console.warn('[translate-switch] resume', e);
       }
@@ -499,6 +592,7 @@
 
   // 페이지가 우리가 바꾼 글자를 다시 쓰면 그 노드는 새 원문으로 보고 다시 번역한다.
   function onMutations(muts) {
+    if (torn) return;
     const nodes = [];
     for (const m of muts) {
       if (m.type === 'characterData') {
@@ -520,6 +614,7 @@
     if (pruneTimer) return;
     pruneTimer = setTimeout(() => {
       pruneTimer = 0;
+      if (torn) return;
       for (const [n, rec] of [...done]) if (!n.isConnected) { if (n.nodeValue === rec.text) n.nodeValue = rec.orig; done.delete(n); unmark(n); }
       held = held.filter(([, x]) => x.isConnected);
       waiting = waiting.filter((x) => x.isConnected);
@@ -530,11 +625,19 @@
   }
 
   async function enable() {
+    if (torn) return;
+    syncVisibility();
+    if (torn) return;
+    if (on) return; // 이미 켜진 프레임의 숨김 중 재요청은 새 켜기로 미루지 않는다
+    if (suspended || document.hidden) { deferredEnable = true; return; }
     if (!settings) { wantOn = true; return; }
     if (on || !settings.site) return;
     on = true;
+    initializing = true;
     const myGen = ++gen;
     status(t('preparing'));
+    // 문구 조회가 확장을 정리했으면 관찰자·타이머를 다시 붙이지 않는다.
+    if (torn) return;
     if (!observer) {
       observer = new MutationObserver(onMutations);
       // <body> 를 통째로 바꾸는 화면 전환(Turbo 등)도 잡게 <html> 을 본다 — 새 body 가 「추가됨」으로 들어온다.
@@ -542,7 +645,7 @@
       for (const r of roots) observer.observe(r, { childList: true, subtree: true, characterData: true });
     }
     try {
-      const slow = setTimeout(() => { if (gen === myGen) status(t('slowDownload')); }, 4000);
+      const slow = setTimeout(() => { if (!torn && !suspended && gen === myGen) status(t('slowDownload')); }, 4000);
       try {
         const r = settings.site;
         // 한 번의 클릭으로는 모델 하나만 만들 수 있다 — 페이지 언어 번역기를 먼저(가장 많이 쓰인다), 감지기는 필요할 때.
@@ -551,21 +654,34 @@
           let tl = null;
           try { tl = await getTranslator(first, r.target); } catch (e) {
             // 자동 감지면 페이지 언어 모델을 미리 못 만들어도 줄마다 번역을 이어 간다(크롬 원문 오류는 띄우지 않는다).
-            if (e.needsGesture || r.source !== 'auto') throw e.needsGesture ? e : new Error(t('pairUnsupported', langName(r.source), langName(r.target)));
+            if (e.needsGesture) throw e;
+            if (r.source !== 'auto') { if (e.gwKind === 'api') throw e; throw new Error(t('serviceUnavailable')); }
             console.warn('[translate-switch] page pair', e);
           }
-          if (tl === null && r.source !== 'auto') throw new Error(t('pairUnsupported', langName(r.source), langName(r.target)));
+          if (tl === null && r.source !== 'auto') {
+            const reason = await gwUnavailableReason(r.source, r.target);
+            throw new Error(reason === 'service' ? t('serviceUnavailable') : t('pairUnsupported', langName(r.source), langName(r.target)));
+          }
         }
       } finally { clearTimeout(slow); }
       if (gen !== myGen) return;
+      initializing = false;
+      if (releaseWanted && document.hidden && !workers) { releaseAll(); releaseWanted = false; }
       ready = true;
       applyPill();
+      if (torn) return;
       status(t('pillOriginal'));
+      if (torn) return;
       broadcast();
       enqueue(collect(document.body || document.documentElement));
       scanShadows();
     } catch (e) {
       if (gen !== myGen) return;
+      if (suspended || document.hidden) {
+        // 숨김 중 생성 실패는 켜기 의도와 해제 타이머를 보존하고, 복귀 뒤 다시 시도한다.
+        on = false; ready = false; deferredEnable = true;
+        return;
+      }
       if (e.needsGesture) {
         // 빨간 경고 대신 스위치 글자로 다음 할 일을 알린다. 알약을 누르면 그 클릭으로 바로 시작된다.
         // 하위 프레임은 알약이 없으니 최상위에 알린다(최상위에서 누르면 다시 켜라는 신호가 온다).
@@ -580,10 +696,17 @@
       disable();
       if (isTop) alertBox(e.message);
       console.warn('[translate-switch]', e);
+    } finally {
+      if (gen === myGen) {
+        initializing = false;
+        if (releaseWanted && document.hidden && !workers) { releaseAll(); releaseWanted = false; }
+      }
     }
   }
 
   function disable() {
+    clearTimeout(hideTimer); hideTimer = 0;
+    releaseWanted = false; initializing = false; deferredEnable = false;
     childNeedClick = false;
     clearTimeout(scanTimer);
     scanTimer = 0;
@@ -598,7 +721,7 @@
     failed = [];
     retries = 0;
     cache.clear(); // 번역 결과는 메모리에만 있고, 끄면 바로 비운다
-    for (const k of failedPairs) translators.delete(k);
+    releaseAll();
     failedPairs.clear();
     pendingNeed = null;
     held = [];
@@ -610,7 +733,8 @@
     ranges.clear();
     applyPill();
     status(pillLabel());
-    broadcast();
+    // 고아 정리는 이 인스턴스만 끈다 — 새 하위 프레임에는 전하지 않는다.
+    if (!torn) broadcast();
   }
 
   // ── 같은 출처 하위 프레임과 켜기/끄기 맞추기 ──
@@ -619,6 +743,7 @@
   const childFrames = () => { const out = []; for (let i = 0; i < window.frames.length; i++) if (sameOriginWin(window.frames[i])) out.push(window.frames[i]); return out; };
   function broadcast() { for (const f of childFrames()) f.postMessage({ [MSG]: on }, self.origin); }
   function setState(next) {
+    if (torn) return;
     if (next && needClick && !on) { needClick = false; pendingNeed = null; enable(); broadcast(); return; }
     if (next && (needClick || childNeedClick)) {
       if (needClick) resume();
@@ -632,7 +757,8 @@
     broadcast();
   }
   let wantOn = false;
-  window.addEventListener('message', (e) => {
+  function onMessage(e) {
+    if (!alive()) { teardown(); return; }
     const d = e.data;
     if (!d || typeof d !== 'object' || e.origin !== self.origin) return;
     if (typeof d[MSG] === 'boolean' && e.source === window.parent && !isTop) {
@@ -655,7 +781,8 @@
       applyPill();
       restoreStatus();
     }
-  });
+  }
+  window.addEventListener('message', onMessage);
   let readySent = false;
   let parentWants = false; // 하위 프레임: 부모가 마지막으로 보낸 켜기/끄기
   function announceReady() {
@@ -670,10 +797,15 @@
   async function loadSettings() {
     let host = '';
     try { host = new URL(self.origin).hostname; } catch {}
-    const s = await chrome.storage.sync.get(GW_DEFAULTS).catch(() => GW_DEFAULTS);
-    applySettings({ shortcut: s.shortcut, pill: s.pill, position: s.position, highlight: s.highlight, hlColor: s.hlColor, site: gwResolve(s, host) });
+    if (torn) return;
+    try {
+      const s = await chrome.storage.sync.get(GW_DEFAULTS);
+      if (torn) return;
+      applySettings({ shortcut: s.shortcut, pill: s.pill, position: s.position, highlight: s.highlight, hlColor: s.hlColor, site: gwResolve(s, host) });
+    } catch { if (!alive()) teardown(); }
   }
   function applySettings(next) {
+    if (torn) return;
     const key = next.site ? `${next.site.source}>${next.site.target}` : '';
     const rk = JSON.stringify(next.site);
     if (key !== langKey) {
@@ -681,7 +813,7 @@
       const want = wantOn;
       if (on) disable();
       wantOn = want;
-      translators.clear();
+      releaseAll();
       cache.clear();
       langKey = key;
       const src = next.site?.source;
@@ -699,16 +831,19 @@
     if (!settings.site && on) disable();
     if (!on) restoreStatus();
     applyPill();
+    if (torn) return;
     if (wantOn && !on && settings.site) { wantOn = false; setState(true); }
     if (isTop && settings.site?.auto && !autoDone && !on) { autoDone = true; setState(true); }
     if (!isTop && parentWants && settings.site && !on) enable(); // 부모는 켜져 있는데 내 쪽만 꺼진 경우를 맞춘다
     announceReady();
+    syncVisibility();
   }
-  chrome.storage.onChanged.addListener((_, area) => { if (area === 'sync') loadSettings(); });
+  function onStorage(_, area) { if (!torn && area === 'sync') loadSettings(); }
 
   // ── 단축키: 맥 ⌘K, 윈도우 Ctrl+K ──
   // 물리 키(code)로 본다 — 한글(ㅏ)·일본어(の) 자판, Caps Lock·Shift 에서도 같은 K 자리면 동작.
-  window.addEventListener('keydown', (e) => {
+  function onKeydown(e) {
+    if (!alive()) { teardown(); return; }
     const isK = e.code === 'KeyK' || e.keyCode === 75 || ['k', 'K', 'ㅏ', 'の'].includes(e.key);
     if (!settings?.site || !settings.shortcut || e.repeat || !isK || e.altKey) return;
     if (isMac ? !(e.metaKey && !e.ctrlKey) : !(e.ctrlKey && !e.metaKey)) return;
@@ -717,7 +852,8 @@
     e.stopImmediatePropagation();
     if (isTop) toggle();
     else if (sameOriginWin(window.top)) window.top.postMessage({ [MSG + 'Toggle']: true }, self.origin);
-  }, true);
+  }
+  window.addEventListener('keydown', onKeydown, true);
 
   // ── 원문 툴팁: 마우스 아래 글자를 찾아 그 줄의 원문을 보여 준다 ──
   let tip = null;
@@ -738,10 +874,12 @@
     return null;
   }
   let raf = 0;
-  document.addEventListener('mousemove', (e) => {
+  function onMousemove(e) {
+    if (torn) return;
     if (!done.size || raf) return;
     raf = requestAnimationFrame(() => {
       raf = 0;
+      if (torn) return;
       const l = lineAt(e.clientX, e.clientY);
       if (!l) return hideTip();
       if (!tip) {
@@ -757,6 +895,7 @@
       if (tipLine !== l) {
         tipLine = l;
         tip.textContent = `${t('tipOriginal', langName(l.lang))} · ${l.orig}`;
+        if (torn) return;
         tip.lang = l.lang;
       }
       tip.style.display = 'block';
@@ -767,7 +906,8 @@
       tip.style.left = `${left}px`;
       tip.style.top = `${top}px`;
     });
-  }, true);
+  }
+  document.addEventListener('mousemove', onMousemove, true);
   document.addEventListener('mouseleave', hideTip);
 
   // ── 스위치(알약) ──
@@ -782,14 +922,16 @@
     'bottom-right': { bottom: '16px', right: '16px' },
   };
   function applyPill() {
-    if (!isTop || !settings) return;
+    if (torn || !isTop || !settings) return;
     if (!btn) {
       btn = document.createElement('button');
       btn.dataset.gwJa2koUi = '1';
       btn.type = 'button';
       btn.setAttribute('aria-live', 'polite');
       btn.textContent = pillLabel();
+      if (torn) return;
       btn.addEventListener('click', (e) => {
+        if (!alive()) { teardown(); return; }
         if (e.shiftKey) { copyDiag(); return; } // Shift+클릭: 진단 정보 복사(문제 신고용)
         toggle();
       });
@@ -803,12 +945,16 @@
     Object.assign(btn.style, base, POS[settings.position] || POS['bottom-right']);
     // 알약을 숨겨 둬도 클릭이 필요해지면(자기 것이든 하위 프레임 것이든) 보여 준다.
     btn.style.display = (settings.pill || needClick || (childNeedClick && idle())) && settings.site ? '' : 'none';
-    if (!needClick) btn.title = t('pillTitle', settings.shortcut ? ` (${isMac ? '⌘K' : 'Ctrl+K'})` : '');
+    if (!needClick) {
+      const title = t('pillTitle', settings.shortcut ? ` (${isMac ? '⌘K' : 'Ctrl+K'})` : '');
+      if (torn) return;
+      btn.title = title;
+    }
   }
 
   // 진단 정보(문제 신고용) — 개인 정보 없이 상태 수치와 마지막 오류만.
   function diag() {
-    return { v: chrome.runtime.getManifest().version, url: location.origin, lang: document.documentElement.lang, pageLang, on, ready, needClick,
+    return { v: VERSION, suspended, initializing, releaseWanted, deferredEnable, torn, released, url: location.origin, lang: document.documentElement.lang, pageLang, on, ready, needClick,
       pendingNeed, waiting: waiting.length, waitingDetect: waitingDetect.length, held: held.length, queue: queue.length, workers,
       translators: [...translators.keys()], failedPairs: [...failedPairs], done: done.size, failed: failed.length, retries, lastErr,
       kana: kanaSeen.size, site: settings?.site, api: { tr: 'Translator' in self, det: 'LanguageDetector' in self, hl: !!highlight, secure: self.isSecureContext } };
@@ -818,6 +964,7 @@
     try { await navigator.clipboard.writeText(text); toast(t('diagCopied')); } catch { console.log('[translate-switch] diag', text); toast(t('diagConsole')); }
   }
   function toast(text) {
+    if (torn) return;
     const d = document.createElement('div');
     d.dataset.gwJa2koUi = '1';
     d.setAttribute('role', 'status');
@@ -828,10 +975,12 @@
     setTimeout(() => d.remove(), 3000);
   }
   function alertBox(text) {
+    if (torn) return;
     const d = document.createElement('div');
     d.dataset.gwJa2koUi = '1';
     d.setAttribute('role', 'alert');
     d.textContent = `${t('alertPrefix')} ${text}`;
+    if (torn) return;
     Object.assign(d.style, { all: 'initial', position: 'fixed', right: '16px', bottom: '64px', zIndex: 2147483647,
       background: '#c62828', color: '#fff', padding: '8px 12px', borderRadius: '8px', font: '13px sans-serif' });
     document.documentElement.appendChild(d);
@@ -842,9 +991,11 @@
   // 팝업에서 「이 사이트에서 사용」을 켜면 이 함수에 허용 화면 주소를 맡긴다. 크롬은 사이트에서 처음 번역기를 만들 때
   // 페이지 안의 클릭을 요구하므로, 먼저 알약 클릭으로 번역을 시작하게 두고 번역이 뜬 뒤에 레이어를 띄운다
   // (그래야 「허용」을 누른 시점에 이미 번역된 화면이 보인다). 20초가 지나도록 시작하지 않으면 그냥 띄운다.
+  let grantClose = null;
   let grantUrl = null;
   let grantTimer = 0;
-  globalThis.__gwTSGrant = (url, immediate) => {
+  const grant = (url, immediate) => {
+    if (torn) return;
     grantUrl = url;
     clearTimeout(grantTimer);
     if (immediate) { maybeShowGrant(true); return; }
@@ -852,7 +1003,7 @@
     maybeShowGrant(false);
   };
   function maybeShowGrant(force) {
-    if (!grantUrl) return;
+    if (torn || !grantUrl) return;
     if (!force && !(on && ready && done.size > 0)) return;
     const u = grantUrl;
     grantUrl = null;
@@ -860,6 +1011,8 @@
     showGrantLayer(u);
   }
   function showGrantLayer(src) {
+    if (torn) return;
+    grantClose?.();
     document.getElementById('gw-ja2ko-grant')?.remove();
     const wrap = document.createElement('div');
     wrap.id = 'gw-ja2ko-grant';
@@ -872,27 +1025,78 @@
     Object.assign(f.style, { width: '440px', maxWidth: 'calc(100vw - 32px)', height: '390px', border: '0',
       borderRadius: '12px', boxShadow: '0 12px 40px rgba(0,0,0,.35)', background: '#fff', colorScheme: 'normal' });
     wrap.append(f);
-    const close = () => { wrap.remove(); removeEventListener('message', onMsg); removeEventListener('keydown', onKey, true); };
+    const close = () => { grantClose = null; wrap.remove(); removeEventListener('message', onMsg); removeEventListener('keydown', onKey, true); };
     wrap.addEventListener('click', (e) => { if (e.target === wrap) close(); });
     const onMsg = (e) => { if (e.source === f.contentWindow && e.data?.gwGrant === 'close') close(); };
     const onKey = (e) => { if (e.key === 'Escape') close(); };
+    grantClose = close;
     addEventListener('message', onMsg);
     addEventListener('keydown', onKey, true);
     document.documentElement.append(wrap);
-    f.addEventListener('load', () => f.focus());
+    f.addEventListener('load', () => { if (!torn) f.focus(); });
   }
 
   // 확장 팝업의 「지금 번역 켜기/끄기」가 부른다(격리 world 안이라 페이지는 이 함수를 볼 수 없다).
-  globalThis.__gwTSToggle = () => { if (isTop) toggle(); };
+  const popupToggle = () => {
+    if (!alive()) { teardown(); return; }
+    if (isTop) toggle();
+  };
   // 팝업의 「켜기」가 부른다 — 꺼져 있으면 켠다(이미 켜져 있으면 아무것도 안 한다). 설정이 아직 안 왔으면 오는 대로 켠다.
-  globalThis.__gwTSStart = () => {
+  const start = () => {
+    if (!alive()) { teardown(); return; }
     if (!isTop || on) return;
     wantOn = true;          // 켜진 규칙이 적용될 때까지 의도를 들고 있는다(applySettings 가 소비한다)
     loadSettings();         // 팝업이 방금 저장한 규칙을 다시 읽는다
   };
   // 진단용(격리 world 안에서만 보인다): 지금 상태 요약
+  globalThis.__gwTSGrant = grant;
+  globalThis.__gwTSToggle = popupToggle;
+  globalThis.__gwTSStart = start;
   globalThis.__gwTSState = diag;
+  const instance = { v: VERSION, alive, teardown, state: diag };
+  globalThis.__gwTS2 = instance;
+  function teardown() {
+    if (torn) return;
+    torn = true;
+    disable();
+    observer?.disconnect(); observer = null;
+    clearTimeout(scanTimer); clearTimeout(pruneTimer); clearTimeout(grantTimer); clearTimeout(hideTimer);
+    clearInterval(aliveTimer); cancelAnimationFrame(raf);
+    grantClose?.();
+    btn?.remove(); tip?.remove();
+    for (const st of styles) st.remove();
+    styles.clear(); roots.clear();
+    // 허용 레이어는 위의 grantClose 가 잡아 둔 자기 요소만 지운다.
+    // 다른 world 의 새 인스턴스가 등록한 표시는 지우지 않는다.
+    if (highlight && CSS.highlights?.get(HL) === highlight) CSS.highlights.delete(HL);
+    window.removeEventListener('message', onMessage);
+    window.removeEventListener('keydown', onKeydown, true);
+    document.removeEventListener('mousemove', onMousemove, true);
+    document.removeEventListener('mouseleave', hideTip);
+    document.removeEventListener('visibilitychange', syncVisibility);
+    window.removeEventListener('pagehide', suspendNow);
+    window.removeEventListener('pageshow', onPageShow);
+    document.removeEventListener('freeze', suspendNow);
+    document.removeEventListener('resume', syncVisibility);
+    document.removeEventListener(BOOT_EVENT, onInstanceBoot);
+    if (globalThis.__gwTS2 === instance) delete globalThis.__gwTS2;
+    for (const [key, fn] of [['__gwTSGrant', grant], ['__gwTSToggle', popupToggle], ['__gwTSStart', start], ['__gwTSState', diag]]) {
+      if (globalThis[key] === fn) delete globalThis[key];
+    }
+  }
+  const aliveTimer = setInterval(() => { if (!torn && !alive()) teardown(); }, ALIVE_CHECK_MS);
+  document.addEventListener('visibilitychange', syncVisibility);
+  window.addEventListener('pagehide', suspendNow);
+  window.addEventListener('pageshow', onPageShow);
+  document.addEventListener('freeze', suspendNow);
+  document.addEventListener('resume', syncVisibility);
 
+  // 새 world 가 뜨면 같은 문서의 고아를 즉시 정리한다. 15초 검사는 신호 누락 대비로 남긴다.
+  document.addEventListener(BOOT_EVENT, onInstanceBoot);
+  document.dispatchEvent(new CustomEvent(BOOT_EVENT, { detail: bootToken }));
+
+  try { chrome.storage.onChanged.addListener(onStorage); } catch { teardown(); return; }
   addStyle(document);
+  syncVisibility();
   loadSettings();
 })();

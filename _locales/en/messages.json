@@ -281,6 +281,15 @@
  "pairUnsupported": {
   "message": "{1}→{2} translation isn't supported."
  },
+ "serviceUnavailable": {
+  "message": "Chrome's built-in translator isn't available right now. Close other translating tabs or reload this page; if it still fails, restart Chrome."
+ },
+ "availServiceUnavailable": {
+  "message": "Unavailable right now"
+ },
+ "legacyRefresh": {
+  "message": "The extension was updated. Please reload this page."
+ },
  "clickToStart": {
   "message": "Click to translate"
  },

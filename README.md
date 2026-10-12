@@ -12,6 +12,8 @@ A Chrome extension that replaces only the foreign-language sentences on a page w
 ## 설치 (개발용)
 `chrome://extensions` → 개발자 모드 → 「압축해제된 확장 프로그램을 로드합니다」 → 이 폴더 선택.
 
+1.5.0에서 업데이트한 뒤 이미 열린 탭은 한 번 새로고침해 주세요. 같은 격리 world에서 1.5.0이 감지되면 새 인스턴스를 시작하지 않고 새로고침을 안내합니다. 별도 world에서는 탐침이 기존 인스턴스를 볼 수 없어 새 인스턴스가 주입되지만, 1.5.0은 자동 정리할 수 없으므로 수동 새로고침이 필요합니다.
+
 ## 구조
 | 파일 | 역할 |
 |---|---|

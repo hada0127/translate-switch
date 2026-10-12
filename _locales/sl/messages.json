@@ -281,6 +281,15 @@
  "pairUnsupported": {
   "message": "Prevajanje {1}→{2} ni podprto."
  },
+ "serviceUnavailable": {
+  "message": "Chromov vgrajeni prevajalnik trenutno ni na voljo. Zaprite druge zavihke, ki prevajajo, ali znova naložite to stran. Če težava ostaja, znova zaženite Chrome."
+ },
+ "availServiceUnavailable": {
+  "message": "Trenutno ni na voljo"
+ },
+ "legacyRefresh": {
+  "message": "Razširitev je posodobljena. Znova naložite to stran."
+ },
  "clickToStart": {
   "message": "Kliknite za prevod"
  },

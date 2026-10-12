@@ -281,6 +281,15 @@
  "pairUnsupported": {
   "message": "Terjemahan {1}→{2} tidak didukung."
  },
+ "serviceUnavailable": {
+  "message": "Penerjemah bawaan Chrome tidak tersedia saat ini. Tutup tab lain yang sedang menerjemahkan atau muat ulang halaman ini; jika masih gagal, mulai ulang Chrome."
+ },
+ "availServiceUnavailable": {
+  "message": "Tidak tersedia saat ini"
+ },
+ "legacyRefresh": {
+  "message": "Ekstensi telah diperbarui. Muat ulang halaman ini."
+ },
  "clickToStart": {
   "message": "Klik untuk menerjemahkan"
  },

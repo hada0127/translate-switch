@@ -281,6 +281,15 @@
  "pairUnsupported": {
   "message": "Vertimas {1}→{2} nepalaikomas."
  },
+ "serviceUnavailable": {
+  "message": "„Chrome“ integruotas vertėjas šiuo metu nepasiekiamas. Uždarykite kitus verčiančius skirtukus arba iš naujo įkelkite šį puslapį. Jei vis tiek neveikia, paleiskite „Chrome“ iš naujo."
+ },
+ "availServiceUnavailable": {
+  "message": "Šiuo metu nepasiekiamas"
+ },
+ "legacyRefresh": {
+  "message": "Plėtinys atnaujintas. Įkelkite šį puslapį iš naujo."
+ },
  "clickToStart": {
   "message": "Spustelėkite, kad išverstumėte"
  },

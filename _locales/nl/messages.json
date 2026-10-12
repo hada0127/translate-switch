@@ -281,6 +281,15 @@
  "pairUnsupported": {
   "message": "Vertalen van {1}→{2} wordt niet ondersteund."
  },
+ "serviceUnavailable": {
+  "message": "De ingebouwde vertaler van Chrome is momenteel niet beschikbaar. Sluit andere tabbladen die aan het vertalen zijn of laad deze pagina opnieuw. Start Chrome opnieuw als het nog steeds niet werkt."
+ },
+ "availServiceUnavailable": {
+  "message": "Momenteel niet beschikbaar"
+ },
+ "legacyRefresh": {
+  "message": "De extensie is bijgewerkt. Laad deze pagina opnieuw."
+ },
  "clickToStart": {
   "message": "Klik om te vertalen"
  },

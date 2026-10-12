@@ -281,6 +281,15 @@
  "pairUnsupported": {
   "message": "Översättning {1}→{2} stöds inte."
  },
+ "serviceUnavailable": {
+  "message": "Chromes inbyggda översättare är inte tillgänglig just nu. Stäng andra flikar som översätter eller ladda om den här sidan. Starta om Chrome om det fortfarande inte fungerar."
+ },
+ "availServiceUnavailable": {
+  "message": "Inte tillgänglig just nu"
+ },
+ "legacyRefresh": {
+  "message": "Tillägget har uppdaterats. Ladda om den här sidan."
+ },
  "clickToStart": {
   "message": "Klicka för att översätta"
  },

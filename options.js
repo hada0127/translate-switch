@@ -107,7 +107,8 @@ async function renderModels() {
   const pairs = [...new Set(rules.filter((r) => r.source !== 'auto').map((r) => `${r.source}>${r.target || gwBrowserLang()}`))];
   const rows = await Promise.all(pairs.map(async (p) => {
     const [source, target] = p.split('>');
-    const a = source === target ? 'same' : await Translator.availability({ sourceLanguage: source, targetLanguage: target }).catch(() => 'unavailable');
+    let a = source === target ? 'same' : await Translator.availability({ sourceLanguage: source, targetLanguage: target }).catch(() => 'unavailable');
+    if (a === 'unavailable' && await gwUnavailableReason(source, target) === 'service') a = 'service';
     return { source, target, a };
   }));
   const det = needDetector && 'LanguageDetector' in self ? await LanguageDetector.availability().catch(() => 'unavailable') : null;
@@ -142,7 +143,7 @@ $('preBtn').addEventListener('click', async () => {
   if (preSrc === tgt) return flash(t('sameLang'));
   const a = await Translator.availability({ sourceLanguage: preSrc, targetLanguage: tgt }).catch(() => 'unavailable');
   if (a === 'available') return flash(t('alreadyHave', gwLangName(preSrc), gwLangName(tgt)));
-  if (a === 'unavailable') return flash(t('unsupportedPair'));
+  if (a === 'unavailable') return flash(t(await gwUnavailableReason(preSrc, tgt) === 'service' ? 'serviceUnavailable' : 'unsupportedPair'));
   startDownload(`${preSrc}>${tgt}`, createTranslator(preSrc, tgt));
   renderModels();
 });

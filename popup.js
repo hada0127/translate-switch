@@ -4,26 +4,67 @@ gwWarmUp();
 let state;
 let tab;
 let host = '';
+let legacyBlocked = null; // null 이면 아직 최상위 탐침 전이다.
 const msg = (t) => { $('msg').textContent = t; };
 const fill = (id, el) => { $(id).textContent = ''; $(id).append(el); };
 
 // 지금 탭에 스크립트를 바로 붙인다(새로고침 없이). 이미 붙어 있으면 건너뛴다.
 async function injectNow() {
+  // 대기 시간은 복구 지연 상한일 뿐이다(3초는 UNVERIFIED 정책값). Chrome 요청 자체는 취소되지 않는다.
+  async function bounded(p) {
+    let timer;
+    try { return await Promise.race([p, new Promise((_, reject) => { timer = setTimeout(() => reject(new Error('frame recovery timeout')), 3000); })]); }
+    finally { clearTimeout(timer); }
+  }
+  async function children(tabId) {
+    try {
+      // 권한을 추가하지 않고 프레임을 찾는다. 이 탐침이 멈춰도 최상위 복구는 이미 끝났다.
+      const probes = await bounded(chrome.scripting.executeScript({ target: { tabId, allFrames: true }, func: gwProbe, injectImmediately: true }));
+      await Promise.all(probes.filter(({ frameId, result }) => frameId !== 0 && (result === 'none' || result === 'torn')).map(async ({ frameId }) => {
+        try { await bounded(chrome.scripting.executeScript({ target: { tabId, frameIds: [frameId] }, files: ['common.js', 'content.js'] })); }
+        catch (e) { console.warn('[translate-switch] inject frame', frameId, e); }
+      }));
+    } catch (e) { console.warn('[translate-switch] child probe', e); }
+  }
   try {
-    // 이미 붙은 탭이면 다시 넣지 않는다(common.js 를 다시 돌릴 필요가 없다).
-    const [{ result: has } = {}] = await chrome.scripting.executeScript({ target: { tabId: tab.id }, func: () => !!globalThis.__gwTS }).catch(() => [{}]);
-    if (has) return true;
-    await chrome.scripting.executeScript({ target: { tabId: tab.id, allFrames: true }, files: ['common.js', 'content.js'] });
-    return true;
+    const probes = await bounded(chrome.scripting.executeScript({ target: { tabId: tab.id, frameIds: [0] }, func: gwProbe, injectImmediately: true }));
+    const top = probes.find(({ frameId }) => frameId === 0);
+    if (!top) throw new Error('top frame probe missing');
+    legacyBlocked = top.result === 'legacy';
+    if (legacyBlocked) {
+      msg(t('legacyRefresh'));
+      console.info('[translate-switch] legacy 1.5.0 instance, refresh needed');
+    }
+    if (top.result === 'none' || top.result === 'torn') {
+      await bounded(chrome.scripting.executeScript({ target: { tabId: tab.id, frameIds: [0] }, files: ['common.js', 'content.js'] }));
+    }
+    // 팝업 시작·권한 동작은 하위 프레임을 기다리지 않는다.
+    void children(tab.id);
+    return !legacyBlocked;
   } catch (e) {
     msg(t('injectFail', e.message));
     return false;
   }
 }
 
+// 페이지 동작 전에 최상위의 옛 인스턴스를 확인한다(직접 권한 링크도 같은 검사).
+async function pageActionAllowed() {
+  if (legacyBlocked === null) {
+    try {
+      const probes = await chrome.scripting.executeScript({ target: { tabId: tab.id }, func: gwProbe });
+      const top = probes.find(({ frameId }) => frameId === 0);
+      if (!top) { msg(t('injectFail', 'top frame probe missing')); return false; }
+      legacyBlocked = top.result === 'legacy';
+    } catch (e) { msg(t('injectFail', e.message)); return false; }
+  }
+  if (legacyBlocked) { msg(t('legacyRefresh')); return false; }
+  return true;
+}
+
 // 접근 허용 화면을 지금 페이지 위 레이어(가운데 카드 + 어두운 배경)로 띄운다.
 // 확장 팝업에서 권한을 요청하면 권한 창이 뜰 때 팝업이 닫혀 허용이 버려지므로, 닫히지 않는 페이지 안 레이어에서 요청한다.
 async function showGrantLayer(immediate = false) {
+  if (!(await pageActionAllowed())) return false;
   // 접근 허용 화면은 웹 페이지가 열 수 있는 주소라, 주소에 사이트를 실으면 악성 페이지가 다른 사이트로 바꿔 띄울 수 있다.
   // 그래서 요청 내용은 확장만 읽는 세션 저장소에 두고, 주소에는 한 번 쓰고 버리는 번호만 싣는다.
   const req = crypto.randomUUID();
@@ -156,13 +197,15 @@ async function renderModels() {
 
 // 켜기: 규칙을 켜고 지금 탭에 붙인다. 영구 권한이 없으면 번역이 뜬 뒤 레이어에서 받는다.
 async function turnOn(patch = {}) {
+  if (!(await pageActionAllowed())) return;
   if (!(await editSite((r) => Object.assign(r, { enabled: true }, patch)))) return render();
   const injected = await injectNow();
+  if (legacyBlocked) return;
   // 자동 번역 체크와 상관없이 지금 탭은 바로 번역을 시작한다.
   if (injected) await chrome.scripting.executeScript({ target: { tabId: tab.id }, func: () => globalThis.__gwTSStart?.() }).catch(() => {});
   const granted = allOn || (await chrome.permissions.contains({ origins: [gwPattern(host)] }));
-  if (!granted) { await showGrantLayer(); window.close(); return; }
-  if (injected) msg(t('addedApplied'));
+  if (!granted) { await showGrantLayer(); if (legacyBlocked === false) window.close(); return; }
+  if (injected && $('msg').textContent !== t('legacyRefresh')) msg(t('addedApplied'));
   render();
 }
 
@@ -181,7 +224,7 @@ async function render() {
     const a = document.createElement('a');
     a.href = '#';
     a.textContent = t('grantBtn');
-    a.addEventListener('click', async (e) => { e.preventDefault(); await showGrantLayer(); window.close(); });
+    a.addEventListener('click', async (e) => { e.preventDefault(); await showGrantLayer(); if (legacyBlocked === false) window.close(); });
     $('ruleFrom').append(a);
   } else $('ruleFrom').textContent = site ? (site.host === host ? t('ruleSite') : t('ruleSiteOf', site.host))
     : allOn ? t('ruleAll') : t('ruleNone');
@@ -191,13 +234,15 @@ async function render() {
   tb.textContent = on ? t('turnOff') : t('turnOn');
   tb.classList.toggle('primary', !on);
   tb.onclick = async () => {
+    if (!(await pageActionAllowed())) return;
     if (on) { if (await editSite((r) => { r.enabled = false; })) msg(t('turnedOff')); render(); return; }
     await turnOn();
   };
   const r = rule || { ...GW_RULE };
-  fill('src', gwLangSelect(r.source, { withAuto: true, label: t('source') }, async (v) => { await editSite((x) => { x.source = v; }); render(); }));
-  fill('tgt', gwLangSelect(r.target, { withBrowser: true, label: t('target') }, async (v) => { await editSite((x) => { x.target = v; }); render(); }));
+  fill('src', gwLangSelect(r.source, { withAuto: true, label: t('source') }, async (v) => { if (!(await pageActionAllowed())) return; await editSite((x) => { x.source = v; }); render(); }));
+  fill('tgt', gwLangSelect(r.target, { withBrowser: true, label: t('target') }, async (v) => { if (!(await pageActionAllowed())) return; await editSite((x) => { x.target = v; }); render(); }));
   fill('auto', gwCheck(!!r.auto, async (v) => {
+    if (!(await pageActionAllowed())) return;
     if (v && !on) { await turnOn({ auto: true }); return; } // 꺼진 사이트에서 자동 번역을 켜면 사이트도 켠다
     await editSite((x) => { x.auto = v; });
   }, t('autoThisSite')));
@@ -208,7 +253,8 @@ async function render() {
 $('openOptions').addEventListener('click', () => { chrome.runtime.openOptionsPage(); window.close(); });
 // 「모든 사이트에서 사용」: 지금 탭에 바로 붙이고 레이어를 즉시 띄운다(거기서 「모든 사이트 허용」을 누르면 어디서든 동작).
 $('useAll').addEventListener('click', async () => {
-  await injectNow();
+  if (!(await pageActionAllowed())) return;
+  if (!(await injectNow())) return;
   await showGrantLayer(true);
   window.close();
 });

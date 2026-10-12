@@ -281,6 +281,15 @@
  "pairUnsupported": {
   "message": "Käännöstä {1}→{2} ei tueta."
  },
+ "serviceUnavailable": {
+  "message": "Chromen sisäinen kääntäjä ei ole juuri nyt käytettävissä. Sulje muut käännöstä tekevät välilehdet tai lataa tämä sivu uudelleen. Jos ongelma jatkuu, käynnistä Chrome uudelleen."
+ },
+ "availServiceUnavailable": {
+  "message": "Ei käytettävissä juuri nyt"
+ },
+ "legacyRefresh": {
+  "message": "Laajennus on päivitetty. Lataa tämä sivu uudelleen."
+ },
  "clickToStart": {
   "message": "Käännä napsauttamalla"
  },

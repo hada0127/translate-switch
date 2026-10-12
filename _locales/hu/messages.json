@@ -281,6 +281,15 @@
  "pairUnsupported": {
   "message": "A(z) {1}→{2} fordítás nem támogatott."
  },
+ "serviceUnavailable": {
+  "message": "A Chrome beépített fordítója jelenleg nem érhető el. Zárja be a többi fordítást végző lapot, vagy töltse újra ezt az oldalt. Ha továbbra sem működik, indítsa újra a Chrome-ot."
+ },
+ "availServiceUnavailable": {
+  "message": "Jelenleg nem érhető el"
+ },
+ "legacyRefresh": {
+  "message": "A bővítmény frissült. Töltse újra ezt az oldalt."
+ },
  "clickToStart": {
   "message": "Kattintson a fordításhoz"
  },

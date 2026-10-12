@@ -37,7 +37,11 @@ async function doSync() {
 let chain = Promise.resolve();
 function sync() { chain = chain.then(doSync).catch((e) => console.warn('[translate-switch] sync', e)); return chain; }
 
-chrome.runtime.onInstalled.addListener(sync);
+chrome.runtime.onInstalled.addListener(async () => {
+  await sync();
+  const [cur] = await chrome.scripting.getRegisteredContentScripts({ ids: [ID] });
+  if (cur?.matches.length) await injectOpenTabs(cur.matches);
+});
 chrome.runtime.onStartup.addListener(sync);
 chrome.storage.onChanged.addListener((c, area) => { if (area === 'sync' && (c.sites || c.all)) sync(); });
 chrome.permissions.onAdded.addListener(async (p) => {
@@ -64,14 +68,34 @@ chrome.permissions.onRemoved.addListener(sync);
 
 // 범위에 들어온 사이트의 열린 탭에 새로고침 없이 바로 붙인다(content.js 는 두 번 붙어도 한 번만 돈다).
 async function injectOpenTabs(origins) {
-  const tabs = await chrome.tabs.query({ url: origins }).catch(() => []);
-  for (const tb of tabs) {
-    try {
-      const [{ result: has } = {}] = await chrome.scripting.executeScript({ target: { tabId: tb.id }, func: () => !!globalThis.__gwTS }).catch(() => [{}]);
-      if (has) continue;
-      await chrome.scripting.executeScript({ target: { tabId: tb.id, allFrames: true }, files: FILES });
-    } catch (e) {
-      console.warn('[translate-switch] inject', e);
-    }
+  // 대기 시간은 복구 지연 상한일 뿐이다(3초는 UNVERIFIED 정책값). Chrome 요청 자체는 취소되지 않는다.
+  async function bounded(p) {
+    let timer;
+    try { return await Promise.race([p, new Promise((_, reject) => { timer = setTimeout(() => reject(new Error('frame recovery timeout')), 3000); })]); }
+    finally { clearTimeout(timer); }
   }
+  async function children(tabId) {
+    try {
+      // 권한을 추가하지 않고 프레임을 찾는다. 이 탐침이 멈춰도 최상위 복구는 이미 끝났다.
+      const probes = await bounded(chrome.scripting.executeScript({ target: { tabId, allFrames: true }, func: gwProbe, injectImmediately: true }));
+      await Promise.all(probes.filter(({ frameId, result }) => frameId !== 0 && (result === 'none' || result === 'torn')).map(async ({ frameId }) => {
+        try { await bounded(chrome.scripting.executeScript({ target: { tabId, frameIds: [frameId] }, files: ['common.js', 'content.js'] })); }
+        catch (e) { console.warn('[translate-switch] inject frame', frameId, e); }
+      }));
+    } catch (e) { console.warn('[translate-switch] child probe', e); }
+  }
+  const tabs = await chrome.tabs.query({ url: origins }).catch(() => []);
+  // 한 탭의 탐침·주입 대기가 다른 탭의 복구를 막지 않는다.
+  await Promise.all(tabs.map(async (tb) => {
+    try {
+      const probes = await bounded(chrome.scripting.executeScript({ target: { tabId: tb.id, frameIds: [0] }, func: gwProbe, injectImmediately: true }));
+      const top = probes.find(({ frameId }) => frameId === 0);
+      if (!top) throw new Error('top frame probe missing');
+      if (top.result === 'legacy') console.info('[translate-switch] legacy 1.5.0 instance, refresh needed');
+      if (top.result === 'none' || top.result === 'torn') {
+        await bounded(chrome.scripting.executeScript({ target: { tabId: tb.id, frameIds: [0] }, files: FILES }));
+      }
+      await children(tb.id);
+    } catch (e) { console.warn('[translate-switch] inject', e); }
+  }));
 }

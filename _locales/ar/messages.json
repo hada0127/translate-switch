@@ -281,6 +281,15 @@
  "pairUnsupported": {
   "message": "الترجمة {1}→{2} غير مدعومة."
  },
+ "serviceUnavailable": {
+  "message": "مترجم Chrome المدمج غير متاح الآن. أغلق علامات التبويب الأخرى التي تترجم أو أعد تحميل هذه الصفحة؛ وإذا استمرت المشكلة، فأعد تشغيل Chrome."
+ },
+ "availServiceUnavailable": {
+  "message": "غير متاح الآن"
+ },
+ "legacyRefresh": {
+  "message": "تم تحديث الإضافة. يُرجى إعادة تحميل هذه الصفحة."
+ },
  "clickToStart": {
   "message": "انقر للترجمة"
  },

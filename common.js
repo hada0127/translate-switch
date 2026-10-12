@@ -75,3 +75,50 @@ function gwResolve(s, hostname) {
   if (!rule || !rule.enabled) return null;
   return { source: rule.source || 'auto', target: rule.target || gwBrowserLang(), auto: !!rule.auto };
 }
+
+// 슬롯의 엔트리가 자원을 소유한다 — 늦게 끝난 생성도 해제는 정확히 한 번.
+function gwDestroy(x) { try { x?.destroy?.(); } catch {} }
+function gwSlots() {
+  const map = new Map();
+  const owns = (key, entry) => map.get(key) === entry;
+  function destroyOnce(entry) {
+    if (entry.destroyed || !entry.settled || entry.value == null) return;
+    entry.destroyed = true;
+    gwDestroy(entry.value);
+  }
+  function release(key) {
+    const entry = map.get(key);
+    if (!entry) return false;
+    map.delete(key);
+    destroyOnce(entry);
+    return true;
+  }
+  return {
+    get(key, make) {
+      if (map.has(key)) return map.get(key).p;
+      const entry = { p: Promise.resolve().then(make), settled: false, value: undefined, destroyed: false };
+      map.set(key, entry);
+      entry.p.then((v) => { entry.settled = true; entry.value = v; if (!owns(key, entry)) destroyOnce(entry); },
+        () => { entry.settled = true; if (owns(key, entry)) map.delete(key); });
+      return entry.p;
+    },
+    owns, entryOf: (key) => map.get(key), promiseOf: (key) => map.get(key)?.p,
+    has: (key) => map.has(key), keys: () => map.keys(), get size() { return map.size; }, release,
+    releaseAll() { let n = 0; for (const key of map.keys()) if (release(key)) n++; return n; },
+  };
+}
+var GW_PROBE_PAIR = { sourceLanguage: 'en', targetLanguage: 'es' }; // 서비스 포화 판별용 쌍의 신뢰도: UNVERIFIED (실 Chrome QA)
+async function gwUnavailableReason(src, tgt) {
+  if (!GW_LANG_CODES.includes(src) || !GW_LANG_CODES.includes(tgt)) return 'pair';
+  try { return await Translator.availability(GW_PROBE_PAIR) === 'unavailable' ? 'service' : 'pair'; } catch { return 'service'; }
+}
+// executeScript 로 직렬화하므로 외부 클로저를 참조하지 않는다.
+function gwProbe() {
+  const n = globalThis.__gwTS2;
+  if (n) {
+    try { if (n.alive() === true) return 'alive'; } catch {}
+    try { n.teardown(); } catch {}
+    return 'torn';
+  }
+  return globalThis.__gwTS ? 'legacy' : 'none';
+}

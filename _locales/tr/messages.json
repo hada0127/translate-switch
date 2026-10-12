@@ -281,6 +281,15 @@
  "pairUnsupported": {
   "message": "{1}→{2} çevirisi desteklenmiyor."
  },
+ "serviceUnavailable": {
+  "message": "Chrome’un yerleşik çevirmeni şu anda kullanılamıyor. Çeviri yapan diğer sekmeleri kapatın veya bu sayfayı yeniden yükleyin. Sorun devam ederse Chrome’u yeniden başlatın."
+ },
+ "availServiceUnavailable": {
+  "message": "Şu anda kullanılamıyor"
+ },
+ "legacyRefresh": {
+  "message": "Uzantı güncellendi. Lütfen bu sayfayı yeniden yükleyin."
+ },
  "clickToStart": {
   "message": "Çevirmek için tıklayın"
  },

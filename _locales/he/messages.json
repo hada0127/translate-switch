@@ -281,6 +281,15 @@
  "pairUnsupported": {
   "message": "התרגום {1}→{2} אינו נתמך."
  },
+ "serviceUnavailable": {
+  "message": "המתרגם המובנה של Chrome אינו זמין כרגע. יש לסגור כרטיסיות אחרות שמתבצע בהן תרגום או לטעון מחדש את הדף הזה. אם הבעיה נמשכת, יש להפעיל מחדש את Chrome."
+ },
+ "availServiceUnavailable": {
+  "message": "לא זמין כרגע"
+ },
+ "legacyRefresh": {
+  "message": "התוסף עודכן. יש לטעון מחדש את הדף הזה."
+ },
  "clickToStart": {
   "message": "לחיצה לתרגום"
  },

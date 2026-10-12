@@ -281,6 +281,15 @@
  "pairUnsupported": {
   "message": "Không hỗ trợ dịch {1}→{2}."
  },
+ "serviceUnavailable": {
+  "message": "Trình dịch tích hợp của Chrome hiện không khả dụng. Đóng các thẻ khác đang dịch hoặc tải lại trang này; nếu vẫn không được, hãy khởi động lại Chrome."
+ },
+ "availServiceUnavailable": {
+  "message": "Hiện không khả dụng"
+ },
+ "legacyRefresh": {
+  "message": "Tiện ích đã được cập nhật. Vui lòng tải lại trang này."
+ },
  "clickToStart": {
   "message": "Nhấp để dịch"
  },

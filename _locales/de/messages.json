@@ -281,6 +281,15 @@
  "pairUnsupported": {
   "message": "Die Übersetzung {1}→{2} wird nicht unterstützt."
  },
+ "serviceUnavailable": {
+  "message": "Der integrierte Übersetzer von Chrome ist derzeit nicht verfügbar. Schließen Sie andere Tabs, in denen übersetzt wird, oder laden Sie diese Seite neu. Falls es weiterhin nicht funktioniert, starten Sie Chrome neu."
+ },
+ "availServiceUnavailable": {
+  "message": "Derzeit nicht verfügbar"
+ },
+ "legacyRefresh": {
+  "message": "Die Erweiterung wurde aktualisiert. Bitte laden Sie diese Seite neu."
+ },
  "clickToStart": {
   "message": "Zum Übersetzen klicken"
  },

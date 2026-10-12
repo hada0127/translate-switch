@@ -281,6 +281,15 @@
  "pairUnsupported": {
   "message": "不支援 {1}→{2} 翻譯。"
  },
+ "serviceUnavailable": {
+  "message": "Chrome 內建翻譯器目前無法使用。請關閉其他正在翻譯的分頁或重新載入此頁面；如果仍然無法使用，請重新啟動 Chrome。"
+ },
+ "availServiceUnavailable": {
+  "message": "目前無法使用"
+ },
+ "legacyRefresh": {
+  "message": "擴充功能已更新。請重新載入此頁面。"
+ },
  "clickToStart": {
   "message": "點選即可翻譯"
  },

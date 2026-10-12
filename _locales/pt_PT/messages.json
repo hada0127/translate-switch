@@ -281,6 +281,15 @@
  "pairUnsupported": {
   "message": "A tradução {1}→{2} não é suportada."
  },
+ "serviceUnavailable": {
+  "message": "O tradutor integrado do Chrome não está disponível de momento. Feche outros separadores que estejam a traduzir ou recarregue esta página; se continuar sem funcionar, reinicie o Chrome."
+ },
+ "availServiceUnavailable": {
+  "message": "Indisponível de momento"
+ },
+ "legacyRefresh": {
+  "message": "A extensão foi atualizada. Recarregue esta página."
+ },
  "clickToStart": {
   "message": "Clique para traduzir"
  },

@@ -50,7 +50,7 @@ const gwGrant = (origin) => chrome.permissions.request({ origins: [origin] }).ca
 const td = (child, cls) => { const t = document.createElement('td'); if (cls) t.className = cls; if (child) t.append(child); return t; };
 
 // ── 번역 모델 상태·받기 ──
-const AVAIL = { available: t('availAvailable'), downloadable: t('availDownloadable'), downloading: t('availDownloading'), unavailable: t('availUnavailable') };
+const AVAIL = { available: t('availAvailable'), downloadable: t('availDownloadable'), downloading: t('availDownloading'), unavailable: t('availUnavailable'), service: t('availServiceUnavailable') };
 const downloads = new Map(); // 'ja>ko' 또는 'detector' -> { loaded, error, note, views: Set<갱신 함수> }
 const gwLastFail = new Map(); // 받기에 실패한 모델 -> 마지막 오류 문구(다음 클릭까지 표시)
 function startDownload(key, create) {
@@ -94,12 +94,12 @@ async function gwLoadDone() {
 const gwAvail = (key, a) => (gwDone.has(key) ? 'available' : a);
 
 function modelRow(label, key, avail, create) {
-  avail = gwAvail(key, avail);
+  avail = avail === 'service' ? 'service' : gwAvail(key, avail);
   const tr = document.createElement('tr');
   const st = document.createElement('span');
   st.textContent = AVAIL[avail] || avail;
   const cell = document.createElement('div');
-  if (avail === 'downloadable' || avail === 'downloading' || downloads.has(key)) {
+  if (avail !== 'service' && (avail === 'downloadable' || avail === 'downloading' || downloads.has(key))) {
     const b = document.createElement('button');
     b.className = 'btn primary';
     b.textContent = t('downloadModel');
