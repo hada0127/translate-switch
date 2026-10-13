@@ -3,7 +3,7 @@
   "message": "Translate Switch - Vertimo jungiklis"
  },
  "extDesc": {
-  "message": "Chrome įrenginyje verčia tik pasirinktą kalbą pasirinktose svetainėse. Užveskite žymeklį ir pamatysite originalą."
+  "message": "Verčia tik pasirinktą kalbą „Chrome“ vertėju įrenginyje. ⌘K / Ctrl+K įjungia ir išjungia; užveskite pelę – matysite originalą."
  },
  "appTitle": {
   "message": "Translate Switch"

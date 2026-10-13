@@ -3,7 +3,7 @@
   "message": "Translate Switch - Käännöskytkin"
  },
  "extDesc": {
-  "message": "Chrome kääntää laitteella vain valitun kielen valituilla sivuilla. Vie osoitin tekstin päälle nähdäksesi alkuperäisen."
+  "message": "Kääntää vain valitsemasi kielen Chromen laitteella toimivalla kääntäjällä. ⌘K / Ctrl+K päälle/pois; alkuperäinen näkyy osoittamalla."
  },
  "appTitle": {
   "message": "Translate Switch"

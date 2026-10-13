@@ -3,7 +3,7 @@
   "message": "Translate Switch - Übersetzungsschalter"
  },
  "extDesc": {
-  "message": "Chrome übersetzt lokal nur die gewählte Sprache auf gewählten Websites. Fürs Original führen Sie die Maus über den Text."
+  "message": "Übersetzt nur die gewählte Sprache mit Chromes On-Device-Übersetzer. ⌘K / Ctrl+K schaltet um; Maus darüber zeigt das Original."
  },
  "appTitle": {
   "message": "Translate Switch"

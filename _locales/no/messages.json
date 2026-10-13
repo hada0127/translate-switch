@@ -3,7 +3,7 @@
   "message": "Translate Switch - Oversettelsesbryter"
  },
  "extDesc": {
-  "message": "Chrome oversetter lokalt bare valgt språk på valgte nettsteder. Hold pekeren over teksten for å se originalen."
+  "message": "Oversetter bare språket du velger, med Chromes innebygde oversetter på enheten. ⌘K / Ctrl+K slår av/på; hold over for originalen."
  },
  "appTitle": {
   "message": "Translate Switch"

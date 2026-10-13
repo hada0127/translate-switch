@@ -3,7 +3,7 @@
   "message": "Translate Switch"
  },
  "extDesc": {
-  "message": "Translates only the language you pick, on sites you pick, with Chrome's on-device translator. Hover to see the original."
+  "message": "Translates only the language you pick with Chrome's on-device translator. ⌘K / Ctrl+K to toggle; hover to see the original."
  },
  "appTitle": {
   "message": "Translate Switch"

@@ -3,7 +3,7 @@
   "message": "Translate Switch - Çeviri Anahtarı"
  },
  "extDesc": {
-  "message": "Chrome cihazda yalnızca seçtiğiniz sitelerde seçtiğiniz dili çevirir. Aslını görmek için fareyi metnin üzerine getirin."
+  "message": "Yalnızca seçtiğiniz dili Chrome'un cihaz içi çevirmeniyle çevirir. ⌘K / Ctrl+K ile açıp kapatın; orijinal için üzerine gelin."
  },
  "appTitle": {
   "message": "Translate Switch"

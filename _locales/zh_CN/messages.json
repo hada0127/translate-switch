@@ -3,7 +3,7 @@
   "message": "Translate Switch - 翻译开关"
  },
  "extDesc": {
-  "message": "使用 Chrome 设备端翻译器，仅在您选择的网站翻译您选择的语言。将鼠标悬停在译文上即可查看原文。"
+  "message": "用 Chrome 内置的设备端翻译器，只翻译你选择的语言。按 ⌘K / Ctrl+K 即可开关翻译，鼠标悬停即可查看原文。"
  },
  "appTitle": {
   "message": "Translate Switch"

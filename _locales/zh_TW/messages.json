@@ -3,7 +3,7 @@
   "message": "Translate Switch - 翻譯開關"
  },
  "extDesc": {
-  "message": "使用 Chrome 裝置端翻譯工具，僅在您選擇的網站翻譯您選擇的語言。將滑鼠游標移至譯文上即可查看原文。"
+  "message": "使用 Chrome 內建的裝置端翻譯器，只翻譯你選擇的語言。按 ⌘K / Ctrl+K 即可切換翻譯，滑鼠移到上方即可查看原文。"
  },
  "appTitle": {
   "message": "Translate Switch"

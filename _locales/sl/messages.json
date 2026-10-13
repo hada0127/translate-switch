@@ -3,7 +3,7 @@
   "message": "Translate Switch - Stikalo za prevajanje"
  },
  "extDesc": {
-  "message": "Chrome v napravi prevaja le izbrani jezik na izbranih straneh. Za izvirnik premaknite kazalec nad besedilo."
+  "message": "Prevaja le izbrani jezik z vgrajenim prevajalnikom Chrome v napravi. ⌘K / Ctrl+K vklopi in izklopi; pokažite z miško za izvirnik."
  },
  "appTitle": {
   "message": "Translate Switch"

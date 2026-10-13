@@ -3,7 +3,7 @@
   "message": "번역 스위치 - Translate Switch"
  },
  "extDesc": {
-  "message": "고른 사이트에서 정한 언어만 Chrome 내장 번역기로 바꿔 보여 줍니다. 번역은 이 컴퓨터 안에서 처리되며 원문은 마우스를 올리면 볼 수 있습니다."
+  "message": "고른 언어만 Chrome 내장 번역기로 기기 안에서 바꿔 보여 줍니다. ⌘K / Ctrl+K 로 바로 켜고 끄고, 마우스를 올리면 원문이 보입니다."
  },
  "appTitle": {
   "message": "번역 스위치"

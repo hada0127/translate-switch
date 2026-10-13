@@ -3,7 +3,7 @@
   "message": "Translate Switch - Prekidač za prijevod"
  },
  "extDesc": {
-  "message": "Chrome na uređaju prevodi samo odabrani jezik na odabranim stranicama. Za izvornik prijeđite mišem preko teksta."
+  "message": "Prevodi samo odabrani jezik Chromeovim prevoditeljem na uređaju. ⌘K / Ctrl+K uključuje i isključuje; zadržite pokazivač za izvornik."
  },
  "appTitle": {
   "message": "Translate Switch"

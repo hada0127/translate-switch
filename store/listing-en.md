@@ -1,7 +1,7 @@
 # Translate Switch — Chrome Web Store listing (English)
 
 ## Summary (≤132 chars)
-Translates only the language you pick, on sites you pick, with Chrome's on-device translator. Hover to see the original.
+Translates only the language you pick with Chrome's on-device translator. ⌘K / Ctrl+K to toggle; hover to see the original.
 
 ## Description
 Translate Switch replaces only the foreign-language sentences on a page with your language and leaves everything else untouched. It does not reload or re-render the page; it uses Chrome's built-in, on-device translator, so page content never leaves your computer.

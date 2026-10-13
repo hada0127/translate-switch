@@ -3,7 +3,7 @@
   "message": "Translate Switch - Comutator de traducere"
  },
  "extDesc": {
-  "message": "Chrome traduce local doar limba aleasă pe site-urile alese. Treceți cursorul peste text pentru a vedea originalul."
+  "message": "Traduce doar limba aleasă, cu traducătorul Chrome de pe dispozitiv. ⌘K / Ctrl+K pornește/oprește; treceți cursorul pentru original."
  },
  "appTitle": {
   "message": "Translate Switch"

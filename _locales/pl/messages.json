@@ -3,7 +3,7 @@
   "message": "Translate Switch - Przełącznik tłumaczenia"
  },
  "extDesc": {
-  "message": "Chrome tłumaczy na urządzeniu tylko wybrany język na wybranych stronach. Najedź kursorem, aby zobaczyć oryginał."
+  "message": "Tłumaczy tylko wybrany język wbudowanym tłumaczem Chrome na urządzeniu. ⌘K / Ctrl+K włącza i wyłącza; najedź, by zobaczyć oryginał."
  },
  "appTitle": {
   "message": "Translate Switch"

@@ -3,7 +3,7 @@
   "message": "Translate Switch - Přepínač překladu"
  },
  "extDesc": {
-  "message": "Chrome v zařízení překládá jen zvolený jazyk na zvolených webech. Originál zobrazíte najetím myší."
+  "message": "Překládá jen zvolený jazyk vestavěným překladačem Chrome přímo v zařízení. ⌘K / Ctrl+K zapne/vypne; najetím myši uvidíte originál."
  },
  "appTitle": {
   "message": "Translate Switch"

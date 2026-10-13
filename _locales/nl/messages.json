@@ -3,7 +3,7 @@
   "message": "Translate Switch - Vertaalschakelaar"
  },
  "extDesc": {
-  "message": "Chrome vertaalt lokaal alleen de gekozen taal op gekozen sites. Wijs de tekst aan om het origineel te zien."
+  "message": "Vertaalt alleen de gekozen taal met de vertaler van Chrome, op je apparaat. ⌘K / Ctrl+K zet het aan/uit; hover voor het origineel."
  },
  "appTitle": {
   "message": "Translate Switch"

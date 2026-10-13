@@ -3,7 +3,7 @@
   "message": "Translate Switch - Fordításkapcsoló"
  },
  "extDesc": {
-  "message": "A Chrome helyben csak a kijelölt nyelvet fordítja a kijelölt oldalakon. Az eredetihez vigye a szöveg fölé az egeret."
+  "message": "Csak a kiválasztott nyelvet fordítja a Chrome eszközön futó fordítójával. ⌘K / Ctrl+K be/ki; az eredetiért vigye fölé az egeret."
  },
  "appTitle": {
   "message": "Translate Switch"

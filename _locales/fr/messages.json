@@ -3,7 +3,7 @@
   "message": "Translate Switch - Interrupteur de traduction"
  },
  "extDesc": {
-  "message": "Chrome traduit en local la seule langue choisie sur les sites choisis. Survolez le texte pour voir l’original."
+  "message": "Traduit uniquement la langue choisie, en local, via le traducteur de Chrome. ⌘K / Ctrl+K pour activer ; survolez pour l'original."
  },
  "appTitle": {
   "message": "Translate Switch"

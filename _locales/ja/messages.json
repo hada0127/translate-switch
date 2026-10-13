@@ -3,7 +3,7 @@
   "message": "Translate Switch - 翻訳スイッチ"
  },
  "extDesc": {
-  "message": "Chromeのデバイス内翻訳で、選んだサイトの選んだ言語だけを翻訳します。カーソルを合わせると原文を確認できます。"
+  "message": "選んだ言語だけを Chrome 内蔵の翻訳機能でデバイス内翻訳。⌘K / Ctrl+K ですぐにオン・オフでき、カーソルを合わせると原文を表示します。"
  },
  "appTitle": {
   "message": "Translate Switch"

@@ -3,7 +3,7 @@
   "message": "Translate Switch - Công tắc dịch"
  },
  "extDesc": {
-  "message": "Chrome dịch ngay trên thiết bị chỉ ngôn ngữ đã chọn ở trang đã chọn. Di chuột lên chữ để xem bản gốc."
+  "message": "Chỉ dịch ngôn ngữ bạn chọn bằng trình dịch trên thiết bị của Chrome. Nhấn ⌘K / Ctrl+K để bật/tắt; di chuột để xem bản gốc."
  },
  "appTitle": {
   "message": "Translate Switch"

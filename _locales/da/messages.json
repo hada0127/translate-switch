@@ -3,7 +3,7 @@
   "message": "Translate Switch - Oversættelsesknap"
  },
  "extDesc": {
-  "message": "Chrome oversætter lokalt kun det valgte sprog på valgte sider. Hold markøren over teksten for at se originalen."
+  "message": "Oversætter kun det valgte sprog med Chromes indbyggede oversætter på enheden. ⌘K / Ctrl+K slår til/fra; peg for at se originalen."
  },
  "appTitle": {
   "message": "Translate Switch"
