@@ -33,13 +33,12 @@ async function render() {
   const a = state.all;
   fill('allOn', gwCheck(a.enabled && allGranted, async (v, box) => {
     if (v && !(await gwGrant(GW_ALL_PATTERN))) { box.checked = false; return; }
-    const ok = await save((x) => { x.all.enabled = v; if (v) x.all.auto = true; });
+    const ok = await save((x) => { x.all.enabled = v; x.all.auto = false; });
     // 끄면 넓은 권한을 돌려준다(사이트별로 켜 둔 곳이 없을 때만 — 그 사이트들이 이 권한에 기대고 있을 수 있다).
     if (ok && !v && !state.sites.some((x) => x.enabled)) chrome.permissions.remove({ origins: [GW_ALL_PATTERN] }).catch(() => {});
   }, t('allSitesUse')));
   fill('allSrc', gwLangSelect(a.source, { withAuto: true, label: `${t('allSites')} ${t('source')}` }, (v) => save((x) => { x.all.source = v; })));
   fill('allTgt', gwLangSelect(a.target, { withBrowser: true, label: `${t('allSites')} ${t('target')}` }, (v) => save((x) => { x.all.target = v; })));
-  fill('allAuto', gwCheck(a.auto, (v) => save((x) => { x.all.auto = v; }), `${t('allSites')} ${t('autoTranslate')}`));
   $('allSrc').parentElement.classList.toggle('off', !(a.enabled && allGranted));
 
   // 사이트별

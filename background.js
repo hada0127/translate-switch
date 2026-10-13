@@ -56,7 +56,7 @@ chrome.permissions.onAdded.addListener(async (p) => {
     await chrome.storage.session.remove(k);
     // grant.js 와 같은 마무리(둘 다 돌아도 결과는 같다)
     await gwUpdate((s) => {
-      if (g.all) { Object.assign(s.all, { enabled: true, auto: true }); s.sites = s.sites.filter((x) => x.host !== g.host); return; }
+      if (g.all) { Object.assign(s.all, { enabled: true, auto: false }); return; }
       let rule = s.sites.find((x) => x.host === g.host);
       if (!rule) { rule = { ...GW_RULE, host: g.host }; s.sites.unshift(rule); }
       Object.assign(rule, { enabled: true, auto: true });

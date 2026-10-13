@@ -121,6 +121,7 @@ function siteRuleIn(s) {
   if (!r) {
     const base = gwSiteFor(s.sites, host) || (allOn ? s.all : { ...GW_RULE, enabled: false });
     r = { ...GW_RULE, ...base, host };
+    if (base === s.all) r.auto = false; // 모든 사이트 규칙에서 복사할 땐 자동 번역은 가져오지 않는다
     s.sites.unshift(r);
   }
   return r;
@@ -241,7 +242,7 @@ async function render() {
   const r = rule || { ...GW_RULE };
   fill('src', gwLangSelect(r.source, { withAuto: true, label: t('source') }, async (v) => { if (!(await pageActionAllowed())) return; await editSite((x) => { x.source = v; }); render(); }));
   fill('tgt', gwLangSelect(r.target, { withBrowser: true, label: t('target') }, async (v) => { if (!(await pageActionAllowed())) return; await editSite((x) => { x.target = v; }); render(); }));
-  fill('auto', gwCheck(!!r.auto, async (v) => {
+  fill('auto', gwCheck(!!(site && r.auto), async (v) => {
     if (!(await pageActionAllowed())) return;
     if (v && !on) { await turnOn({ auto: true }); return; } // 꺼진 사이트에서 자동 번역을 켜면 사이트도 켠다
     await editSite((x) => { x.auto = v; });

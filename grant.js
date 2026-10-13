@@ -66,9 +66,8 @@ async function saveRule() {
   try {
     await gwUpdate((s) => {
       if (grantedAll) {
-        // 모든 사이트 허용 = 어디서든 바로 동작. 이 사이트 규칙은 따로 두지 않는다(모든 사이트 규칙을 따른다).
-        Object.assign(s.all, { enabled: true, auto: true });
-        s.sites = s.sites.filter((x) => x.host !== granted);
+        // 모든 사이트 허용 = 어디서든 스위치가 붙는다. 처음 들어가는 사이트는 자동 번역하지 않는다(사이트별 규칙에서만 자동).
+        Object.assign(s.all, { enabled: true, auto: false });
         return;
       }
       let rule = s.sites.find((x) => x.host === granted);

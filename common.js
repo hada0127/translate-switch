@@ -6,6 +6,7 @@ var GW_LANG_CODES = ['ar', 'bg', 'bn', 'cs', 'da', 'de', 'el', 'en', 'es', 'fi',
 
 // source: 'auto' = 자동 감지 · target: '' = 브라우저 기본 언어
 var GW_RULE = { enabled: true, source: 'auto', target: '', auto: false };
+// 자동 번역은 사이트별 규칙에서만 — 모든 사이트 규칙으로 처음 들어간 사이트는 스위치만 붙고 자동으로 켜지지 않는다.
 var GW_DEFAULTS = {
   shortcut: true,
   pill: true,
@@ -73,7 +74,7 @@ function gwResolve(s, hostname) {
   const site = gwSiteFor(s.sites, hostname);
   const rule = site || (s.all?.enabled ? s.all : null);
   if (!rule || !rule.enabled) return null;
-  return { source: rule.source || 'auto', target: rule.target || gwBrowserLang(), auto: !!rule.auto };
+  return { source: rule.source || 'auto', target: rule.target || gwBrowserLang(), auto: !!(site && rule.auto) };
 }
 
 // 슬롯의 엔트리가 자원을 소유한다 — 늦게 끝난 생성도 해제는 정확히 한 번.
